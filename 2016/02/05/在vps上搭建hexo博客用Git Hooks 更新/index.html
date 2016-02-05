@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="git,hexo,nginx," />
 
 
 
@@ -57,25 +57,25 @@
 
 
 
-<meta name="description" content="在vps上搭建hexo博客用Git Hooks 更新很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。
+<meta name="description" content="很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。
 之前一直不清楚搭一个博客需要啥，所以用了hexo这个静态博客系统。
 我的vps系统是Centos 6 x86。本机是windows7.
-搭建过程搭建过程分两部分，需要在本机和服">
+搭建过程搭建过程分两部分，需要在本机和服务端都安装Hexo和Git，VPS上还需要安装Ngi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Xiao555">
+<meta property="og:title" content="在vps上搭建hexo博客用Git Hooks 更新">
 <meta property="og:url" content="http://yoursite.com/2016/02/05/在vps上搭建hexo博客用Git Hooks 更新/index.html">
 <meta property="og:site_name" content="Xiao555">
-<meta property="og:description" content="在vps上搭建hexo博客用Git Hooks 更新很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。
+<meta property="og:description" content="很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。
 之前一直不清楚搭一个博客需要啥，所以用了hexo这个静态博客系统。
 我的vps系统是Centos 6 x86。本机是windows7.
-搭建过程搭建过程分两部分，需要在本机和服">
-<meta property="og:updated_time" content="2016-02-05T15:26:19.821Z">
+搭建过程搭建过程分两部分，需要在本机和服务端都安装Hexo和Git，VPS上还需要安装Ngi">
+<meta property="og:updated_time" content="2016-02-05T15:32:20.122Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xiao555">
-<meta name="twitter:description" content="在vps上搭建hexo博客用Git Hooks 更新很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。
+<meta name="twitter:title" content="在vps上搭建hexo博客用Git Hooks 更新">
+<meta name="twitter:description" content="很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。
 之前一直不清楚搭一个博客需要啥，所以用了hexo这个静态博客系统。
 我的vps系统是Centos 6 x86。本机是windows7.
-搭建过程搭建过程分两部分，需要在本机和服">
+搭建过程搭建过程分两部分，需要在本机和服务端都安装Hexo和Git，VPS上还需要安装Ngi">
 
 
 
@@ -93,7 +93,7 @@
   };
 </script>
 
-  <title>  | Xiao555 </title>
+  <title> 在vps上搭建hexo博客用Git Hooks 更新 | Xiao555 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -262,7 +262,7 @@
             
             
               
-                
+                在vps上搭建hexo博客用Git Hooks 更新
               
             
           </h1>
@@ -274,11 +274,30 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-05T23:26:19+08:00" content="2016-02-05">
+            <time itemprop="dateCreated" datetime="2016-02-05T00:00:00+08:00" content="2016-02-05">
               2016-02-05
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -307,7 +326,7 @@
       
 
       
-        <h1 id="u5728vps_u4E0A_u642D_u5EFAhexo_u535A_u5BA2_u7528Git_Hooks__u66F4_u65B0"><a href="#u5728vps_u4E0A_u642D_u5EFAhexo_u535A_u5BA2_u7528Git_Hooks__u66F4_u65B0" class="headerlink" title="在vps上搭建hexo博客用Git Hooks 更新"></a>在vps上搭建hexo博客用Git Hooks 更新</h1><p>很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。</p>
+        <p>很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。</p>
 <p>之前一直不清楚搭一个博客需要啥，所以用了<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo</a>这个静态博客系统。</p>
 <p>我的vps系统是Centos 6 x86。<br>本机是windows7.</p>
 <h2 id="u642D_u5EFA_u8FC7_u7A0B"><a href="#u642D_u5EFA_u8FC7_u7A0B" class="headerlink" title="搭建过程"></a>搭建过程</h2><p>搭建过程分两部分，需要在本机和服务端都安装Hexo和Git，VPS上还需要安装Nginx服务器，配置Git Hooks。</p>
@@ -433,6 +452,16 @@ exit 0
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/git/" rel="tag">#git</a>
+          
+            <a href="/tags/hexo/" rel="tag">#hexo</a>
+          
+            <a href="/tags/nginx/" rel="tag">#nginx</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
@@ -460,7 +489,7 @@ exit 0
     <div class="post-spread">
       
         <div class="ds-share flat" data-thread-key="2016/02/05/在vps上搭建hexo博客用Git Hooks 更新/"
-     data-title=""
+     data-title="在vps上搭建hexo博客用Git Hooks 更新"
      data-content=""
      data-url="http://yoursite.com/2016/02/05/在vps上搭建hexo博客用Git Hooks 更新/">
   <div class="ds-share-inline">
@@ -485,12 +514,15 @@ exit 0
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/02/05/在vps上搭建hexo博客用Git Hooks 更新/"
-           data-title="" data-url="http://yoursite.com/2016/02/05/在vps上搭建hexo博客用Git Hooks 更新/">
+           data-title="在vps上搭建hexo博客用Git Hooks 更新" data-url="http://yoursite.com/2016/02/05/在vps上搭建hexo博客用Git Hooks 更新/">
       </div>
     
   </div>
@@ -541,7 +573,21 @@ exit 0
           </div>
           
           
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -597,7 +643,7 @@ exit 0
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u5728vps_u4E0A_u642D_u5EFAhexo_u535A_u5BA2_u7528Git_Hooks__u66F4_u65B0"><span class="nav-number">1.</span> <span class="nav-text">在vps上搭建hexo博客用Git Hooks 更新</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#u642D_u5EFA_u8FC7_u7A0B"><span class="nav-number">1.1.</span> <span class="nav-text">搭建过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u672C_u673A1"><span class="nav-number">1.1.1.</span> <span class="nav-text">本机1</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u642D_u5EFA_u8FC7_u7A0B"><span class="nav-number">1.</span> <span class="nav-text">搭建过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u672C_u673A1"><span class="nav-number">1.1.</span> <span class="nav-text">本机1</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
