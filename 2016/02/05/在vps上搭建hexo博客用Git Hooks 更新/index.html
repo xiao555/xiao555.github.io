@@ -69,7 +69,7 @@
 之前一直不清楚搭一个博客需要啥，所以用了hexo这个静态博客系统。
 我的vps系统是Centos 6 x86。本机是windows7.
 搭建过程搭建过程分两部分，需要在本机和服务端都安装Hexo和Git，VPS上还需要安装Ngi">
-<meta property="og:updated_time" content="2016-02-05T15:34:39.887Z">
+<meta property="og:updated_time" content="2016-02-05T15:38:34.194Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在vps上搭建hexo博客用Git Hooks 更新">
 <meta name="twitter:description" content="很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。
@@ -329,11 +329,11 @@
         <p>很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。</p>
 <p>之前一直不清楚搭一个博客需要啥，所以用了<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo</a>这个静态博客系统。</p>
 <p>我的vps系统是Centos 6 x86。<br>本机是windows7.</p>
-<h2 id="u642D_u5EFA_u8FC7_u7A0B"><a href="#u642D_u5EFA_u8FC7_u7A0B" class="headerlink" title="搭建过程"></a>搭建过程</h2><p>搭建过程分两部分，需要在本机和服务端都安装Hexo和Git，VPS上还需要安装Nginx服务器，配置Git Hooks。</p>
-<h3 id="u672C_u673A1"><a href="#u672C_u673A1" class="headerlink" title="本机1"></a>本机1</h3><p>###安装Git<br>下载<a href="https://git-scm.com/download/win" target="_blank" rel="external">Git for windows</a>，一路默认安装</p>
-<p>###安装Node.js<br>在<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>官网下载最新版，一路默认安装</p>
-<p>###创建网站目录<br>在你电脑的任意位置创建一个文件夹（我的是D:\blog，下文以此代替），作为网站目录。</p>
-<p>###安装Hexo<br>打开你创建的网站目录，右键git bash here打开命令行。</p>
+<h1 id="u642D_u5EFA_u8FC7_u7A0B"><a href="#u642D_u5EFA_u8FC7_u7A0B" class="headerlink" title="搭建过程"></a>搭建过程</h1><p>搭建过程分两部分，需要在本机和服务端都安装Hexo和Git，VPS上还需要安装Nginx服务器，配置Git Hooks。</p>
+<h2 id="u672C_u673A1"><a href="#u672C_u673A1" class="headerlink" title="本机1"></a>本机1</h2><p>##安装Git<br>下载<a href="https://git-scm.com/download/win" target="_blank" rel="external">Git for windows</a>，一路默认安装</p>
+<p>##安装Node.js<br>在<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>官网下载最新版，一路默认安装</p>
+<p>##创建网站目录<br>在你电脑的任意位置创建一个文件夹（我的是D:\blog，下文以此代替），作为网站目录。</p>
+<p>##安装Hexo<br>打开你创建的网站目录，右键git bash here打开命令行。</p>
 <pre><code>$npm install -g hexo-cli
 $hexo init
 $npm install
@@ -342,23 +342,23 @@ $hexo serve
 </code></pre><p>打开<a href="http://localhost:4000如果看到hexo的初始页面证明安装成功。" target="_blank" rel="external">http://localhost:4000如果看到hexo的初始页面证明安装成功。</a></p>
 <p>PS:在我的电脑上4000貌似被占了，如果要改端口的话：</p>
 <pre><code>$hexo serve -p ****
-</code></pre><p>###配置Git<br>在网站目录git bash，执行</p>
+</code></pre><p>##配置Git<br>在网站目录git bash，执行</p>
 <pre><code>$ git init
 $ git add .
 $ git commit -m &quot;Initial commit&quot;
 </code></pre><p>我们还要给他加个插件<br>    $npm install hexo-deployer-git –save</p>
-<p>###生成ssh密钥</p>
+<p>##生成ssh密钥</p>
 <p>输入命令 <code>ssh-keygen -t rsa -C “blog” </code>,生成公钥和私钥，打开生成密钥的文件夹，找到id_rsa.pub。</p>
-<p>###VPS(CentOS 6)</p>
+<p>##VPS(CentOS 6)</p>
 <p>我们选择Git仓库+Git Hooks作为服务器端的解决方案.<br>PS:我操作的用户是root，因为这样可以方便点.</p>
-<p>###安装Git</p>
+<p>##安装Git</p>
 <pre><code>yum update &amp;&amp; apt-get upgrade -y #更新内核
 yum install git-core
-</code></pre><p>###Git仓库</p>
+</code></pre><p>##Git仓库</p>
 <pre><code>cd ~ 
 mkdir blog.git &amp;&amp; cd blog.git #创建GIT仓库目录
 git init --bare #初始化一个空仓库
-</code></pre><p>###SSH公钥配置<br>为了本机不登录自动部署</p>
+</code></pre><p>##SSH公钥配置<br>为了本机不登录自动部署</p>
 <pre><code>cd ~
 mkdir .ssh &amp;&amp; cd .ssh
 vim authorized_keys
@@ -366,12 +366,12 @@ vim authorized_keys
 <p>本机Git Bash里实验一下</p>
 <pre><code>ssh username@yourVps(IP Or URL)
 </code></pre><p>如果配置成功的话不用输入密码就会登陆。</p>
-<p>###配置Hexo<br>设置git用户名</p>
+<p>##配置Hexo<br>设置git用户名</p>
 <pre><code>$ git config --global user.email &quot;email@example.com&quot;
 $ git config --global user.name &quot;username&quot;
 </code></pre><p>配置站点目录里的_config.yml</p>
 <pre><code># Deployment
-## Docs: https://hexo.io/docs/deployment.html
+# Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   message: update
@@ -382,8 +382,8 @@ deploy:
   s1: root@YOURVPSIP:blog.git,master
 </code></pre><p>运行    <code>hexo g &amp;&amp; hexo d</code>，如果一切正常，静态文件已经被成功的push到了blog的仓库里</p>
 <p>PS:注意配置文件的冒号 ： 后面一定要有空格</p>
-<p>###配置Nginx</p>
-<p>####安装Nginx和Node.js</p>
+<p>##配置Nginx</p>
+<p>##安装Nginx和Node.js</p>
 <pre><code>$yum update &amp;&amp; apt-get upgrade -y #更新内核
 $yun install nodejs -y
 $yum install nginx -y
@@ -413,7 +413,7 @@ $vi default.conf
         }                                                                      
     }                                                                              
 }
-</code></pre><p>###创建目录 分配权限</p>
+</code></pre><p>##创建目录 分配权限</p>
 <pre><code>$cd /var/www
 $mkdir blog
 $chmod 775 -R /var/www/blog
@@ -422,9 +422,9 @@ $chmod 775 -R /var/www/blog
 git remote add origin ~/blog.git
 git fetch
 git checkout master
-</code></pre><p>###运行Nginx</p>
+</code></pre><p>##运行Nginx</p>
 <pre><code>$/etc/init.d/nginx restart
-</code></pre><p>###配置 Git Hooks</p>
+</code></pre><p>##配置 Git Hooks</p>
 <pre><code>cd ~/blog.git/hooks
 touch post-receive
 vi post-receive
@@ -629,7 +629,7 @@ exit 0
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u642D_u5EFA_u8FC7_u7A0B"><span class="nav-number">1.</span> <span class="nav-text">搭建过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u672C_u673A1"><span class="nav-number">1.1.</span> <span class="nav-text">本机1</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u642D_u5EFA_u8FC7_u7A0B"><span class="nav-number">1.</span> <span class="nav-text">搭建过程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#u672C_u673A1"><span class="nav-number">1.1.</span> <span class="nav-text">本机1</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
