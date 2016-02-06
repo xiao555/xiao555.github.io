@@ -342,8 +342,8 @@
 <p>之前一直不清楚搭一个博客需要啥，所以用了<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo</a>这个静态博客系统。</p>
 <p>我的vps系统是Centos 6 x86。<br>本机是windows7.</p>
 <h1 id="u642D_u5EFA_u8FC7_u7A0B"><a href="#u642D_u5EFA_u8FC7_u7A0B" class="headerlink" title="搭建过程"></a>搭建过程</h1><p>搭建过程分两部分，需要在本机和服务端都安装Hexo和Git，VPS上还需要安装Nginx服务器，配置Git Hooks。</p>
-<h2 id="u672C_u673A1"><a href="#u672C_u673A1" class="headerlink" title="本机1"></a>本机1</h2><p>###安装Git<br>下载<a href="https://git-scm.com/download/win" target="_blank" rel="external">Git for windows</a>，一路默认安装</p>
-<p>##安装Node.js<br>在<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>官网下载最新版，一路默认安装</p>
+<h2 id="u672C_u673A1"><a href="#u672C_u673A1" class="headerlink" title="本机1"></a>本机1</h2><h3 id="u5B89_u88C5Git"><a href="#u5B89_u88C5Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>下载<a href="https://git-scm.com/download/win" target="_blank" rel="external">Git for windows</a>，一路默认安装</p>
+<h2 id="u5B89_u88C5Node-js"><a href="#u5B89_u88C5Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>在<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>官网下载最新版，一路默认安装</p>
 <p>##创建网站目录<br>在你电脑的任意位置创建一个文件夹（我的是D:\blog，下文以此代替），作为网站目录。</p>
 <p>##安装Hexo<br>打开你创建的网站目录，右键git bash here打开命令行。</p>
 <pre><code>$npm install -g hexo-cli
@@ -354,23 +354,19 @@ $hexo serve
 </code></pre><p>打开<a href="http://localhost:4000如果看到hexo的初始页面证明安装成功。" target="_blank" rel="external">http://localhost:4000如果看到hexo的初始页面证明安装成功。</a></p>
 <p>PS:在我的电脑上4000貌似被占了，如果要改端口的话：</p>
 <pre><code>$hexo serve -p ****
-</code></pre><p>##配置Git<br>在网站目录git bash，执行</p>
+</code></pre><h2 id="u914D_u7F6EGit"><a href="#u914D_u7F6EGit" class="headerlink" title="配置Git"></a>配置Git</h2><p>在网站目录git bash，执行</p>
 <pre><code>$ git init
 $ git add .
 $ git commit -m &quot;Initial commit&quot;
 </code></pre><p>我们还要给他加个插件<br>    $npm install hexo-deployer-git –save</p>
-<p>##生成ssh密钥</p>
-<p>输入命令 <code>ssh-keygen -t rsa -C “blog” </code>,生成公钥和私钥，打开生成密钥的文件夹，找到id_rsa.pub。</p>
-<p>##VPS(CentOS 6)</p>
-<p>我们选择Git仓库+Git Hooks作为服务器端的解决方案.<br>PS:我操作的用户是root，因为这样可以方便点.</p>
-<p>##安装Git</p>
-<pre><code>yum update &amp;&amp; apt-get upgrade -y #更新内核
+<h2 id="u751F_u6210ssh_u5BC6_u94A5"><a href="#u751F_u6210ssh_u5BC6_u94A5" class="headerlink" title="生成ssh密钥"></a>生成ssh密钥</h2><p>输入命令 <code>ssh-keygen -t rsa -C “blog” </code>,生成公钥和私钥，打开生成密钥的文件夹，找到id_rsa.pub。</p>
+<h2 id="VPS_28CentOS_6_29"><a href="#VPS_28CentOS_6_29" class="headerlink" title="VPS(CentOS 6)"></a>VPS(CentOS 6)</h2><p>我们选择Git仓库+Git Hooks作为服务器端的解决方案.<br>PS:我操作的用户是root，因为这样可以方便点.</p>
+<h2 id="u5B89_u88C5Git-1"><a href="#u5B89_u88C5Git-1" class="headerlink" title="安装Git"></a>安装Git</h2><pre><code>yum update &amp;&amp; apt-get upgrade -y #更新内核
 yum install git-core
-</code></pre><p>##Git仓库</p>
-<pre><code>cd ~ 
+</code></pre><h2 id="Git_u4ED3_u5E93"><a href="#Git_u4ED3_u5E93" class="headerlink" title="Git仓库"></a>Git仓库</h2><pre><code>cd ~ 
 mkdir blog.git &amp;&amp; cd blog.git #创建GIT仓库目录
 git init --bare #初始化一个空仓库
-</code></pre><p>##SSH公钥配置<br>为了本机不登录自动部署</p>
+</code></pre><h2 id="SSH_u516C_u94A5_u914D_u7F6E"><a href="#SSH_u516C_u94A5_u914D_u7F6E" class="headerlink" title="SSH公钥配置"></a>SSH公钥配置</h2><p>为了本机不登录自动部署</p>
 <pre><code>cd ~
 mkdir .ssh &amp;&amp; cd .ssh
 vim authorized_keys
@@ -394,9 +390,7 @@ deploy:
   s1: root@YOURVPSIP:blog.git,master
 </code></pre><p>运行    <code>hexo g &amp;&amp; hexo d</code>，如果一切正常，静态文件已经被成功的push到了blog的仓库里</p>
 <p>PS:注意配置文件的冒号 ： 后面一定要有空格</p>
-<p>##配置Nginx</p>
-<p>##安装Nginx和Node.js</p>
-<pre><code>$yum update &amp;&amp; apt-get upgrade -y #更新内核
+<h2 id="u914D_u7F6ENginx"><a href="#u914D_u7F6ENginx" class="headerlink" title="配置Nginx"></a>配置Nginx</h2><h2 id="u5B89_u88C5Nginx_u548CNode-js"><a href="#u5B89_u88C5Nginx_u548CNode-js" class="headerlink" title="安装Nginx和Node.js"></a>安装Nginx和Node.js</h2><pre><code>$yum update &amp;&amp; apt-get upgrade -y #更新内核
 $yun install nodejs -y
 $yum install nginx -y
 $cd /etc/nginx/conf.d/
@@ -425,8 +419,7 @@ $vi default.conf
         }                                                                      
     }                                                                              
 }
-</code></pre><p>##创建目录 分配权限</p>
-<pre><code>$cd /var/www
+</code></pre><h2 id="u521B_u5EFA_u76EE_u5F55__u5206_u914D_u6743_u9650"><a href="#u521B_u5EFA_u76EE_u5F55__u5206_u914D_u6743_u9650" class="headerlink" title="创建目录 分配权限"></a>创建目录 分配权限</h2><pre><code>$cd /var/www
 $mkdir blog
 $chmod 775 -R /var/www/blog
 </code></pre><p>顺便初始化一下仓库</p>
@@ -434,10 +427,8 @@ $chmod 775 -R /var/www/blog
 git remote add origin ~/blog.git
 git fetch
 git checkout master
-</code></pre><p>##运行Nginx</p>
-<pre><code>$/etc/init.d/nginx restart
-</code></pre><p>##配置 Git Hooks</p>
-<pre><code>cd ~/blog.git/hooks
+</code></pre><h2 id="u8FD0_u884CNginx"><a href="#u8FD0_u884CNginx" class="headerlink" title="运行Nginx"></a>运行Nginx</h2><pre><code>$/etc/init.d/nginx restart
+</code></pre><h2 id="u914D_u7F6E_Git_Hooks"><a href="#u914D_u7F6E_Git_Hooks" class="headerlink" title="配置 Git Hooks"></a>配置 Git Hooks</h2><pre><code>cd ~/blog.git/hooks
 touch post-receive
 vi post-receive
 </code></pre><p>配置如下</p>
