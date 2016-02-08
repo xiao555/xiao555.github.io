@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="shadowsocks,vps," />
+  <meta name="keywords" content="pptpd,vpn,vps," />
 
 
 
@@ -57,28 +57,31 @@
 
 
 
-<meta name="description" content="本文适用于CentOS 6 系统shadowsocks客户端下载链接：http://sourceforge.net/projects/shadowsocksgui/files/dist/
-#安装shadowsocksroot用户运行：
-wget --no-check-certificate http://www.bandwagong.com/vps/ss.sh
-chmod +x ss.sh
-./s">
+<meta name="description" content="本教程适用于CentOS 6
+#安装pptp
+wget --no-check-certificate https://raw.githubusercontent.com/teddysun/across/master/pptp.sh
+chmod +x pptp.sh
+./pptp.sh
+http://www.bandwagong.com/wp-content/uploads/2015/04/258.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搬瓦工VPS shadowsocks配置">
-<meta property="og:url" content="http://yoursite.com/2016/02/08/搬瓦工VPS shadowsocks配置/index.html">
+<meta property="og:title" content="搬瓦工VPS pptpd VPN配置">
+<meta property="og:url" content="http://yoursite.com/2016/02/08/搬瓦工CentOS VPS pptpd VPN配置/index.html">
 <meta property="og:site_name" content="Xiao555">
-<meta property="og:description" content="本文适用于CentOS 6 系统shadowsocks客户端下载链接：http://sourceforge.net/projects/shadowsocksgui/files/dist/
-#安装shadowsocksroot用户运行：
-wget --no-check-certificate http://www.bandwagong.com/vps/ss.sh
-chmod +x ss.sh
-./s">
-<meta property="og:updated_time" content="2016-02-08T15:34:20.233Z">
+<meta property="og:description" content="本教程适用于CentOS 6
+#安装pptp
+wget --no-check-certificate https://raw.githubusercontent.com/teddysun/across/master/pptp.sh
+chmod +x pptp.sh
+./pptp.sh
+http://www.bandwagong.com/wp-content/uploads/2015/04/258.">
+<meta property="og:updated_time" content="2016-02-08T15:49:18.845Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搬瓦工VPS shadowsocks配置">
-<meta name="twitter:description" content="本文适用于CentOS 6 系统shadowsocks客户端下载链接：http://sourceforge.net/projects/shadowsocksgui/files/dist/
-#安装shadowsocksroot用户运行：
-wget --no-check-certificate http://www.bandwagong.com/vps/ss.sh
-chmod +x ss.sh
-./s">
+<meta name="twitter:title" content="搬瓦工VPS pptpd VPN配置">
+<meta name="twitter:description" content="本教程适用于CentOS 6
+#安装pptp
+wget --no-check-certificate https://raw.githubusercontent.com/teddysun/across/master/pptp.sh
+chmod +x pptp.sh
+./pptp.sh
+http://www.bandwagong.com/wp-content/uploads/2015/04/258.">
 
 
 
@@ -96,7 +99,7 @@ chmod +x ss.sh
   };
 </script>
 
-  <title> 搬瓦工VPS shadowsocks配置 | Xiao555 </title>
+  <title> 搬瓦工VPS pptpd VPN配置 | Xiao555 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -265,7 +268,7 @@ chmod +x ss.sh
             
             
               
-                搬瓦工VPS shadowsocks配置
+                搬瓦工VPS pptpd VPN配置
               
             
           </h1>
@@ -307,8 +310,8 @@ chmod +x ss.sh
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/02/08/搬瓦工VPS shadowsocks配置/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/08/搬瓦工VPS shadowsocks配置/" itemprop="commentsCount"></span>
+                <a href="/2016/02/08/搬瓦工CentOS VPS pptpd VPN配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/08/搬瓦工CentOS VPS pptpd VPN配置/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -329,53 +332,24 @@ chmod +x ss.sh
       
 
       
-        <p>本文适用于CentOS 6 系统<br>shadowsocks客户端下载链接：<a href="http://sourceforge.net/projects/shadowsocksgui/files/dist/" target="_blank" rel="external">http://sourceforge.net/projects/shadowsocksgui/files/dist/</a></p>
-<p>#安装shadowsocks<br>root用户运行：</p>
-<pre><code>wget --no-check-certificate http://www.bandwagong.com/vps/ss.sh
-chmod +x ss.sh
-./ss.sh 2&gt;&amp;1 | tee shadowsocks.log
-</code></pre><p>安装完成后，提示如下：</p>
-<pre><code>Congratulations, shadowsocks install completed!
-Your Server IP:your_server_ip
-Your Server Port:443
-Your Password:your_password
-Your Local IP:127.0.0.1
-Your Local Port:1080
-Your Encryption Method:aes-256-cfb
-
-Welcome to visit:http://www.bandwagong.com
-Enjoy it!
-</code></pre><p>#卸载方法<br>root用户运行：</p>
-<pre><code>./ss.sh uninstall
-</code></pre><p>#单用户配置文件<br>配置文件路径：/etc/shadowsocks.json</p>
-<pre><code>{
-    &quot;server&quot;:&quot;your_server_ip&quot;,
-    &quot;server_port&quot;:443,
-    &quot;local_address&quot;:&quot;127.0.0.1&quot;,
-    &quot;local_port&quot;:1080,
-    &quot;password&quot;:&quot;yourpassword&quot;,
-    &quot;timeout&quot;:300,
-    &quot;method&quot;:&quot;aes-256-cfb&quot;,
-    &quot;fast_open&quot;: false
-}
-</code></pre><p>#多用户多端口配置文件<br>配置文件路径：/etc/shadowsocks.json</p>
-<pre><code>{
-    &quot;server&quot;:&quot;your_server_ip&quot;,
-    &quot;local_address&quot;:&quot;127.0.0.1&quot;,
-    &quot;local_port&quot;:1080,
-    &quot;port_password&quot;:{
-         &quot;8989&quot;:&quot;password0&quot;,
-         &quot;9001&quot;:&quot;password1&quot;,
-         &quot;9002&quot;:&quot;password2&quot;,
-         &quot;9003&quot;:&quot;password3&quot;,
-         &quot;9004&quot;:&quot;password4&quot;
-    },
-    &quot;timeout&quot;:300,
-    &quot;method&quot;:&quot;aes-256-cfb&quot;,
-    &quot;fast_open&quot;: false
-}
-</code></pre><p>#使用命令</p>
-<p>启动：/etc/init.d/shadowsocks start<br>停止：/etc/init.d/shadowsocks stop<br>重启：/etc/init.d/shadowsocks restart<br>状态：/etc/init.d/shadowsocks status</p>
+        <p>本教程适用于CentOS 6</p>
+<p>#安装pptp</p>
+<pre><code>wget --no-check-certificate https://raw.githubusercontent.com/teddysun/across/master/pptp.sh
+chmod +x pptp.sh
+./pptp.sh
+</code></pre><p><a href="http://www.bandwagong.com/wp-content/uploads/2015/04/258.png" target="_blank" rel="external">http://www.bandwagong.com/wp-content/uploads/2015/04/258.png</a></p>
+<p>安装成功后，会有相应信息</p>
+<p><a href="http://www.bandwagong.com/wp-content/uploads/2015/04/259.jpg" target="_blank" rel="external">http://www.bandwagong.com/wp-content/uploads/2015/04/259.jpg</a></p>
+<p>增加一个新用户，删除用户，修改密码等可以使用编辑：</p>
+<pre><code>vi /etc/ppp/chap-secrets
+</code></pre><p>按i 编辑，格式如下：</p>
+<pre><code>vpn pptpd 123456 *
+#vpn 用户名
+#123456 密码
+#pptpd 和 * 不变，字符中间必须用一个空格隔开。数字123，选用键盘字母键上方，不要用数字小键盘
+</code></pre><p><a href="http://www.bandwagong.com/wp-content/uploads/2015/04/230.jpg" target="_blank" rel="external">http://www.bandwagong.com/wp-content/uploads/2015/04/230.jpg</a></p>
+<p>如上输入完成，按下键盘左上方ESC键盘，英文状态下输入 “：”再输入字母 wq ，回车即保存好了。<br>现在只要电脑设置好，就可以自由的畅享网络了。</p>
+<p>参考文章：<a href="http://www.bandwagong.com/pptpd-vpn/" target="_blank" rel="external">http://www.bandwagong.com/pptpd-vpn/</a></p>
 
       
     </div>
@@ -384,7 +358,9 @@ Enjoy it!
       
         <div class="post-tags">
           
-            <a href="/tags/shadowsocks/" rel="tag">#shadowsocks</a>
+            <a href="/tags/pptpd/" rel="tag">#pptpd</a>
+          
+            <a href="/tags/vpn/" rel="tag">#vpn</a>
           
             <a href="/tags/vps/" rel="tag">#vps</a>
           
@@ -395,13 +371,17 @@ Enjoy it!
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/02/08/搬瓦工CentOS VPS pptpd VPN配置/" rel="next" title="搬瓦工VPS pptpd VPN配置">
-                <i class="fa fa-chevron-left"></i> 搬瓦工VPS pptpd VPN配置
+              <a href="/2016/02/05/在vps上搭建hexo博客用Git Hooks 更新/" rel="next" title="在vps上搭建hexo博客用Git Hooks 更新">
+                <i class="fa fa-chevron-left"></i> 在vps上搭建hexo博客用Git Hooks 更新
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/02/08/搬瓦工VPS shadowsocks配置/" rel="prev" title="搬瓦工VPS shadowsocks配置">
+                搬瓦工VPS shadowsocks配置 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -416,10 +396,10 @@ Enjoy it!
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/02/08/搬瓦工VPS shadowsocks配置/"
-     data-title="搬瓦工VPS shadowsocks配置"
+        <div class="ds-share flat" data-thread-key="2016/02/08/搬瓦工CentOS VPS pptpd VPN配置/"
+     data-title="搬瓦工VPS pptpd VPN配置"
      data-content=""
-     data-url="http://yoursite.com/2016/02/08/搬瓦工VPS shadowsocks配置/">
+     data-url="http://yoursite.com/2016/02/08/搬瓦工CentOS VPS pptpd VPN配置/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -449,8 +429,8 @@ Enjoy it!
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/02/08/搬瓦工VPS shadowsocks配置/"
-           data-title="搬瓦工VPS shadowsocks配置" data-url="http://yoursite.com/2016/02/08/搬瓦工VPS shadowsocks配置/">
+      <div class="ds-thread" data-thread-key="2016/02/08/搬瓦工CentOS VPS pptpd VPN配置/"
+           data-title="搬瓦工VPS pptpd VPN配置" data-url="http://yoursite.com/2016/02/08/搬瓦工CentOS VPS pptpd VPN配置/">
       </div>
     
   </div>
