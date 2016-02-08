@@ -60,7 +60,7 @@
 <meta name="description" content="好记性不如烂笔头">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Xiao555">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/shadowsocks/index.html">
 <meta property="og:site_name" content="Xiao555">
 <meta property="og:description" content="好记性不如烂笔头">
 <meta name="twitter:card" content="summary">
@@ -83,7 +83,7 @@
   };
 </script>
 
-  <title> Xiao555 </title>
+  <title> 标签: shadowsocks | Xiao555 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -112,9 +112,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -232,181 +230,45 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
 
-    
-
-    
-    
-      
-      
-        
-        
-        
-      
-
-      
-    
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/02/08/搬瓦工VPS shadowsocks配置/" itemprop="url">
-                  搬瓦工VPS shadowsocks配置
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-08T00:00:00+08:00" content="2016-02-08">
-              2016-02-08
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/02/08/搬瓦工VPS shadowsocks配置/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/08/搬瓦工VPS shadowsocks配置/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>本文适用于CentOS 6 系统<br>shadowsocks客户端下载链接：<a href="http://sourceforge.net/projects/shadowsocksgui/files/dist/" target="_blank" rel="external">http://sourceforge.net/projects/shadowsocksgui/files/dist/</a></p>
-<p>#安装shadowsocks<br>root用户运行：</p>
-<pre><code>wget --no-check-certificate http://www.bandwagong.com/vps/ss.sh
-chmod +x ss.sh
-./ss.sh 2&gt;&amp;1 | tee shadowsocks.log
-</code></pre><p>安装完成后，提示如下：</p>
-<pre><code>Congratulations, shadowsocks install completed!
-Your Server IP:your_server_ip
-Your Server Port:443
-Your Password:your_password
-Your Local IP:127.0.0.1
-Your Local Port:1080
-Your Encryption Method:aes-256-cfb
-
-Welcome to visit:http://www.bandwagong.com
-Enjoy it!
-</code></pre><p>#卸载方法<br>root用户运行：</p>
-<pre><code>./ss.sh uninstall
-</code></pre><p>#单用户配置文件<br>配置文件路径：/etc/shadowsocks.json</p>
-<pre><code>{
-    &quot;server&quot;:&quot;your_server_ip&quot;,
-    &quot;server_port&quot;:443,
-    &quot;local_address&quot;:&quot;127.0.0.1&quot;,
-    &quot;local_port&quot;:1080,
-    &quot;password&quot;:&quot;yourpassword&quot;,
-    &quot;timeout&quot;:300,
-    &quot;method&quot;:&quot;aes-256-cfb&quot;,
-    &quot;fast_open&quot;: false
-}
-</code></pre><p>#多用户多端口配置文件<br>配置文件路径：/etc/shadowsocks.json</p>
-<pre><code>{
-    &quot;server&quot;:&quot;your_server_ip&quot;,
-    &quot;local_address&quot;:&quot;127.0.0.1&quot;,
-    &quot;local_port&quot;:1080,
-    &quot;port_password&quot;:{
-         &quot;8989&quot;:&quot;password0&quot;,
-         &quot;9001&quot;:&quot;password1&quot;,
-         &quot;9002&quot;:&quot;password2&quot;,
-         &quot;9003&quot;:&quot;password3&quot;,
-         &quot;9004&quot;:&quot;password4&quot;
-    },
-    &quot;timeout&quot;:300,
-    &quot;method&quot;:&quot;aes-256-cfb&quot;,
-    &quot;fast_open&quot;: false
-}
-</code></pre><p>#使用命令</p>
-<p>启动：/etc/init.d/shadowsocks start<br>停止：/etc/init.d/shadowsocks stop<br>重启：/etc/init.d/shadowsocks restart<br>状态：/etc/init.d/shadowsocks status</p>
-
-          
-        
-      
+  <div id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        shadowsocks
+        <small>标签</small>
+      </h2>
     </div>
 
-    <footer class="post-footer">
+    
       
 
-      
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2016/02/08/搬瓦工VPS shadowsocks配置/" itemprop="url">
+              
+                <span itemprop="name">搬瓦工VPS shadowsocks配置</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-02-08T00:00:00+08:00"
+              content="2016-02-08" >
+          02-08
+        </time>
+      </div>
+
+    </header>
   </article>
 
 
     
-
-  </section>
+  </div>
 
   
 
