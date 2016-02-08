@@ -428,7 +428,8 @@ git remote add origin ~/blog.git
 git fetch
 git checkout master
 </code></pre><h4 id="u8FD0_u884CNginx"><a href="#u8FD0_u884CNginx" class="headerlink" title="运行Nginx"></a>运行Nginx</h4><pre><code>$/etc/init.d/nginx restart
-</code></pre><h3 id="u914D_u7F6E_Git_Hooks"><a href="#u914D_u7F6E_Git_Hooks" class="headerlink" title="配置 Git Hooks"></a>配置 Git Hooks</h3><pre><code>cd ~/blog.git/hooks
+</code></pre><h3 id="u914D_u7F6E_Git_Hooks"><a href="#u914D_u7F6E_Git_Hooks" class="headerlink" title="配置 Git Hooks"></a>配置 Git Hooks</h3><p>这个是不同于网上搜的大多数方法的git hooks配置，因为他们那种方法我用不成功==</p>
+<pre><code>cd ~/blog.git/hooks
 touch post-receive
 vi post-receive
 </code></pre><p>配置如下</p>

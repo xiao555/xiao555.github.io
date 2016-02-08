@@ -69,7 +69,7 @@
 之前一直不清楚搭一个博客需要啥，所以用了hexo这个静态博客系统。
 我的vps系统是Centos 6 x86。本机是windows7.
 搭建过程搭建过程分两部分，需要在本机和服务端都安装Hexo和Git，VPS上还需要安装Ngi">
-<meta property="og:updated_time" content="2016-02-06T08:32:01.574Z">
+<meta property="og:updated_time" content="2016-02-08T15:09:49.061Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在vps上搭建hexo博客用Git Hooks 更新">
 <meta name="twitter:description" content="很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。
@@ -416,7 +416,8 @@ git remote add origin ~/blog.git
 git fetch
 git checkout master
 </code></pre><h4 id="u8FD0_u884CNginx"><a href="#u8FD0_u884CNginx" class="headerlink" title="运行Nginx"></a>运行Nginx</h4><pre><code>$/etc/init.d/nginx restart
-</code></pre><h3 id="u914D_u7F6E_Git_Hooks"><a href="#u914D_u7F6E_Git_Hooks" class="headerlink" title="配置 Git Hooks"></a>配置 Git Hooks</h3><pre><code>cd ~/blog.git/hooks
+</code></pre><h3 id="u914D_u7F6E_Git_Hooks"><a href="#u914D_u7F6E_Git_Hooks" class="headerlink" title="配置 Git Hooks"></a>配置 Git Hooks</h3><p>这个是不同于网上搜的大多数方法的git hooks配置，因为他们那种方法我用不成功==</p>
+<pre><code>cd ~/blog.git/hooks
 touch post-receive
 vi post-receive
 </code></pre><p>配置如下</p>
