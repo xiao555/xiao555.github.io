@@ -610,18 +610,19 @@ Enjoy it!
   由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
+
 <script>
 var birthDay = new Date("2/5/2016");
 var now = new Date();
 var duration = now.getTime() - birthDay.getTime();
 var total= Math.floor(duration / (1000 * 60 * 60 * 24));
-document.getElementById("showDays").innerHTML = "本站已运行 "+total+" 天";
+document.getElementById("showDays").innerHTML = "本站已运行 "+total+" 天 ---";
 </script>
 <span id="showDays"></span>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+    总访问量<span id="busuanzi_value_site_pv"></span>次
 </span>
 
 
