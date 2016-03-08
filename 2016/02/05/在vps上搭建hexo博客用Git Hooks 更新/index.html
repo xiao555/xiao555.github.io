@@ -69,7 +69,8 @@
 之前一直不清楚搭一个博客需要啥，所以用了hexo这个静态博客系统。
 我的vps系统是Centos 6 x86。本机是windows7.
 搭建过程搭建过程分两部分，需要在本机和服务端都安装Hexo和Git，VPS上还需要安装Ngi">
-<meta property="og:updated_time" content="2016-03-07T14:35:19.012Z">
+<meta property="og:image" content="http://yoursite.com/images/codebug.png">
+<meta property="og:updated_time" content="2016-03-08T10:10:02.283Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在vps上搭建hexo博客用Git Hooks 更新">
 <meta name="twitter:description" content="很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。
@@ -444,6 +445,8 @@ exit 0
 </code></pre><p>cd 后面是你的本机站点目录。保存并退出，再运行(不然不生效）：</p>
 <pre><code>source ~/.bashrc
 </code></pre><p>这样以后写完一篇文章要更新只需要直接打开git bash输入blog就可以了。</p>
+<p>至于hexo站点的配置，参照官网就好。这里添加一项就是站点配置文件里的<code>auto_detect: false</code>要改为true，否则代码块行号只有1，其他为空白：</p>
+<p><img src="/images/codebug.png" alt=""></p>
 <p>啊，突然发现写个博客好难啊，记性不好怕写得不对，有错误还希望读者多多指出，参考资料基本就是你能google到的那些有关的博文，就不一一列举了,主要的区别就是git hooks的。</p>
 
       
