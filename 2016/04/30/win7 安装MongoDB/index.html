@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="mongodb," />
 
 
 
@@ -57,28 +57,31 @@
 
 
 
-<meta name="description" content="win7 安装 mongodb最近玩node需要用到MongoDB数据库，试过各种方法终于配置好了，记录下来防坑。
+<meta name="description" content="最近玩node需要用到MongoDB数据库，试过各种方法终于配置好了，记录下来防坑。
 下载官网地址：http://www.mongodb.org/downloads
 安装无论是压缩包还是安装程序，都可以放在你想放的位置，然后在目录下建立DB目录存储数据库和Log目录记录日志
 1234- bin- DB- Log...
-安装成系统服务在目录下建立mongo.conf和m">
+安装成系统服务在目录下建立mongo.conf和mongo.cfg
+mongo.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Xiao555的博客">
+<meta property="og:title" content="win7 安装 mongodb">
 <meta property="og:url" content="http://yoursite.com/2016/04/30/win7 安装MongoDB/index.html">
 <meta property="og:site_name" content="Xiao555的博客">
-<meta property="og:description" content="win7 安装 mongodb最近玩node需要用到MongoDB数据库，试过各种方法终于配置好了，记录下来防坑。
+<meta property="og:description" content="最近玩node需要用到MongoDB数据库，试过各种方法终于配置好了，记录下来防坑。
 下载官网地址：http://www.mongodb.org/downloads
 安装无论是压缩包还是安装程序，都可以放在你想放的位置，然后在目录下建立DB目录存储数据库和Log目录记录日志
 1234- bin- DB- Log...
-安装成系统服务在目录下建立mongo.conf和m">
-<meta property="og:updated_time" content="2016-04-30T06:33:15.631Z">
+安装成系统服务在目录下建立mongo.conf和mongo.cfg
+mongo.">
+<meta property="og:updated_time" content="2016-04-30T06:42:06.384Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xiao555的博客">
-<meta name="twitter:description" content="win7 安装 mongodb最近玩node需要用到MongoDB数据库，试过各种方法终于配置好了，记录下来防坑。
+<meta name="twitter:title" content="win7 安装 mongodb">
+<meta name="twitter:description" content="最近玩node需要用到MongoDB数据库，试过各种方法终于配置好了，记录下来防坑。
 下载官网地址：http://www.mongodb.org/downloads
 安装无论是压缩包还是安装程序，都可以放在你想放的位置，然后在目录下建立DB目录存储数据库和Log目录记录日志
 1234- bin- DB- Log...
-安装成系统服务在目录下建立mongo.conf和m">
+安装成系统服务在目录下建立mongo.conf和mongo.cfg
+mongo.">
 
 
 
@@ -96,7 +99,7 @@
   };
 </script>
 
-  <title>  | Xiao555的博客 </title>
+  <title> win7 安装 mongodb | Xiao555的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -265,7 +268,7 @@
             
             
               
-                
+                win7 安装 mongodb
               
             
           </h1>
@@ -277,11 +280,30 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-30T14:34:26+08:00" content="2016-04-30">
+            <time itemprop="dateCreated" datetime="2016-04-30T00:00:00+08:00" content="2016-04-30">
               2016-04-30
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -310,7 +332,7 @@
       
 
       
-        <h1 id="win7__u5B89_u88C5_mongodb"><a href="#win7__u5B89_u88C5_mongodb" class="headerlink" title="win7 安装 mongodb"></a>win7 安装 mongodb</h1><p>最近玩node需要用到MongoDB数据库，试过各种方法终于配置好了，记录下来防坑。</p>
+        <p>最近玩node需要用到MongoDB数据库，试过各种方法终于配置好了，记录下来防坑。</p>
 <h2 id="u4E0B_u8F7D"><a href="#u4E0B_u8F7D" class="headerlink" title="下载"></a>下载</h2><p>官网地址：<a href="http://www.mongodb.org/downloads" target="_blank" rel="external">http://www.mongodb.org/downloads</a></p>
 <h2 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h2><p>无论是压缩包还是安装程序，都可以放在你想放的位置，然后在目录下建立DB目录存储数据库和Log目录记录日志</p>
 <figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-<span class="ruby"> bin</span><br><span class="line"></span>-<span class="ruby"> <span class="constant">DB</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Log</span></span><br><span class="line"></span>...</span><br></pre></td></tr></table></figure>
@@ -330,6 +352,12 @@
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mongodb/" rel="tag">#mongodb</a>
+          
+        </div>
       
 
       
@@ -358,7 +386,7 @@
     <div class="post-spread">
       
         <div class="ds-share flat" data-thread-key="2016/04/30/win7 安装MongoDB/"
-     data-title=""
+     data-title="win7 安装 mongodb"
      data-content=""
      data-url="http://yoursite.com/2016/04/30/win7 安装MongoDB/">
   <div class="ds-share-inline">
@@ -383,12 +411,15 @@
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/04/30/win7 安装MongoDB/"
-           data-title="" data-url="http://yoursite.com/2016/04/30/win7 安装MongoDB/">
+           data-title="win7 安装 mongodb" data-url="http://yoursite.com/2016/04/30/win7 安装MongoDB/">
       </div>
     
   </div>
@@ -450,7 +481,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -515,7 +546,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#win7__u5B89_u88C5_mongodb"><span class="nav-number">1.</span> <span class="nav-text">win7 安装 mongodb</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#u4E0B_u8F7D"><span class="nav-number">1.1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5"><span class="nav-number">1.2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5_u6210_u7CFB_u7EDF_u670D_u52A1"><span class="nav-number">1.3.</span> <span class="nav-text">安装成系统服务</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u4E0B_u8F7D"><span class="nav-number">1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5_u6210_u7CFB_u7EDF_u670D_u52A1"><span class="nav-number">3.</span> <span class="nav-text">安装成系统服务</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
