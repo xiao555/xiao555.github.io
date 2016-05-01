@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="express,mongodb,socket.io," />
 
 
 
@@ -57,29 +57,29 @@
 
 
 
-<meta name="description" content="用Express + Socket.io + MongoDB实现简易聊天室最近做大作业需要研究一下Node.js，需要了解node与mongoDB的链接，前后端的通信，后端的逻辑结构等，怎么快速上手呢？那就做个聊天室吧。
+<meta name="description" content="最近做大作业需要研究一下Node.js，需要了解node与mongoDB的链接，前后端的通信，后端的逻辑结构等，怎么快速上手呢？那就做个聊天室吧。
 安装Node.JS和MongoDBNode.js就不多说了，MongoDB可以看我上一篇博客
 构建Express项目找一个合适的地方：
-123456789mkdir chatro">
+123456789mkdir chatroomcd chatroomnpm install expressexpre">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Xiao555的博客">
+<meta property="og:title" content="用Express + Socket.io + MongoDB实现简易聊天室">
 <meta property="og:url" content="http://yoursite.com/2016/05/01/用Express + Socket.io + MongoDB实现简易聊天室/index.html">
 <meta property="og:site_name" content="Xiao555的博客">
-<meta property="og:description" content="用Express + Socket.io + MongoDB实现简易聊天室最近做大作业需要研究一下Node.js，需要了解node与mongoDB的链接，前后端的通信，后端的逻辑结构等，怎么快速上手呢？那就做个聊天室吧。
+<meta property="og:description" content="最近做大作业需要研究一下Node.js，需要了解node与mongoDB的链接，前后端的通信，后端的逻辑结构等，怎么快速上手呢？那就做个聊天室吧。
 安装Node.JS和MongoDBNode.js就不多说了，MongoDB可以看我上一篇博客
 构建Express项目找一个合适的地方：
-123456789mkdir chatro">
+123456789mkdir chatroomcd chatroomnpm install expressexpre">
 <meta property="og:image" content="http://ww3.sinaimg.cn/mw1024/005NJVkbjw1f3fsnv448uj311y0kg0vk.jpg">
 <meta property="og:image" content="http://ww3.sinaimg.cn/mw1024/005NJVkbjw1f3ftv2386qj311y0kg0wl.jpg">
 <meta property="og:image" content="http://static.oschina.net/uploads/space/2016/0301/084929_dx2L_1017135.png">
 <meta property="og:image" content="http://static.oschina.net/uploads/space/2016/0301/084956_5TlW_1017135.png">
-<meta property="og:updated_time" content="2016-05-01T07:00:46.423Z">
+<meta property="og:updated_time" content="2016-05-01T07:05:45.088Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xiao555的博客">
-<meta name="twitter:description" content="用Express + Socket.io + MongoDB实现简易聊天室最近做大作业需要研究一下Node.js，需要了解node与mongoDB的链接，前后端的通信，后端的逻辑结构等，怎么快速上手呢？那就做个聊天室吧。
+<meta name="twitter:title" content="用Express + Socket.io + MongoDB实现简易聊天室">
+<meta name="twitter:description" content="最近做大作业需要研究一下Node.js，需要了解node与mongoDB的链接，前后端的通信，后端的逻辑结构等，怎么快速上手呢？那就做个聊天室吧。
 安装Node.JS和MongoDBNode.js就不多说了，MongoDB可以看我上一篇博客
 构建Express项目找一个合适的地方：
-123456789mkdir chatro">
+123456789mkdir chatroomcd chatroomnpm install expressexpre">
 
 
 
@@ -97,7 +97,7 @@
   };
 </script>
 
-  <title>  | Xiao555的博客 </title>
+  <title> 用Express + Socket.io + MongoDB实现简易聊天室 | Xiao555的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -266,7 +266,7 @@
             
             
               
-                
+                用Express + Socket.io + MongoDB实现简易聊天室
               
             
           </h1>
@@ -278,11 +278,30 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-01T15:02:10+08:00" content="2016-05-01">
+            <time itemprop="dateCreated" datetime="2016-05-01T00:00:00+08:00" content="2016-05-01">
               2016-05-01
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -311,7 +330,7 @@
       
 
       
-        <h1 id="u7528Express_+_Socket-io_+_MongoDB_u5B9E_u73B0_u7B80_u6613_u804A_u5929_u5BA4"><a href="#u7528Express_+_Socket-io_+_MongoDB_u5B9E_u73B0_u7B80_u6613_u804A_u5929_u5BA4" class="headerlink" title="用Express + Socket.io + MongoDB实现简易聊天室"></a>用Express + Socket.io + MongoDB实现简易聊天室</h1><p>最近做大作业需要研究一下Node.js，需要了解node与mongoDB的链接，前后端的通信，后端的逻辑结构等，怎么快速上手呢？那就做个聊天室吧。</p>
+        <p>最近做大作业需要研究一下Node.js，需要了解node与mongoDB的链接，前后端的通信，后端的逻辑结构等，怎么快速上手呢？那就做个聊天室吧。</p>
 <h2 id="u5B89_u88C5Node-JS_u548CMongoDB"><a href="#u5B89_u88C5Node-JS_u548CMongoDB" class="headerlink" title="安装Node.JS和MongoDB"></a>安装Node.JS和MongoDB</h2><p>Node.js就不多说了，MongoDB可以看我上一篇<a href="http://www.xiao555.club/2016/04/30/win7%20%E5%AE%89%E8%A3%85MongoDB/" target="_blank" rel="external">博客</a></p>
 <h2 id="u6784_u5EFAExpress_u9879_u76EE"><a href="#u6784_u5EFAExpress_u9879_u76EE" class="headerlink" title="构建Express项目"></a>构建Express项目</h2><p>找一个合适的地方：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mkdir chatroom</span><br><span class="line"></span><br><span class="line">cd chatroom</span><br><span class="line"></span><br><span class="line">npm <span class="operator"><span class="keyword">install</span> express</span><br><span class="line"></span><br><span class="line">express -<span class="keyword">e</span>  //-<span class="keyword">e</span> 是用ejs作为模板引擎</span><br><span class="line"></span><br><span class="line">npm <span class="keyword">install</span> //安装依赖，目录在<span class="keyword">package</span>.<span class="keyword">json</span>中</span></span><br></pre></td></tr></table></figure>
@@ -374,6 +393,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/express/" rel="tag">#express</a>
+          
+            <a href="/tags/mongodb/" rel="tag">#mongodb</a>
+          
+            <a href="/tags/socket-io/" rel="tag">#socket.io</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
@@ -401,7 +430,7 @@
     <div class="post-spread">
       
         <div class="ds-share flat" data-thread-key="2016/05/01/用Express + Socket.io + MongoDB实现简易聊天室/"
-     data-title=""
+     data-title="用Express + Socket.io + MongoDB实现简易聊天室"
      data-content=""
      data-url="http://yoursite.com/2016/05/01/用Express + Socket.io + MongoDB实现简易聊天室/">
   <div class="ds-share-inline">
@@ -426,12 +455,15 @@
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/05/01/用Express + Socket.io + MongoDB实现简易聊天室/"
-           data-title="" data-url="http://yoursite.com/2016/05/01/用Express + Socket.io + MongoDB实现简易聊天室/">
+           data-title="用Express + Socket.io + MongoDB实现简易聊天室" data-url="http://yoursite.com/2016/05/01/用Express + Socket.io + MongoDB实现简易聊天室/">
       </div>
     
   </div>
@@ -493,7 +525,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -558,7 +590,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u7528Express_+_Socket-io_+_MongoDB_u5B9E_u73B0_u7B80_u6613_u804A_u5929_u5BA4"><span class="nav-number">1.</span> <span class="nav-text">用Express + Socket.io + MongoDB实现简易聊天室</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5Node-JS_u548CMongoDB"><span class="nav-number">1.1.</span> <span class="nav-text">安装Node.JS和MongoDB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6784_u5EFAExpress_u9879_u76EE"><span class="nav-number">1.2.</span> <span class="nav-text">构建Express项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B9E_u73B0_u524D_u7AEF_u9875_u9762"><span class="nav-number">1.3.</span> <span class="nav-text">实现前端页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6570_u636E_u5E93_u8BBE_u8BA1"><span class="nav-number">1.4.</span> <span class="nav-text">数据库设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u524D_u540E_u7AEF_u901A_u4FE1Socket-io"><span class="nav-number">1.5.</span> <span class="nav-text">前后端通信Socket.io</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E3E_u4E2A_u6817_u5B50"><span class="nav-number">1.5.1.</span> <span class="nav-text">举个栗子</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6570_u636E_u5E93_u7684_u64CD_u4F5C"><span class="nav-number">1.6.</span> <span class="nav-text">数据库的操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4FDD_u5B58_u65B0_u6570_u636E"><span class="nav-number">1.6.1.</span> <span class="nav-text">保存新数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u67E5_u8BE2_u6570_u636E"><span class="nav-number">1.6.2.</span> <span class="nav-text">查询数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u90E8_u7F72_u5230vps_u4E0A"><span class="nav-number">1.7.</span> <span class="nav-text">部署到vps上</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B89_u88C5mongodb_u670D_u52A1"><span class="nav-number">1.7.1.</span> <span class="nav-text">安装mongodb服务</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u521B_u5EFAmongodb-repo_u6587_u4EF6"><span class="nav-number">1.7.1.1.</span> <span class="nav-text">创建mongodb.repo文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6267_u884C_u5B89_u88C5_u547D_u4EE4"><span class="nav-number">1.7.1.2.</span> <span class="nav-text">执行安装命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u542F_u52A8MongoDB"><span class="nav-number">1.7.1.3.</span> <span class="nav-text">启动MongoDB</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8FD0_u884Capp-js"><span class="nav-number">1.7.2.</span> <span class="nav-text">运行app.js</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B89_u88C5Node-JS_u548CMongoDB"><span class="nav-number">1.</span> <span class="nav-text">安装Node.JS和MongoDB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6784_u5EFAExpress_u9879_u76EE"><span class="nav-number">2.</span> <span class="nav-text">构建Express项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B9E_u73B0_u524D_u7AEF_u9875_u9762"><span class="nav-number">3.</span> <span class="nav-text">实现前端页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6570_u636E_u5E93_u8BBE_u8BA1"><span class="nav-number">4.</span> <span class="nav-text">数据库设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u524D_u540E_u7AEF_u901A_u4FE1Socket-io"><span class="nav-number">5.</span> <span class="nav-text">前后端通信Socket.io</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E3E_u4E2A_u6817_u5B50"><span class="nav-number">5.1.</span> <span class="nav-text">举个栗子</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6570_u636E_u5E93_u7684_u64CD_u4F5C"><span class="nav-number">6.</span> <span class="nav-text">数据库的操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4FDD_u5B58_u65B0_u6570_u636E"><span class="nav-number">6.1.</span> <span class="nav-text">保存新数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u67E5_u8BE2_u6570_u636E"><span class="nav-number">6.2.</span> <span class="nav-text">查询数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u90E8_u7F72_u5230vps_u4E0A"><span class="nav-number">7.</span> <span class="nav-text">部署到vps上</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B89_u88C5mongodb_u670D_u52A1"><span class="nav-number">7.1.</span> <span class="nav-text">安装mongodb服务</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u521B_u5EFAmongodb-repo_u6587_u4EF6"><span class="nav-number">7.1.1.</span> <span class="nav-text">创建mongodb.repo文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6267_u884C_u5B89_u88C5_u547D_u4EE4"><span class="nav-number">7.1.2.</span> <span class="nav-text">执行安装命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u542F_u52A8MongoDB"><span class="nav-number">7.1.3.</span> <span class="nav-text">启动MongoDB</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8FD0_u884Capp-js"><span class="nav-number">7.2.</span> <span class="nav-text">运行app.js</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
