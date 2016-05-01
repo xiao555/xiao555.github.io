@@ -261,8 +261,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/03/16/关于Git 和 Github 以及Git pages/" itemprop="url">
-                  关于Git 和 Github 以及Git pages
+                <a class="post-title-link" href="/2016/04/30/win7 安装MongoDB/" itemprop="url">
+                  win7 安装 mongodb
                 </a>
               
             
@@ -275,8 +275,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-16T00:00:00+08:00" content="2016-03-16">
-              2016-03-16
+            <time itemprop="dateCreated" datetime="2016-04-30T00:00:00+08:00" content="2016-04-30">
+              2016-04-30
             </time>
           </span>
 
@@ -305,8 +305,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/16/关于Git 和 Github 以及Git pages/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/16/关于Git 和 Github 以及Git pages/" itemprop="commentsCount"></span>
+                <a href="/2016/04/30/win7 安装MongoDB/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/30/win7 安装MongoDB/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -329,30 +329,21 @@
       
         
           
-            <p>昨晚在床上发现有学习笔记，也想写一个分享一下，写点什么呢？鉴于有不少人是初次接触Git，干脆就说说这个吧，我只会一些基本的操作，大神可以自动忽略。</p>
-<h3 id="u5173_u4E8Egithub"><a href="#u5173_u4E8Egithub" class="headerlink" title="关于github"></a>关于github</h3><p>什么是github(全球最大的同性交友平台，没有性别歧视==)呢？<br>说白了就是一个仓库，你可以把你的代码放在一个小仓库上，别人也把他们的代码放在一个小仓库上，然后这些小仓库就组成了github，我们可以在里面互相串门，看到喜欢的人可以follow，看到喜欢的项目可以star或者fork。看到这，你是否迫不及待想有一个自己的仓库来保存你成果丰硕的代码呢？去<a href="https://github.com/" target="_blank" rel="external">官网</a>注册一个账号吧。</p>
-<h3 id="u5173_u4E8EGit"><a href="#u5173_u4E8EGit" class="headerlink" title="关于Git"></a>关于Git</h3><p>那么怎么把代码上传到github的仓库上呢？</p>
-<h4 id="1_u3001_u9996_u5148_u6211_u4EEC_u5728github_u4E0A_u8981_u5EFA_u7ACB_u4E00_u4E2A_u4ED3_u5E93"><a href="#1_u3001_u9996_u5148_u6211_u4EEC_u5728github_u4E0A_u8981_u5EFA_u7ACB_u4E00_u4E2A_u4ED3_u5E93" class="headerlink" title="1、首先我们在github上要建立一个仓库"></a>1、首先我们在github上要建立一个仓库</h4><p>我们进入自己的官网，可以看见右上角头像左边有个加号,点击选择new repository</p>
-<p><img src="http://ww2.sinaimg.cn/mw1024/005NJVkbjw1f1ymc2ulnuj309h04y3yn.jpg" style="height: auto;width: 600px;"></p>
-<p>进入这样一个页面，填一下名字和描述，然后点击左下角的Creat</p>
-<p><img src="http://ww3.sinaimg.cn/mw1024/005NJVkbjw1f1ymenjrv4j30lj0fhq5w.jpg" style="width: 600px"></p>
-<p>然后进入这样一个页面，这表示这个仓库空空如也，需要我们上传东西，接下来就要用到Git喽，没有Git的去<a href="https://git-scm.com/downloads" target="_blank" rel="external">官网</a>下一个吧.图中箭头所指的就是我们新建的这个github仓库的地址，方框中的就是我们一会要用到的git命令。</p>
-<p><img src="http://ww4.sinaimg.cn/mw1024/005NJVkbjw1f1ymkab7fkj30o90hgwjf.jpg" style="width: 600px"></p>
-<p>好，现在我们在桌面新建一个文件夹，里面放了我们要上传的代码，安装好git后鼠标右键会有一个Git Bash here，点击出现一个熟悉的黑框框</p>
-<p><img src="http://ww3.sinaimg.cn/mw1024/005NJVkbjw1f1ymvjn5hnj30il0goq8z.jpg" style="width: 600px"></p>
-<p><code>git init</code> 就是初始化一下，我们会发现文件夹里多了一个<code>.git</code>的隐藏文件，这个不要随便改。<code>git add</code>就是把本机文件添加进去 <code>git add .</code>就是添加所有的意思。添加完了就要提交了，<code>git commit -m &quot;&quot;</code>,-m就是message的意思，后面的双引号里写上这次提交的信息。<code>git remote add ...</code>添加远程服务器，名字可以随便，地址就是你git仓库的地址，添加一次以后就不用再添加了。然后就是<code>git push 远程服务器名字 分支</code>，分支一般是master主分支。回车后会让你输入github账号和密码。可以使用<a href="https://git-scm.com/docs/gitcredentials" target="_blank" rel="external"> credential helper</a>来避免每次提交都要输入密码，如何配置可以参见：<a href="https://help.github.com/articles/caching-your-github-password-in-git/" target="_blank" rel="external">https://help.github.com/articles/caching-your-github-password-in-git/</a>.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">XIAO555@XIAO555-PC MINGW64 ~/Desktop/新建文件夹 (master)</span><br><span class="line">$ git push origin master</span><br><span class="line">Counting objects: <span class="number">3</span>, done.</span><br><span class="line">Delta compression <span class="keyword">using</span> up to <span class="number">4</span> threads.</span><br><span class="line">Compressing objects: <span class="number">100</span>% (<span class="number">2</span>/<span class="number">2</span>), done.</span><br><span class="line">Writing objects: <span class="number">100</span>% (<span class="number">3</span>/<span class="number">3</span>), <span class="number">1.23</span> KiB | <span class="number">0</span> bytes/s, done.</span><br><span class="line">Total <span class="number">3</span> (delta <span class="number">0</span>), reused <span class="number">0</span> (delta <span class="number">0</span>)</span><br><span class="line">To https:<span class="comment">//github.com/xiao555/example.git</span></span><br><span class="line"> * [<span class="keyword">new</span> branch]      master -&gt; master</span><br></pre></td></tr></table></figure>
-<p>这样就表示上传完成了，回到你的github上看看吧。</p>
-<p><img src="http://ww3.sinaimg.cn/mw1024/005NJVkbjw1f1ynaltri1j30sg0ar41g.jpg" style="width: 600px;"></p>
-<p>大功告成！咦，要是我们在本地修改了代码要同步到github上怎么办？没关系，继续下列步骤：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add . //会显示有几个改动</span><br><span class="line">git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">"..."</span></span><br><span class="line">git push origin <span class="keyword">master</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="u5173_u4E8Egithub_pages"><a href="#u5173_u4E8Egithub_pages" class="headerlink" title="关于github pages"></a>关于github pages</h3><p>我想让我的代码可以在线演示怎么办？用Github Pages。让我们回到git bash那个黑框框，进行如下操作：</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">XIAO555<span class="annotation">@XIAO</span>555-PC MINGW64 <span class="regexp">~/Desktop/</span>新建文件夹 (master)</span><br><span class="line">$ git checkout -b gh-pages</span><br><span class="line">Switched to a <span class="keyword">new</span> branch <span class="string">'gh-pages'</span></span><br><span class="line"><span class="comment">//创建名为gh-pages的分支</span></span><br><span class="line"></span><br><span class="line">XIAO555<span class="annotation">@XIAO</span>555-PC MINGW64 <span class="regexp">~/Desktop/</span>新建文件夹 (gh-pages)</span><br><span class="line">$ git push origin gh-pages</span><br><span class="line">Total <span class="number">0</span> (delta <span class="number">0</span>), reused <span class="number">0</span> (delta <span class="number">0</span>)</span><br><span class="line">To <span class="string">https:</span><span class="comment">//github.com/xiao555/example.git</span></span><br><span class="line"> * [<span class="keyword">new</span> branch]      gh-pages -&gt; gh-pages</span><br><span class="line"><span class="comment">//上传到gh-pages分支</span></span><br></pre></td></tr></table></figure>
-<p>我们这时候回到github上刷新一下，会发现这里多了gh-pages的分支</p>
-<p><img src="http://ww3.sinaimg.cn/mw1024/005NJVkbjw1f1ynooepmdj30en0erwgg.jpg" style="width: 600px"></p>
-<p>我们的文件也在这个分支上。github pages需要index.html文件，我在本地新建了一个上传到gh-pages分支上，内容是 <code>Hello!</code>.然后我们进入这个链接：<a href="http://xiao555.github.io/example/" target="_blank" rel="external">http://xiao555.github.io/example/</a>,这不就是刚上传的那个index.html吗，</p>
-<p>关于github pages具体可以参考<a href="https://help.github.com/categories/github-pages-basics/" target="_blank" rel="external">这个</a>. </p>
-<p>哈哈，到这里就结束了，不过git使用过程中会遇到一些奇怪的问题，大家可以百度，找我也行.</p>
+            <p>最近玩node需要用到MongoDB数据库，试过各种方法终于配置好了，记录下来防坑。</p>
+<h2 id="u4E0B_u8F7D"><a href="#u4E0B_u8F7D" class="headerlink" title="下载"></a>下载</h2><p>官网地址：<a href="http://www.mongodb.org/downloads" target="_blank" rel="external">http://www.mongodb.org/downloads</a></p>
+<h2 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h2><p>无论是压缩包还是安装程序，都可以放在你想放的位置，然后在目录下建立DB目录存储数据库和Log目录记录日志</p>
+<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-<span class="ruby"> bin</span><br><span class="line"></span>-<span class="ruby"> <span class="constant">DB</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Log</span></span><br><span class="line"></span>...</span><br></pre></td></tr></table></figure>
+<h2 id="u5B89_u88C5_u6210_u7CFB_u7EDF_u670D_u52A1"><a href="#u5B89_u88C5_u6210_u7CFB_u7EDF_u670D_u52A1" class="headerlink" title="安装成系统服务"></a>安装成系统服务</h2><p>在目录下建立mongo.conf和mongo.cfg</p>
+<p>mongo.conf:</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">storage</span>:</span><br><span class="line">   <span class="attribute">dbPath</span>: <span class="string">"C:\MongoDB\DB"</span></span><br></pre></td></tr></table></figure>
+<p>mongo.cfg:</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">logpath=C:<span class="command">\MongoDB</span><span class="command">\Log</span><span class="command">\mongo</span>.log</span><br></pre></td></tr></table></figure>
+<p>然后cmd切换到bin目录下，运行：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod<span class="class">.exe</span> --config <span class="string">"C:\MongoDB\mongo.cfg"</span> --install</span><br></pre></td></tr></table></figure>
+<p>这样就安装好了，要启动mongodb服务只需要输入：</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="winutils">net</span> <span class="built_in">start</span> mongodb</span><br></pre></td></tr></table></figure>
+<p>会提示MongoDB 服务已经启动成功。</p>
+<p>然后再输入<code>mongo</code>即可进入shell环境。</p>
 
           
         
@@ -378,7 +369,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -419,7 +410,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

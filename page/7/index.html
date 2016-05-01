@@ -261,8 +261,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/02/05/在vps上搭建hexo博客用Git Hooks 更新/" itemprop="url">
-                  在vps上搭建hexo博客用Git Hooks 更新
+                <a class="post-title-link" href="/2016/02/08/搬瓦工CentOS VPS pptpd VPN配置/" itemprop="url">
+                  搬瓦工VPS pptpd VPN配置
                 </a>
               
             
@@ -275,8 +275,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-05T00:00:00+08:00" content="2016-02-05">
-              2016-02-05
+            <time itemprop="dateCreated" datetime="2016-02-08T00:00:00+08:00" content="2016-02-08">
+              2016-02-08
             </time>
           </span>
 
@@ -305,8 +305,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/02/05/在vps上搭建hexo博客用Git Hooks 更新/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/05/在vps上搭建hexo博客用Git Hooks 更新/" itemprop="commentsCount"></span>
+                <a href="/2016/02/08/搬瓦工CentOS VPS pptpd VPN配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/08/搬瓦工CentOS VPS pptpd VPN配置/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -329,127 +329,23 @@
       
         
           
-            <p>很早以前就想搭一个博客了，三个月前为了翻越伟大的防火墙，去搬瓦工买了个vps，配了个shadowsocks。既然有了vps，当然也希望搞个博客，这个寒假在家没事就开工了。</p>
-<p>之前一直不清楚搭一个博客需要啥，所以用了<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo</a>这个静态博客系统。</p>
-<p>我的vps系统是Centos 6 x86。<br>本机是windows7.</p>
-<h1 id="u642D_u5EFA_u8FC7_u7A0B"><a href="#u642D_u5EFA_u8FC7_u7A0B" class="headerlink" title="搭建过程"></a>搭建过程</h1><p>搭建过程分两部分，需要在本机和服务端都安装Hexo和Git，VPS上还需要安装Nginx服务器，配置Git Hooks。</p>
-<h2 id="u672C_u673A1"><a href="#u672C_u673A1" class="headerlink" title="本机1"></a>本机1</h2><h3 id="u5B89_u88C5Git"><a href="#u5B89_u88C5Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>下载<a href="https://git-scm.com/download/win" target="_blank" rel="external">Git for windows</a>，一路默认安装</p>
-<h3 id="u5B89_u88C5Node-js"><a href="#u5B89_u88C5Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>在<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>官网下载最新版，一路默认安装</p>
-<h3 id="u521B_u5EFA_u7F51_u7AD9_u76EE_u5F55"><a href="#u521B_u5EFA_u7F51_u7AD9_u76EE_u5F55" class="headerlink" title="创建网站目录"></a>创建网站目录</h3><p>在你电脑的任意位置创建一个文件夹（我的是D:\blog，下文以此代替），作为网站目录。</p>
-<h3 id="u5B89_u88C5Hexo"><a href="#u5B89_u88C5Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>打开你创建的网站目录，右键git bash here打开命令行。</p>
-<pre><code>$npm install -g hexo-cli
-$hexo init
-$npm install
-$hexo d -fg
-$hexo serve
-</code></pre><p>打开<a href="http://localhost:4000如果看到hexo的初始页面证明安装成功。" target="_blank" rel="external">http://localhost:4000如果看到hexo的初始页面证明安装成功。</a></p>
-<p>PS:在我的电脑上4000貌似被占了，如果要改端口的话：</p>
-<pre><code>$hexo serve -p ****
-</code></pre><h3 id="u914D_u7F6EGit"><a href="#u914D_u7F6EGit" class="headerlink" title="配置Git"></a>配置Git</h3><p>在网站目录git bash，执行</p>
-<pre><code>$ git init
-$ git add .
-$ git commit -m &quot;Initial commit&quot;
-</code></pre><p>我们还要给他加个插件<br>    $npm install hexo-deployer-git –save</p>
-<h3 id="u751F_u6210ssh_u5BC6_u94A5"><a href="#u751F_u6210ssh_u5BC6_u94A5" class="headerlink" title="生成ssh密钥"></a>生成ssh密钥</h3><p>输入命令 <code>ssh-keygen -t rsa -C “blog” </code>,生成公钥和私钥，打开生成密钥的文件夹，找到id_rsa.pub。</p>
-<h2 id="VPS_28CentOS_6_29"><a href="#VPS_28CentOS_6_29" class="headerlink" title="VPS(CentOS 6)"></a>VPS(CentOS 6)</h2><p>我们选择Git仓库+Git Hooks作为服务器端的解决方案.<br>PS:我操作的用户是root，因为这样可以方便点.</p>
-<h3 id="u5B89_u88C5Git-1"><a href="#u5B89_u88C5Git-1" class="headerlink" title="安装Git"></a>安装Git</h3><pre><code>yum update &amp;&amp; apt-get upgrade -y #更新内核
-yum install git-core
-</code></pre><h3 id="Git_u4ED3_u5E93"><a href="#Git_u4ED3_u5E93" class="headerlink" title="Git仓库"></a>Git仓库</h3><pre><code>cd ~ 
-mkdir blog.git &amp;&amp; cd blog.git #创建GIT仓库目录
-git init --bare #初始化一个空仓库
-</code></pre><h3 id="SSH_u516C_u94A5_u914D_u7F6E"><a href="#SSH_u516C_u94A5_u914D_u7F6E" class="headerlink" title="SSH公钥配置"></a>SSH公钥配置</h3><p>为了本机不登录自动部署</p>
-<pre><code>cd ~
-mkdir .ssh &amp;&amp; cd .ssh
-vim authorized_keys
-</code></pre><p>然后把id_rsa.pub里的那一串复制过去。</p>
-<p>本机Git Bash里实验一下</p>
-<pre><code>ssh username@yourVps(IP Or URL)
-</code></pre><p>如果配置成功的话不用输入密码就会登陆。</p>
-<h3 id="u914D_u7F6E_u672C_u673AHexo"><a href="#u914D_u7F6E_u672C_u673AHexo" class="headerlink" title="配置本机Hexo"></a>配置本机Hexo</h3><p>设置git用户名</p>
-<pre><code>$ git config --global user.email &quot;email@example.com&quot;
-$ git config --global user.name &quot;username&quot;
-</code></pre><p>配置站点目录里的_config.yml</p>
-<pre><code># Deployment
-# Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  message: update
-  repo: root@YOURVPSIP:blog.git
-  branch: master
-</code></pre><p>这应该是单用户的设置，多用户请自行google,基本是</p>
-<pre><code>repo:
-  s1: root@YOURVPSIP:blog.git,master
-</code></pre><p>运行    <code>hexo g &amp;&amp; hexo d</code>，如果一切正常，静态文件已经被成功的push到了blog的仓库里</p>
-<p>PS:注意配置文件的冒号 ： 后面一定要有空格</p>
-<h3 id="u914D_u7F6ENginx"><a href="#u914D_u7F6ENginx" class="headerlink" title="配置Nginx"></a>配置Nginx</h3><h4 id="u5B89_u88C5Nginx_u548CNode-js"><a href="#u5B89_u88C5Nginx_u548CNode-js" class="headerlink" title="安装Nginx和Node.js"></a>安装Nginx和Node.js</h4><pre><code>$yum update &amp;&amp; apt-get upgrade -y #更新内核
-$yun install nodejs -y
-$yum install nginx -y
-$cd /etc/nginx/conf.d/
-$vi default.conf
-</code></pre><p>我这里为了方便直接改默认配置文件了，其他博客一般介绍新建一个vhost的方法。</p>
-<pre><code>server {                                                                               
-    listen IP:80 ;                                                                                               
-    root /var/www/blog;  # 这里是你网站的路径 路径下包含index.html等一系列文件                                                      
-    server_name _;   # 如果没有域名就像我这样写，有域名就写域名                                               
-    access_log  /var/log/nginx/example_access.log;                                    
-    error_log   /var/log/nginx/example_error.log;                                            
-    location ~* ^.+\.(ico|gif|jpg|jpeg|png)$ {                            
-            root /var/www/example.com/public;                            
-            access_log   off;                 
-            expires      1d;                            
-        }                                                                              
-    location ~* ^.+\.(css|js|txt|xml|swf|wav)$ {                                   
-        root /var/www/example.com/public;                                                        
-        access_log   off;                                                          
-        expires      10m;                                                          
-    }                                                                              
-    location / {                                                                   
-        root /var/www/example.com/public;                                                
-        if (-f $request_filename) {                                            
-            rewrite ^/(.*)$  /$1 break;                                    
-        }                                                                      
-    }                                                                              
-}
-</code></pre><h4 id="u521B_u5EFA_u76EE_u5F55__u5206_u914D_u6743_u9650"><a href="#u521B_u5EFA_u76EE_u5F55__u5206_u914D_u6743_u9650" class="headerlink" title="创建目录 分配权限"></a>创建目录 分配权限</h4><pre><code>$cd /var/www
-$mkdir blog
-$chmod 775 -R /var/www/blog
-</code></pre><p>顺便初始化一下仓库</p>
-<pre><code>git init
-git remote add origin ~/blog.git
-git fetch
-git checkout master
-</code></pre><h4 id="u8FD0_u884CNginx"><a href="#u8FD0_u884CNginx" class="headerlink" title="运行Nginx"></a>运行Nginx</h4><pre><code>$/etc/init.d/nginx restart
-</code></pre><h3 id="u914D_u7F6E_Git_Hooks"><a href="#u914D_u7F6E_Git_Hooks" class="headerlink" title="配置 Git Hooks"></a>配置 Git Hooks</h3><p>这个是不同于网上搜的大多数方法的git hooks配置，因为他们那种方法我用不成功==</p>
-<pre><code>cd ~/blog.git/hooks
-touch post-receive
-vi post-receive
-</code></pre><p>配置如下</p>
-<pre><code>#!/bin/sh
-
-unset GIT_DIR
-
-NowPath=`pwd`
-DeployPath=&quot;/var/www/blog&quot;
-
-cd $DeployPath
-git pull origin master
-
-cd $NowPath
-exit 0
-</code></pre><p>更改权限</p>
-<pre><code>$ chmod +x post-receive
-</code></pre><p>到这里就配置ok了，回到本机站点目录git bash测试一下，可以略作修改，比如换一下标题 <code>title:     Xiao555</code>,然后</p>
-<pre><code>hexo g &amp;&amp; hexo d
-</code></pre><p>从浏览器打开你的网站或者服务器的ip看看是否成功。<br>当然，每次更新完都要写这行虽然不多但是还有感觉有点麻烦，在这里我们可以给Git配置一下，编辑~/.bashrc文件，没有会加上：</p>
-<pre><code>vim ~/.bashrc
-</code></pre><p>编辑内容：</p>
-<pre><code>alias blog=&apos;cd D:/blog;hexo g &amp;&amp; hexo d&apos;
-</code></pre><p>cd 后面是你的本机站点目录。保存并退出，再运行(不然不生效）：</p>
-<pre><code>source ~/.bashrc
-</code></pre><p>这样以后写完一篇文章要更新只需要直接打开git bash输入blog就可以了。</p>
-<p>至于hexo站点的配置，参照官网就好。这里添加一项就是站点配置文件里的<code>auto_detect: false</code>要改为true，否则代码块行号只有1，其他为空白：</p>
-<p><img src="/images/codebug.png" alt=""></p>
-<p>啊，突然发现写个博客好难啊，记性不好怕写得不对，有错误还希望读者多多指出，参考资料基本就是你能google到的那些有关的博文，就不一一列举了,主要的区别就是git hooks的。</p>
+            <p>本教程适用于CentOS 6</p>
+<h1 id="u5B89_u88C5pptp"><a href="#u5B89_u88C5pptp" class="headerlink" title="安装pptp"></a>安装pptp</h1><pre><code>wget --no-check-certificate https://raw.githubusercontent.com/teddysun/across/master/pptp.sh
+chmod +x pptp.sh
+./pptp.sh
+</code></pre><p><a href="http://www.bandwagong.com/wp-content/uploads/2015/04/258.png" target="_blank" rel="external">http://www.bandwagong.com/wp-content/uploads/2015/04/258.png</a></p>
+<p>安装成功后，会有相应信息</p>
+<p><a href="http://www.bandwagong.com/wp-content/uploads/2015/04/259.jpg" target="_blank" rel="external">http://www.bandwagong.com/wp-content/uploads/2015/04/259.jpg</a></p>
+<p>增加一个新用户，删除用户，修改密码等可以使用编辑：</p>
+<pre><code>vi /etc/ppp/chap-secrets
+</code></pre><p>按i 编辑，格式如下：</p>
+<pre><code>vpn pptpd 123456 *
+#vpn 用户名
+#123456 密码
+#pptpd 和 * 不变，字符中间必须用一个空格隔开。数字123，选用键盘字母键上方，不要用数字小键盘
+</code></pre><p><a href="http://www.bandwagong.com/wp-content/uploads/2015/04/230.jpg" target="_blank" rel="external">http://www.bandwagong.com/wp-content/uploads/2015/04/230.jpg</a></p>
+<p>如上输入完成，按下键盘左上方ESC键盘，英文状态下输入 “：”再输入字母 wq ，回车即保存好了。<br>现在只要电脑设置好，就可以自由的畅享网络了。</p>
+<p>参考文章：<a href="http://www.bandwagong.com/pptpd-vpn/" target="_blank" rel="external">http://www.bandwagong.com/pptpd-vpn/</a></p>
 
           
         
@@ -475,7 +371,7 @@ exit 0
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span>
+    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -516,7 +412,7 @@ exit 0
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
