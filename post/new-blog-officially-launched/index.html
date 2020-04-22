@@ -1,1 +1,435 @@
-<!DOCTYPE html><html lang="zh-hans"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="logo.jpeg"><link rel="manifest" href="/manifest.json"><title>打开天眼看文章</title><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://kit.fontawesome.com/b2fc37abd6.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-98427538-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-98427538-1")</script><link href="/static/css/2.5bcfae4a.chunk.css" rel="stylesheet"><link href="/static/css/main.f9f6d843.chunk.css" rel="stylesheet"><style type="text/css">.v{font-size:16px;text-align:left}.v *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:2;color:#555;-webkit-transition:all .3s ease;transition:all .3s ease}.v hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v.hide-avatar .vimg{display:none}.v a{position:relative;cursor:pointer;color:#1abc9c;display:inline-block}.v a:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v a:hover{color:#d7191a}.v a:hover:before{width:100%;left:0;right:auto}.v code,.v pre{background-color:#f6f6f6;color:#555;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0;font-family:Source Code Pro,courier new,Input Mono,PT Mono,SFMono-Regular,Consolas,Monaco,Menlo,PingFang SC,Liberation Mono,Microsoft YaHei,Courier，monospace}.v pre{padding:10px;overflow:auto;line-height:1.45}.v pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v input[type=checkbox],.v input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v .vwrap input{background:transparent}.v .vwrap .vedit{position:relative;padding-top:10px}.v .vwrap .vedit .vctrl{text-align:right;font-size:12px}.v .vwrap .vedit .vctrl span{padding:10px;display:inline-block;vertical-align:middle;cursor:pointer}.v .vwrap .vedit .vemojis{display:none;font-size:18px;text-align:justify;max-height:145px;overflow:auto;margin-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vemojis i{font-style:normal;padding:7px 0;width:38px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v .vwrap .vedit .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vpreview frame,.v .vwrap .vedit .vpreview iframe,.v .vwrap .vedit .vpreview img{max-width:100%;border:none}.v .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v .vwrap .vheader.item2 .vinput{width:50%}.v .vwrap .vheader.item1 .vinput{width:100%}.v .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v .vwrap .vheader.item2 .vinput,.v .vwrap .vheader .vinput{width:100%}}.v .vwrap .vcontrol{font-size:0;padding-top:15px}.v .vwrap .vcontrol .col{display:inline-block;font-size:16px;vertical-align:middle;color:#ccc}.v .vwrap .vcontrol .col.text-right{text-align:right}.v .vwrap .vcontrol .col svg{margin-right:2px;overflow:hidden;fill:currentColor;vertical-align:middle}.v .vwrap .vcontrol .col.col-20{width:20%}.v .vwrap .vcontrol .col.col-40{width:40%}.v .vwrap .vcontrol .col.col-60{width:60%}.v .vwrap .vcontrol .col.col-80{width:80%}.v .vwrap .vcontrol .col.split{width:50%}.v .vwrap .vmark{position:absolute;background:rgba(0,0,0,.65);width:100%;height:100%;left:0;top:0}.v .vwrap .vmark .valert{padding-top:3em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}.v .vwrap .vmark .valert .vcode{width:4.6875em;border-radius:.3125em;padding:.5em;background:#dedede}.v .vwrap .vmark .valert .vcode:focus{border-color:#3090e4;background-color:#fff}@media screen and (max-width:720px){.v .vwrap .vmark .valert{padding-top:5.5em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}}.v .power{color:#999;padding:.5em 0}.v .power,.v .power a{font-size:.75em}.v .vinfo{font-size:0;padding:5px}.v .vinfo .col{font-size:16px;display:inline-block;width:50%;vertical-align:middle}.v .vinfo .vcount .vnum{font-weight:600;font-size:1.25em}.v a{text-decoration:none;color:#555}.v a:hover{color:#222}.v ol,.v ul{padding:0;margin-left:1.25em}.v .txt-center{text-align:center}.v .txt-right{text-align:right}.v .pd5{padding:5px}.v .pd10{padding:10px}.v .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#313131;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:#ededed;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v .vbtn+.vbtn{margin-left:1.25em}.v .vbtn:active,.v .vbtn:hover{color:#3090e4;border-color:#3090e4;background-color:#fff}.v .vempty{padding:1.25em;text-align:center;color:#999}.v .vlist{width:100%}.v .vlist .vcard{padding-top:1.5em;position:relative;display:block}.v .vlist .vcard:after{content:"";clear:both;display:block}.v .vlist .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v .vlist .vcard .vimg{width:2.5em;height:2.5em}}.v .vlist .vcard .vhead{line-height:1.5;margin-top:0}.v .vlist .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v .vlist .vcard .vhead .vnick:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v .vlist .vcard .vhead .vnick:hover{color:#d7191a}.v .vlist .vcard .vhead .vnick:hover:before{width:100%;left:0;right:auto}.v .vlist .vcard .vhead .vsys{display:inline-block;padding:.2em .5em;background:#ededed;color:#b3b1b1;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v .vlist .vcard .vhead .vsys{display:none}}.v .vlist .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v .vlist .vcard .vh .vtime{color:#b3b3b3;font-size:.75em;margin-right:.875em}.v .vlist .vcard .vh .vmeta{line-height:1;position:relative}.v .vlist .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v .vlist .vcard:last-child .vh{border-bottom:none}.v .vlist .vcard .vcontent{word-wrap:break-word;word-break:break-all;text-align:justify;color:#4a4a4a;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v .vlist .vcard .vcontent frame,.v .vlist .vcard .vcontent iframe,.v .vlist .vcard .vcontent img{max-width:100%;border:none}.v .vlist .vcard .vcontent.expand{cursor:pointer;max-height:11.25em;overflow:hidden}.v .vlist .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;pointer-events:none;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9))}.v .vlist .vcard .vcontent.expand:after{display:block;content:"Click on expand";text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;pointer-events:none;background:hsla(0,0%,100%,.9)}.v .vlist .vcard .vquote{color:#666;margin-top:1em;padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v .vlist .vcard .vquote .vimg{width:2.225em;height:2.225em}.v .vpage .vmore{margin:1em 0}.v .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v .vloading{position:relative;padding:20px;display:block;height:80px}.v .vloading:before{-webkit-box-sizing:border-box;box-sizing:border-box;content:"";position:absolute;display:inline-block;top:20px;left:50%;margin-left:-20px;width:40px;height:40px;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}</style></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(i){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)t=n[l],Object.prototype.hasOwnProperty.call(p,t)&&p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var r=this.webpackJsonpblog=this.webpackJsonpblog||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.16fea087.chunk.js"></script><script src="/static/js/main.d56376db.chunk.js"></script></body></html>
+<!DOCTYPE html><html lang="zh-hans"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="logo.jpeg"><link rel="manifest" href="/manifest.json"><title>新的博客正式上线 | 打开天眼看文章</title><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="//api.ip.sb/jsonip?callback=getIP"></script><script src="https://kit.fontawesome.com/b2fc37abd6.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-98427538-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-98427538-1")</script><link href="/static/css/2.5bcfae4a.chunk.css" rel="stylesheet"><link href="/static/css/main.f9f6d843.chunk.css" rel="stylesheet"><style type="text/css">.v{font-size:16px;text-align:left}.v *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:2;color:#555;-webkit-transition:all .3s ease;transition:all .3s ease}.v hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v.hide-avatar .vimg{display:none}.v a{position:relative;cursor:pointer;color:#1abc9c;display:inline-block}.v a:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v a:hover{color:#d7191a}.v a:hover:before{width:100%;left:0;right:auto}.v code,.v pre{background-color:#f6f6f6;color:#555;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0;font-family:Source Code Pro,courier new,Input Mono,PT Mono,SFMono-Regular,Consolas,Monaco,Menlo,PingFang SC,Liberation Mono,Microsoft YaHei,Courier，monospace}.v pre{padding:10px;overflow:auto;line-height:1.45}.v pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v input[type=checkbox],.v input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v .vwrap input{background:transparent}.v .vwrap .vedit{position:relative;padding-top:10px}.v .vwrap .vedit .vctrl{text-align:right;font-size:12px}.v .vwrap .vedit .vctrl span{padding:10px;display:inline-block;vertical-align:middle;cursor:pointer}.v .vwrap .vedit .vemojis{display:none;font-size:18px;text-align:justify;max-height:145px;overflow:auto;margin-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vemojis i{font-style:normal;padding:7px 0;width:38px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v .vwrap .vedit .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vpreview frame,.v .vwrap .vedit .vpreview iframe,.v .vwrap .vedit .vpreview img{max-width:100%;border:none}.v .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v .vwrap .vheader.item2 .vinput{width:50%}.v .vwrap .vheader.item1 .vinput{width:100%}.v .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v .vwrap .vheader.item2 .vinput,.v .vwrap .vheader .vinput{width:100%}}.v .vwrap .vcontrol{font-size:0;padding-top:15px}.v .vwrap .vcontrol .col{display:inline-block;font-size:16px;vertical-align:middle;color:#ccc}.v .vwrap .vcontrol .col.text-right{text-align:right}.v .vwrap .vcontrol .col svg{margin-right:2px;overflow:hidden;fill:currentColor;vertical-align:middle}.v .vwrap .vcontrol .col.col-20{width:20%}.v .vwrap .vcontrol .col.col-40{width:40%}.v .vwrap .vcontrol .col.col-60{width:60%}.v .vwrap .vcontrol .col.col-80{width:80%}.v .vwrap .vcontrol .col.split{width:50%}.v .vwrap .vmark{position:absolute;background:rgba(0,0,0,.65);width:100%;height:100%;left:0;top:0}.v .vwrap .vmark .valert{padding-top:3em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}.v .vwrap .vmark .valert .vcode{width:4.6875em;border-radius:.3125em;padding:.5em;background:#dedede}.v .vwrap .vmark .valert .vcode:focus{border-color:#3090e4;background-color:#fff}@media screen and (max-width:720px){.v .vwrap .vmark .valert{padding-top:5.5em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}}.v .power{color:#999;padding:.5em 0}.v .power,.v .power a{font-size:.75em}.v .vinfo{font-size:0;padding:5px}.v .vinfo .col{font-size:16px;display:inline-block;width:50%;vertical-align:middle}.v .vinfo .vcount .vnum{font-weight:600;font-size:1.25em}.v a{text-decoration:none;color:#555}.v a:hover{color:#222}.v ol,.v ul{padding:0;margin-left:1.25em}.v .txt-center{text-align:center}.v .txt-right{text-align:right}.v .pd5{padding:5px}.v .pd10{padding:10px}.v .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#313131;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:#ededed;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v .vbtn+.vbtn{margin-left:1.25em}.v .vbtn:active,.v .vbtn:hover{color:#3090e4;border-color:#3090e4;background-color:#fff}.v .vempty{padding:1.25em;text-align:center;color:#999}.v .vlist{width:100%}.v .vlist .vcard{padding-top:1.5em;position:relative;display:block}.v .vlist .vcard:after{content:"";clear:both;display:block}.v .vlist .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v .vlist .vcard .vimg{width:2.5em;height:2.5em}}.v .vlist .vcard .vhead{line-height:1.5;margin-top:0}.v .vlist .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v .vlist .vcard .vhead .vnick:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v .vlist .vcard .vhead .vnick:hover{color:#d7191a}.v .vlist .vcard .vhead .vnick:hover:before{width:100%;left:0;right:auto}.v .vlist .vcard .vhead .vsys{display:inline-block;padding:.2em .5em;background:#ededed;color:#b3b1b1;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v .vlist .vcard .vhead .vsys{display:none}}.v .vlist .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v .vlist .vcard .vh .vtime{color:#b3b3b3;font-size:.75em;margin-right:.875em}.v .vlist .vcard .vh .vmeta{line-height:1;position:relative}.v .vlist .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v .vlist .vcard:last-child .vh{border-bottom:none}.v .vlist .vcard .vcontent{word-wrap:break-word;word-break:break-all;text-align:justify;color:#4a4a4a;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v .vlist .vcard .vcontent frame,.v .vlist .vcard .vcontent iframe,.v .vlist .vcard .vcontent img{max-width:100%;border:none}.v .vlist .vcard .vcontent.expand{cursor:pointer;max-height:11.25em;overflow:hidden}.v .vlist .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;pointer-events:none;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9))}.v .vlist .vcard .vcontent.expand:after{display:block;content:"Click on expand";text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;pointer-events:none;background:hsla(0,0%,100%,.9)}.v .vlist .vcard .vquote{color:#666;margin-top:1em;padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v .vlist .vcard .vquote .vimg{width:2.225em;height:2.225em}.v .vpage .vmore{margin:1em 0}.v .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v .vloading{position:relative;padding:20px;display:block;height:80px}.v .vloading:before{-webkit-box-sizing:border-box;box-sizing:border-box;content:"";position:absolute;display:inline-block;top:20px;left:50%;margin-left:-20px;width:40px;height:40px;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}</style><script src="//js.fundebug.cn/fundebug.1.9.0.min.js" apikey="2c7e5b30c7cf402cb7fb35d14b62e7f778babbb70d054160af750065a180fdcd" async="true"></script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="app"><div class="progress-bar"><div class="bg-red"></div><div class="bg-orange"></div><div class="bg-yellow"></div><div class="bg-green"></div><div class="bg-blue"></div><div class="bg-indigo"></div><div class="bg-purple"></div></div><main class="main"><div class="sidebar text-left"><h1><a class="logo" href="/">打开天眼看文章</a></h1><p>TECH | LIFE | X</p><p class="font-sm"><a class="text-blue" title="about me" href="/about">@me |</a><a class="text-green" href="https://github.com/xiao555" title="github" target="_blank" rel="noopener noreferrer">@github</a></p><p class="font-sm"><a href="mailto:zhangruiwu32@gmail.com">zhangruiwu32@gmail.com</a></p><p><small>本站已存活 49 天</small></p><button class="border-0 px-0"><i class="fas fa-moon" aria-hidden="true"></i></button></div><article class="main-content"><h2>新的博客正式上线</h2><p><small>2017-06-13</small><span id="new-blog-officially-launched" class="leancloud_visitors ml-1"><small>阅读量</small> <small class="leancloud-visitors-count"></small></span></p><section><p>这是一个vue的练手项目，也是koa的练手项目。
+这是一个js写的完整的博客系统。
+这是一个前后端分离 + 服务端渲染的博客系统。
+这是一个前端 SPA + 后端 RESTful API 的博客系统。
+这是一个为了找实习做的个人作品，虽然是在找完实习后完成的。
+这是我以后的试验田，也是个人分享的平台。
+当然还有很多不足，今后会逐渐完善。</p>
+<h3 id="开发环境">开发环境</h3>
+<ul>
+<li>MacOS + iTerm2 + Sublime（前期） + Atom（后期）</li>
+<li>Node v7.7.0 + MongoDB + Redis</li>
+<li>Docker</li>
+</ul>
+<h3 id="技术栈">技术栈</h3>
+<h5 id="后端：">后端：</h5>
+<ul>
+<li>服务器 Koa2</li>
+<li>路由 Koa-Router</li>
+<li>数据库 MongoDB + Mongoose</li>
+<li>权限验证 Redis + JWT</li>
+<li>日志 log4js</li>
+<li>测试 mocha + chai</li>
+</ul>
+<h5 id="前端：">前端：</h5>
+<ul>
+<li>单页应用 Vue2</li>
+<li>状态管理 Vuex</li>
+<li>前端路由 Vue-Router</li>
+<li>服务端渲染 Express</li>
+<li>Markdown生成目录 + 渲染 marked + uslug + highlight.js</li>
+<li>通信库 axios</li>
+<li>缓存 lru-cache</li>
+</ul>
+<h5 id="服务器端：">服务器端：</h5>
+<ul>
+<li>腾讯云 Ubuntu 16.04</li>
+<li>守护进程 pm2</li>
+<li>反向代理 Nginx</li>
+<li>ssl证书 acme-tiny自动化脚本</li>
+<li>Docker</li>
+</ul>
+<h5 id="cdn：">CDN：</h5>
+<ul>
+<li>netlify（免费 + 支持https + 支持 github repo导入）</li>
+</ul>
+<h3 id="usage">Usage</h3>
+<p>最近除了Nginx，Node.js, MongoDB, Redis三部分都上了Docker，要用docker运行的话需要配好docker环境了, 将<code>blog</code>目录复制到<code>docker/node</code>目录下在<code>docker</code>目录运行</p>
+<pre><code class="language-bash"><span class="hljs-symbol">docker</span>-compose <span class="hljs-keyword">build
+</span><span class="hljs-symbol">docker</span>-compose up</code></pre>
+<p>访问yourdomain:5050 就可以看到博客前端页面了，再按照下面步骤配置Nginx即可，省去了很多步骤。不过<code>build</code>的时间可能有十几分钟（有docker加速器），所以<code>build</code>的时候可以去喝杯茶，聊聊天~~</p>
+<p>不想用docker的话，只需要切换到<code>blog</code>目录，按照下面步骤一步一步走即可。</p>
+<h4 id="安装-node">安装 Node</h4>
+<p>推荐使用 <a href="https://github.com/creationix/nvm">NVM</a> 管理Node版本，我的开发版本是 v7.7.0</p>
+<h4 id="安装-mongodb">安装 MongoDB</h4>
+<ul>
+<li><a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/">Ubuntu上安装</a></li>
+<li><a href="http://www.linuxdiyf.com/linux/26151.html">国内推荐阿里云镜像安装</a></li>
+<li><a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/">Mac上安装</a></li>
+</ul>
+<p>貌似Ubuntu上有些坑，比如用官网的教程安装巨慢，可能被墙了，推荐阿里云镜像，后面写一篇记录一下吧。
+朋友说apt-get默认是腾讯的源，速度很快，我没默认装过...</p>
+<h4 id="安装-redis">安装 Redis</h4>
+<ul>
+<li><a href="http://blog.fens.me/linux-redis-install/">Ubuntu</a></li>
+<li><a href="http://blog.csdn.net/pingpangbing0902/article/details/47104545">Mac</a></li>
+</ul>
+<p>还是Homebrew方便啊，网上找的一个教程，应该没问题</p>
+<h4 id="安装-pm2">安装 pm2</h4>
+<pre><code class="language-bash"><span class="hljs-built_in">npm</span> i -g pm2</code></pre>
+<p>用法: <a href="https://github.com/Unitech/pm2#commands-overview">github</a></p>
+<h4 id="安装依赖">安装依赖</h4>
+<p>在<code>client</code> 和 <code>server</code> 目录下分别运行</p>
+<pre><code class="language-bash"><span class="hljs-built_in">npm</span> i</code></pre>
+<h4 id="运行服务端">运行服务端</h4>
+<h5 id="配置">配置</h5>
+<pre><code class="language-javascript"><span class="hljs-comment">// config/index.js</span>
+<span class="hljs-selector-tag">export</span> <span class="hljs-selector-tag">default</span> {
+  <span class="hljs-attribute">admin</span>: { <span class="hljs-comment">// 管理后台用户名，密码</span>
+    <span class="hljs-attribute">name</span>: <span class="hljs-string">'yourname'</span>,
+    <span class="hljs-attribute">passwd</span>: <span class="hljs-string">'yourpassword'</span>
+  },
+  <span class="hljs-attribute">mongoDB</span>: <span class="hljs-string">'mongodb://localhost/blog'</span>, <span class="hljs-comment">// mongoDB数据库连接uri</span>
+  <span class="hljs-attribute">redis</span>: { <span class="hljs-comment">// Redis</span>
+    <span class="hljs-attribute">host</span>: <span class="hljs-string">'127.0.0.1'</span>,
+    <span class="hljs-attribute">port</span>: <span class="hljs-number">6379</span>
+  },
+  <span class="hljs-attribute">port</span>: process.env.PORT || <span class="hljs-number">3000</span>, <span class="hljs-comment">// 服务器运行端口</span>
+  <span class="hljs-attribute">authSecret</span>: <span class="hljs-string">'blogAuth'</span>, <span class="hljs-comment">// 验证密钥</span>
+  <span class="hljs-attribute">expiresIn</span>: <span class="hljs-number">60</span> * <span class="hljs-number">60</span>, <span class="hljs-comment">// JWT token 保存时间 1h</span>
+}</code></pre>
+<h5 id="运行">运行</h5>
+<pre><code class="language-bash">npm <span class="hljs-keyword">run</span><span class="bash"> start</span>
+
+// pm2
+npm <span class="hljs-keyword">run</span><span class="bash"> pm</span></code></pre>
+<h5 id="说明">说明</h5>
+<ul>
+<li>增加了pm script：<code>"NODE_ENV=production pm2 start entry.js --name='blogServer'"</code>, 方便部署</li>
+<li>JWT 的token expiresIn 代表在redis中的存储时间，在有效期内可以通过admin后台进行各种操作，过期了需要重新登录生成token</li>
+<li>API访问时统一加前缀api，比如查看公开文章<a href="https://www.xiao555.com.cn/api/articles?status=Published">https://www.xiao555.com.cn/api/articles?status=Published</a></li>
+<li>生产环境下log输出到<code>log/cheese.log</code>，格式如下：<pre><code class="language-javascript">[<span class="hljs-number">2017</span><span class="hljs-number">-06</span><span class="hljs-number">-09</span> <span class="hljs-number">19</span>:<span class="hljs-number">19</span>:<span class="hljs-number">50.579</span>] [INFO] Blog - Redis <span class="hljs-keyword">is</span> ready
+[<span class="hljs-number">2017</span><span class="hljs-number">-06</span><span class="hljs-number">-09</span> <span class="hljs-number">19</span>:<span class="hljs-number">19</span>:<span class="hljs-number">50.602</span>] [INFO] Blog - Connected to localhost:<span class="hljs-number">27017</span>/blog
+[<span class="hljs-number">2017</span><span class="hljs-number">-06</span><span class="hljs-number">-09</span> <span class="hljs-number">19</span>:<span class="hljs-number">19</span>:<span class="hljs-number">50.605</span>] [INFO] Blog - Server started on port <span class="hljs-number">3000</span>
+[<span class="hljs-number">2017</span><span class="hljs-number">-06</span><span class="hljs-number">-09</span> <span class="hljs-number">19</span>:<span class="hljs-number">20</span>:<span class="hljs-number">22.140</span>] [INFO] Blog - GET /api/ <span class="hljs-number">404</span> - <span class="hljs-number">7</span>ms
+[<span class="hljs-number">2017</span><span class="hljs-number">-06</span><span class="hljs-number">-09</span> <span class="hljs-number">19</span>:<span class="hljs-number">20</span>:<span class="hljs-number">29.507</span>] [INFO] Blog - GET /api/articles、 <span class="hljs-number">404</span> - <span class="hljs-number">2</span>ms
+[<span class="hljs-number">2017</span><span class="hljs-number">-06</span><span class="hljs-number">-09</span> <span class="hljs-number">19</span>:<span class="hljs-number">20</span>:<span class="hljs-number">33.603</span>] [INFO] Blog - GET /api/articles/ <span class="hljs-number">200</span> - <span class="hljs-number">14</span>ms
+[<span class="hljs-number">2017</span><span class="hljs-number">-06</span><span class="hljs-number">-09</span> <span class="hljs-number">19</span>:<span class="hljs-number">23</span>:<span class="hljs-number">34.390</span>] [INFO] Blog - POST /api/admin/login <span class="hljs-number">200</span> - <span class="hljs-number">55</span>ms</code></pre>
+</li>
+</ul>
+<h4 id="运行客户端">运行客户端</h4>
+<h5 id="配置-1">配置</h5>
+<p>暂时硬编码上，后面放到数据库，通过admin后台来修改</p>
+<pre><code class="language-javascript"><span class="hljs-comment">// config/index.js</span>
+<span class="hljs-selector-tag">export</span> <span class="hljs-selector-tag">default</span> {
+  <span class="hljs-attribute">dev</span>: { <span class="hljs-comment">// dev 环境下相关链接</span>
+    <span class="hljs-attribute">api</span>: <span class="hljs-string">'http://localhost:3000/api'</span>,
+    <span class="hljs-attribute">siteInfo</span>: {
+      <span class="hljs-attribute">siteUrl</span>: <span class="hljs-string">'http://localhost:5050/'</span>,
+      <span class="hljs-attribute">postUrl</span>: <span class="hljs-string">'http://localhost:5050/posts/'</span>
+    }
+  },
+  <span class="hljs-attribute">prod</span>: { <span class="hljs-comment">// 生产环境下相关链接</span>
+    <span class="hljs-attribute">api</span>: <span class="hljs-string">'https://www.xiao555.com.cn/api'</span>,
+    <span class="hljs-attribute">siteInfo</span>: {
+      <span class="hljs-attribute">siteUrl</span>: <span class="hljs-string">'https://www.xiao555.com.cn/'</span>,
+      <span class="hljs-attribute">postUrl</span>: <span class="hljs-string">'https://www.xiao555.com.cn/posts/'</span>
+    }
+  },
+  <span class="hljs-attribute">links</span>: { <span class="hljs-comment">// 各种链接</span>
+    <span class="hljs-attribute">github</span>: <span class="hljs-string">"https://github.com/xiao555"</span>,
+    <span class="hljs-attribute">facebook</span>: <span class="hljs-string">"https://www.facebook.com/profile.php?id=100009127309661"</span>,
+    <span class="hljs-attribute">email</span>: <span class="hljs-string">"mailto: zhangruiwu32@gmail.com"</span>,
+    <span class="hljs-attribute">weibo</span>: <span class="hljs-string">"http://weibo.com/u/5315649743"</span>,
+    <span class="hljs-attribute">zhihu</span>: <span class="hljs-string">"https://www.zhihu.com/people/zhang-rui-wu-50"</span>,
+    <span class="hljs-attribute">rss</span>: <span class="hljs-string">"#"</span>
+  },
+  <span class="hljs-attribute">headerImg</span>: <span class="hljs-string">"https://xiao555.netlify.com/header.jpg"</span>, <span class="hljs-comment">// 头像</span>
+  <span class="hljs-attribute">titleTemplate</span>: <span class="hljs-string">"%s | Xiao555's Blog"</span>, <span class="hljs-comment">// Vue-meta title 格式</span>
+}</code></pre>
+<h5 id="运行-1">运行</h5>
+<pre><code class="language-bash"><span class="hljs-comment">// dev</span>
+npm <span class="hljs-built_in">run</span> dev
+
+<span class="hljs-comment">// prod</span>
+npm <span class="hljs-built_in">run</span> build &amp;&amp; npm <span class="hljs-built_in">run</span> start
+<span class="hljs-comment">// pm</span>
+npm <span class="hljs-built_in">run</span> build &amp;&amp; npm <span class="hljs-built_in">run</span> pm</code></pre>
+<h5 id="说明-1">说明</h5>
+<ul>
+<li>增加了pm script：<code>"NODE_ENV=production pm2 start server.js --name='blogClient'"</code>, 方便部署</li>
+<li>dev 模式下，自动打开浏览器，支持热重载，跑在本地<code>8008</code>端口</li>
+<li>prod 模式跑在本地<code>5050</code>端口</li>
+<li>css预处理器用<code>stylus</code>，webpack默认打包<code>/src/assets/css/variables.styl</code>, 里面配置一些全局变量</li>
+<li>加载其他字体文件请参考<code>variables.styl</code>里的<code>font-face('Meta', 'FFMetaPro-Normal', 400)</code>，字体文件放在<code>/src/assets/font/</code>目录</li>
+<li>admin管理后台通过<code>yoursite.com/admin</code>访问</li>
+<li>网站icon放在<code>public</code>目录下，通过<code>server.js</code>里的<code>app.use(favicon('./public/header.jpg'))</code>引入。</li>
+</ul>
+<h4 id="配置服务器">配置服务器</h4>
+<h5 id="nginx">Nginx</h5>
+<p>安装时候记得要支持http2的，貌似现在直接安装的已经支持了？
+本站的nginx配置：</p>
+<pre><code><span class="hljs-section">server</span> {
+    <span class="hljs-attribute">listen</span> <span class="hljs-number">443</span> ssl http2 default_server;
+    <span class="hljs-attribute">server_name</span> xiao555.com.cn www.xiao555.com.cn;
+
+    <span class="hljs-attribute">ssl</span> <span class="hljs-literal">on</span>;
+    <span class="hljs-attribute">ssl_certificate</span> /root/ssl/chained.pem;
+    <span class="hljs-attribute">ssl_certificate_key</span> /root/ssl/domain.key;
+    <span class="hljs-attribute">ssl_session_timeout</span> <span class="hljs-number">5m</span>;
+    <span class="hljs-attribute">ssl_protocols</span> TLSv1 TLSv1.<span class="hljs-number">1</span> TLSv1.<span class="hljs-number">2</span>;
+    <span class="hljs-attribute">ssl_ciphers</span> ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA;
+    <span class="hljs-attribute">ssl_session_cache</span> shared:SSL:<span class="hljs-number">50m</span>;
+    <span class="hljs-attribute">ssl_dhparam</span> /root/ssl/dhparams.pem;
+    <span class="hljs-attribute">ssl_prefer_server_ciphers</span> <span class="hljs-literal">on</span>;
+
+    <span class="hljs-attribute">index</span> index.php index.html;
+    <span class="hljs-attribute">location</span><span class="hljs-regexp"> ^~</span> /api/ {
+        <span class="hljs-attribute">proxy_pass</span> http://localhost:3000;
+        <span class="hljs-attribute">proxy_set_header</span> Host <span class="hljs-variable">$host</span>;
+        <span class="hljs-attribute">proxy_set_header</span> X-Real-IP <span class="hljs-variable">$remote_addr</span>;
+        <span class="hljs-attribute">proxy_set_header</span> X-Forwarded-For <span class="hljs-variable">$proxy_add_x_forwarded_for</span>;
+        <span class="hljs-attribute">proxy_redirect</span> <span class="hljs-literal">off</span>;
+    }
+
+    <span class="hljs-attribute">location</span><span class="hljs-regexp"> ^~</span>  /.well-known/acme-challenge/ {
+        <span class="hljs-attribute">alias</span> /var/www/challenges/;
+        <span class="hljs-attribute">try_files</span> <span class="hljs-variable">$uri</span> =<span class="hljs-number">404</span>;
+    }
+
+    <span class="hljs-attribute">location</span> / {
+        <span class="hljs-attribute">proxy_pass</span> http://localhost:5050;
+        <span class="hljs-attribute">proxy_set_header</span> Host <span class="hljs-variable">$host</span>;
+        <span class="hljs-attribute">proxy_set_header</span> X-Real-IP <span class="hljs-variable">$remote_addr</span>;
+        <span class="hljs-attribute">proxy_set_header</span> X-Forwarded-For <span class="hljs-variable">$proxy_add_x_forwarded_for</span>;
+        <span class="hljs-attribute">proxy_redirect</span> <span class="hljs-literal">off</span>;
+    }
+}
+
+<span class="hljs-section">server</span> {
+    <span class="hljs-attribute">listen</span> <span class="hljs-number">80</span>;
+    <span class="hljs-attribute">server_name</span> www.xiao555.com.cn xiao555.com.cn;
+
+    <span class="hljs-attribute">location</span><span class="hljs-regexp"> ^~</span> /.well-known/acme-challenge/ {
+        <span class="hljs-attribute">alias</span> /var/www/challenges/;
+        <span class="hljs-attribute">try_files</span> <span class="hljs-variable">$uri</span> =<span class="hljs-number">404</span>;
+    }
+}
+
+<span class="hljs-section">server</span> {
+    <span class="hljs-attribute">listen</span> <span class="hljs-number">80</span>;
+    <span class="hljs-attribute">server_name</span> xiao555.com.cn www.xiao555.com.cn;
+    <span class="hljs-attribute">index</span> index.php index.html;
+    <span class="hljs-attribute">location</span><span class="hljs-regexp"> ^~</span> / {
+        <span class="hljs-attribute">rewrite</span><span class="hljs-regexp"> ^(.*)$</span>  https://<span class="hljs-variable">$host</span><span class="hljs-variable">$request_uri</span>;
+    }
+}</code></pre><p><code>/usr/local/nginx/conf/nginx.conf</code>，里其他的配置都删掉了，但是不知道为什么访问80端口不会转发, 无奈只好index.html强制刷新网页，在80端口会访问到的html里加上<code>&lt;meta http-equiv="refresh" content="0;url=https://www.xiao555.com.cn/"&gt;</code></p>
+<h5 id="获取-lets-encyrpt-证书">获取 Let's Encyrpt 证书</h5>
+<p>这是一个免费的ssl证书，通过<a href="https://github.com/diafygi/acme-tiny">acme-tiny</a>脚本自动化获取, 简单说一下步骤：</p>
+<ol>
+<li><p>创建帐号
+ 首先创建一个目录用来放生成的各种东西，我是在<code>~/ssl</code>目录下。创建一个 RSA 私钥用于 Let's Encrypt 识别你的身份：</p>
+<pre><code> openssl genrsa <span class="hljs-number">4096</span> &gt; account.<span class="hljs-type">key</span></code></pre></li>
+<li><p>创建 CSR 文件
+生成 CSR（Certificate Signing Request，证书签名请求）文件：</p>
+<pre><code>openssl genrsa <span class="hljs-number">4096</span> &gt; <span class="hljs-built_in">domain</span>.<span class="hljs-built_in">key</span>
+openssl req -<span class="hljs-built_in">new</span> -sha256 -<span class="hljs-built_in">key</span> <span class="hljs-built_in">domain</span>.<span class="hljs-built_in">key</span> -subj <span class="hljs-string">"/CN=yoursite.com"</span> &gt; <span class="hljs-built_in">domain</span>.csr</code></pre></li>
+<li><p>配置验证服务
+ 创建建用于存放验证文件的目录：</p>
+<pre><code> mkdir -p <span class="hljs-regexp">/var/</span>www<span class="hljs-regexp">/challenges/</span></code></pre><p> 配置服务器(Nginx为例)：</p>
+<pre><code> #example <span class="hljs-keyword">for</span> nginx
+<span class="hljs-built_in"> server </span>{
+     listen 80;
+     server_name yoursite.com www.yoursite.com;
+
+     location /.well-known/acme-challenge/ {
+         alias /var/www/challenges/;
+         try_files <span class="hljs-variable">$uri</span> =404;
+     }
+
+     <span class="hljs-built_in">..</span>.the rest of your<span class="hljs-built_in"> config
+</span> }</code></pre><p> 也可以看我nginx的配置，主要就是访问<code>/.well-known/acme-challenge/</code>的时候能访问到<code>/var/www/challenges/</code>目录</p>
+</li>
+<li><p>获取网站证书
+ 先下载 acme-tiny 脚本：</p>
+<pre><code> wget https:<span class="hljs-regexp">//</span>raw.githubusercontent.com<span class="hljs-regexp">/diafygi/</span>acme-tiny<span class="hljs-regexp">/master/</span>acme_tiny.py</code></pre><p> 指定账户私钥、CSR 以及验证目录，执行脚本：</p>
+<pre><code> python acme_tiny.py <span class="hljs-params">--account-key</span> <span class="hljs-string">./account.key</span> <span class="hljs-params">--csr</span> <span class="hljs-string">./domain.csr</span> <span class="hljs-params">--acme-dir</span> <span class="hljs-string">/var/www/challenges/</span> &gt; <span class="hljs-string">./signed.crt</span></code></pre><p> 下载 Let's Encrypt 的中间证书：</p>
+<pre><code class="language-bash"> wget -O - https:<span class="hljs-comment">//letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem &gt; intermediate.pem</span>
+
+   cat signed<span class="hljs-selector-class">.crt</span> intermediate<span class="hljs-selector-class">.pem</span> &gt; chained.pem</code></pre>
+</li>
+<li><p>Nginx 配置</p>
+<pre><code><span class="hljs-built_in"> server </span>{
+     listen 443;
+     server_name yoursite.com, www.yoursite.com;
+
+     ssl on;
+     ssl_certificate /path/<span class="hljs-keyword">to</span>/chained.pem;
+     ssl_certificate_key /path/<span class="hljs-keyword">to</span>/domain.key;
+     ssl_session_timeout 5m;
+     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+     ssl_ciphers ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA;
+     ssl_session_cache shared:SSL:50m;
+     # openssl dhparam -out dhparams.pem 2048
+     ssl_dhparam /path/<span class="hljs-keyword">to</span>/dhparams.pem;
+     ssl_prefer_server_ciphers on;
+
+     <span class="hljs-built_in">..</span>.the rest of your<span class="hljs-built_in"> config
+</span> }
+
+<span class="hljs-built_in"> server </span>{
+     listen 80;
+     server_name yoursite.com, www.yoursite.com;
+
+     location /.well-known/acme-challenge/ {
+         alias /var/www/challenges/;
+         try_files <span class="hljs-variable">$uri</span> =404;
+     }
+
+     <span class="hljs-built_in">..</span>.the rest of your<span class="hljs-built_in"> config
+</span> }</code></pre><p> 那个dhparams.pem是增强安全性的，用<code>openssl dhparam -out dhparams.pem 2048</code>生成就可以</p>
+</li>
+<li><p>配置脚本自动更新
+Let's Encrypt 签发的证书只有 90 天有效期，所以创建一个脚本自动更新</p>
+<pre><code><span class="hljs-comment"># renew_cert.sh</span>
+cd ~<span class="hljs-regexp">/ssl/</span>
+python acme_tiny.py --account-key account.key --csr domain.csr --acme-dir <span class="hljs-regexp">/var/</span>www<span class="hljs-regexp">/challenges/</span> &gt; signed.crt || <span class="hljs-keyword">exit</span>
+wget -O - https:<span class="hljs-regexp">//</span>letsencrypt.org<span class="hljs-regexp">/certs/</span>lets-encrypt-x3-cross-signed.pem &gt; intermediate.pem
+cat signed.crt intermediate.pem &gt; chained.pem
+nginx -s reload</code></pre><p>通过 <code>chmod a+x renew_cert.sh</code> 赋予执行权限。
+<code>crontab -e</code>加入以下内容：</p>
+<pre><code><span class="hljs-symbol">0 </span><span class="hljs-number">0</span> <span class="hljs-number">1</span> * * ~/ssl/renew_cert.sh &gt;/dev/null <span class="hljs-number">2</span>&gt;&amp;<span class="hljs-number">1</span></code></pre><p>这样以后证书每个月都会自动更新</p>
+</li>
+</ol>
+<h3 id="更新日志">更新日志</h3>
+<p>之前做的时候没有记录，所以说一下大体流程吧。
+这个项目是从服务端开始开发的，先是要搭建一个RESTful API的服务器，用Mocha + chai 测试功能。
+后端功能实现后，开始搞前端，一开始是用vue-cli搭的脚手架，而且admin跟client是分开相互独立的，先开发的admin，最后是client。
+开发过程中对<code>build</code>目录下的webpack配置文件修改了很多次，结合<code>vue-hackernews-2.0</code>加入了服务端渲染的功能，并去掉了dev开发模式的配置。
+随着前端功能的增多也在不断修改后端逻辑，最终形成了beta版本——<a href="https://github.com/xiao555/New-Blog/tree/c8b6e2d909f284d10a484272ac215043978900ed">github</a>, 后面因为其他事情就没再搞。</p>
+<p>在考完java和算法之后，花了两三天才把之前的半成品完善了一下，改动如下：</p>
+<ul>
+<li>改为比较正常sidebar</li>
+<li>取消顶部导航菜单</li>
+<li>markdown渲染弃用vue-markdown，自己用marked + highlight.js + uslug 打造一个语法高亮，能自动生成toc的组件</li>
+<li>取消了category和tag页面，增加archive页面</li>
+<li>构建工具上切换回dev模式，毕竟还要边改边看效果</li>
+</ul>
+<h4 id="201767">2017.6.7</h4>
+<ul>
+<li>实现Archive页面逻辑</li>
+<li>测试production环境下build &amp; start 失败，只有外部css，没有组件内css，原因是都用<code>extract-text-webpack-plugin</code> 单独打包到<code>style.css</code>，外部css把组件内的覆盖掉了，解决办法：查询文档，用<code>const extractCSS = new ExtractTextPlugin('css/[name].css');</code>来实现Multiple Instances。</li>
+<li>用<code>vue-meta</code>实现title的自动更新，同时服务端<code>server.js</code>也要进行相应的修改，优化SEO</li>
+</ul>
+<h4 id="201768">2017.6.8</h4>
+<ul>
+<li>增加响应式布局</li>
+<li>服务器上跑了下，修复了部分依赖没有的问题</li>
+<li>发现admin和client分开的话，部署运行都要各跑一遍，太麻烦，于是admin合并到client，重构后的client由blog和admin组成，也算同构了一下</li>
+<li>每个过程都在不断的优化代码结构，明天把一些配置项整合出来，统一管理</li>
+</ul>
+<h4 id="2017612">2017.6.12</h4>
+<p>这两天太浪了~</p>
+<ul>
+<li>增加文章阅读计数功能</li>
+<li>配置项统一在 <code>config/index.js</code> 里</li>
+<li>部署后发现https图标不是绿色的，以为我的免费Let's Encrypt 证书有问题...最后搞了半天发现是因为有http的图片外链，图片之前放在七牛上的，打算服务器上搞一波，再看看有没有什么好的支持https的CDN</li>
+<li>调试服务器过程中发现我的网页加载有点慢，主要是生成的<code>app.js</code>太大了，有1M多，后面可以优化一下，减少依赖库的使用，发现一个<code>highlight.js</code>就占了三四百K。</li>
+</ul>
+<p>所以后面主要任务是解决一下http外链的问题，优化一下性能。</p>
+<ul>
+<li>外链问题解决了，用的<a href="https://www.netlify.com/">netlify</a>，可以直接导入github的repo，很方便，就是国外的有点慢</li>
+</ul>
+<h4 id="2017722">2017.7.22</h4>
+<p>趁周末在公司做些自己的事23333
+之前分析了提高性能的一些方法，主要是减少打包生成的app.js的体积，这次更新前运行<code>npm run build</code>的结果是这样的：</p>
+<pre><code class="language-bash">Total precache size <span class="hljs-keyword">is</span> about <span class="hljs-number">2.75</span> MB <span class="hljs-keyword">for</span> <span class="hljs-number">12</span> resources.
+Hash: <span class="hljs-number">8</span>a46e668ed80f8d7a493
+Version: webpack <span class="hljs-number">2.6</span><span class="hljs-number">.1</span>
+Time: <span class="hljs-number">32802</span>ms
+                                         Asset       Size  Chunks                    Chunk Names
+    static/fonts/FFMetaPro-Normal.ec7ccf1.woff    <span class="hljs-number">71.7</span> kB          [emitted]
+    static/img/fontawesome-webfont<span class="hljs-number">.912</span>ec66.svg     <span class="hljs-number">444</span> kB          [emitted]  [big]
+  static/fonts/fontawesome-webfont.b06871f.ttf     <span class="hljs-number">166</span> kB          [emitted]
+static/fonts/fontawesome-webfont.af7ae50.woff2    <span class="hljs-number">77.2</span> kB          [emitted]
+ static/fonts/fontawesome-webfont.fee66e7.woff      <span class="hljs-number">98</span> kB          [emitted]
+       static/img/FFMetaPro-Normal<span class="hljs-number">.5</span>d836bf.svg    <span class="hljs-number">2.12</span> MB          [emitted]  [big]
+     static/fonts/FFMetaPro-Normal<span class="hljs-number">.4</span>eebf0c.eot     <span class="hljs-number">200</span> kB          [emitted]
+     static/fonts/FFMetaPro-Normal<span class="hljs-number">.3767f</span>35.ttf     <span class="hljs-number">199</span> kB          [emitted]
+  static/fonts/fontawesome-webfont<span class="hljs-number">.674f</span>50d.eot     <span class="hljs-number">166</span> kB          [emitted]
+                                        app.js    <span class="hljs-number">1.27</span> MB       <span class="hljs-number">0</span>  [emitted]  [big]  app
+                                     vendor.js  <span class="hljs-number">810</span> bytes       <span class="hljs-number">1</span>  [emitted]         vendor
+                                      style.js  <span class="hljs-number">263</span> bytes       <span class="hljs-number">2</span>  [emitted]         style
+                                   manifest.js    <span class="hljs-number">1.39</span> kB       <span class="hljs-number">3</span>  [emitted]         manifest
+                                   css/app.css    <span class="hljs-number">27.5</span> kB       <span class="hljs-number">0</span>  [emitted]         app
+                                 css/style.css    <span class="hljs-number">39.1</span> kB       <span class="hljs-number">2</span>  [emitted]         style
+                                    index.html    <span class="hljs-number">1.26</span> kB          [emitted]
+
+&gt; <span class="hljs-symbol">client@</span><span class="hljs-number">1.0</span><span class="hljs-number">.0</span> build:server /var/www/New-Blog/client
+&gt; cross-env NODE_ENV=production webpack --config build/webpack.server.config.js --progress --hide-modules
+
+Hash: c1685fd6bd9a9bb148a6
+Version: webpack <span class="hljs-number">2.6</span><span class="hljs-number">.1</span>
+Time: <span class="hljs-number">9352</span>ms
+              Asset     Size  Chunks                    Chunk Names
+vue-ssr-bundle.json  <span class="hljs-number">1.72</span> MB          [emitted]  [big]</code></pre>
+<p>可以看到一个app.js就占了1.27MB, 此时网页加载的情况是这样的:
+<img src="https://xiao555.netlify.com/preyouhua.jpg" alt="">
+然后我看了一下别人的app.js，压缩后基本都是几十k大小，而我是几百k，所以app.js的大小是一个优化点，在分析了为何app.js这么大后，我进行了如下优化：</p>
+<ul>
+<li>减少对这些库的依赖，'marked','highlight.js','uslug', 'vuejs-datepicker', 'Vuex'</li>
+<li>markdown 渲染放在server端进行，article Model增加存放markdown的字段，对数据库中的旧数据创建Migration脚本</li>
+</ul>
+<p>优化后运行<code>npm run build</code>的结果是这样的：</p>
+<pre><code class="language-bash">Total precache size <span class="hljs-keyword">is</span> about <span class="hljs-number">1.63</span> MB <span class="hljs-keyword">for</span> <span class="hljs-number">12</span> resources.
+Hash: <span class="hljs-number">85</span>db4cfa5f72482c3c59
+Version: webpack <span class="hljs-number">2.3</span><span class="hljs-number">.0</span>
+Time: <span class="hljs-number">10386</span>ms
+                                         Asset       Size  Chunks                    Chunk Names
+                                        app.js     <span class="hljs-number">203</span> kB       <span class="hljs-number">0</span>  [emitted]         app
+    static/img/fontawesome-webfont<span class="hljs-number">.912</span>ec66.svg     <span class="hljs-number">444</span> kB          [emitted]  [big]
+  static/fonts/fontawesome-webfont.b06871f.ttf     <span class="hljs-number">166</span> kB          [emitted]
+static/fonts/fontawesome-webfont.af7ae50.woff2    <span class="hljs-number">77.2</span> kB          [emitted]
+ static/fonts/fontawesome-webfont.fee66e7.woff      <span class="hljs-number">98</span> kB          [emitted]
+       static/img/FFMetaPro-Normal<span class="hljs-number">.5</span>d836bf.svg    <span class="hljs-number">2.12</span> MB          [emitted]  [big]
+     static/fonts/FFMetaPro-Normal<span class="hljs-number">.4</span>eebf0c.eot     <span class="hljs-number">200</span> kB          [emitted]
+     static/fonts/FFMetaPro-Normal<span class="hljs-number">.3767f</span>35.ttf     <span class="hljs-number">199</span> kB          [emitted]
+    static/fonts/FFMetaPro-Normal.ec7ccf1.woff    <span class="hljs-number">71.7</span> kB          [emitted]
+  static/fonts/fontawesome-webfont<span class="hljs-number">.674f</span>50d.eot     <span class="hljs-number">166</span> kB          [emitted]
+                                     vendor.js  <span class="hljs-number">810</span> bytes       <span class="hljs-number">1</span>  [emitted]         vendor
+                                      style.js  <span class="hljs-number">253</span> bytes       <span class="hljs-number">2</span>  [emitted]         style
+                                   manifest.js    <span class="hljs-number">1.38</span> kB       <span class="hljs-number">3</span>  [emitted]         manifest
+                                   css/app.css    <span class="hljs-number">22.1</span> kB       <span class="hljs-number">0</span>  [emitted]         app
+                                 css/style.css    <span class="hljs-number">39.2</span> kB       <span class="hljs-number">2</span>  [emitted]         style
+                               css/app.css.map    <span class="hljs-number">29.6</span> kB       <span class="hljs-number">0</span>  [emitted]         app
+                             css/style.css.map    <span class="hljs-number">36.1</span> kB       <span class="hljs-number">2</span>  [emitted]         style
+                                    index.html    <span class="hljs-number">1.23</span> kB          [emitted]
+
+&gt; <span class="hljs-symbol">client@</span><span class="hljs-number">1.0</span><span class="hljs-number">.0</span> build:server /Users/zhangruiwu/Desktop/demo-learn/newBlog/client
+&gt; cross-env NODE_ENV=production webpack --config build/webpack.server.config.js --progress --hide-modules
+
+Hash: <span class="hljs-number">5</span>b9d7f18053508c4e7a5
+Version: webpack <span class="hljs-number">2.3</span><span class="hljs-number">.0</span>
+Time: <span class="hljs-number">4008</span>ms
+              Asset    Size  Chunks                    Chunk Names
+vue-ssr-bundle.json  <span class="hljs-number">556</span> kB          [emitted]  [big]</code></pre>
+<p>效果显著，可以看到总大小由2.75 MB减小的1.63 MB， app.js由1.27 MB减小到203 kB， vue-ssr-bundle.json也从1.72 MB减小到556 kB。我们再看看部署到服务器后网页加载情况：
+<img src="https://xiao555.netlify.com/afteryouhua.jpg" alt="">
+效果显著有没有，Load从4.15s减小到了1.31s，如果再要优化的话，其实也就是减少请求数，然后优化一下头像的处理，想到两种方案，一种换成base64，结果发现app.js变大了许多，编码有点多。第二种换成webp格式，效果如下：
+<img src="https://xiao555.netlify.com/afterwebp.jpg" alt="">
+加载速度减小的1s以内了。</p>
+<p>后面再该合并的合并，cdn的cdn，首屏加载性能方面的问题就基本解决的差不多了。先睡觉了==！</p>
+<h4 id="2017827">2017.8.27</h4>
+<p>对client部分进行了一次重构，参考最新的<a href="https://github.com/vuejs/vue-hackernews-2.0">vue-hackernews-2.0</a>，很多module都升级了几个小版本，功能也越来越多，一些功能也出现了一些新的实现方式。</p>
+<p>preFetch 变成了 asyncData，之前的版本我把preFetch去掉了，后来感觉这样会影响组件加载速度吧，感觉不妥。所以这次把asyncData和vuex都重新启用。为什么要启用vuex呢，因为个人感觉asyncData是需要靠一个全局对象来保存状态或者说是数据的，要自己实现还不如直接用vuex...而且新版本webpack打包起来大小比以前小了好多好多，多一个vuex不会影响app.js，会打包到vendor里。打包后的组件部分js是分成若干个文件按需加载，也分担了app.js的大小。</p>
+<ul>
+<li>重新启用vuex，探索了一下数据获取的方式，最后还是加入了asyncData异步加载。</li>
+<li>加入了文章列表分页功能，虽然现在只有一页</li>
+<li>精简优化webpack配置文件</li>
+<li>新的title机制</li>
+<li>顶部进度条</li>
+<li>font-awesome字体文件改为CDN引入</li>
+</ul>
+<h4 id="2017831">2017.8.31</h4>
+<p>上Docker！！！Node.js, MongoDB, Redis三部分各一个容器，本来还用Nginx,但是涉及到https证书什么的好麻烦，要迁移的话反而麻烦，所以除了上面那三部分可以随时随地跑，nginx就单独配置吧。</p>
+<h3 id="todo">TODO</h3>
+<ul>
+<li>评论区</li>
+<li>管理后台界面优化，目前是仿WordPress</li>
+<li>重构，改成同构Web应用</li>
+<li>服务器端（腾讯云）的优化</li>
+<li>数据库定期备份</li>
+</ul>
+<h3 id="license">LICENSE</h3>
+<p><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></p>
+</section><section id="vcomments" class="v"><div class="vwrap"><div class="vheader item3"><input name="nick" placeholder="昵称" class="vnick vinput" type="text"><input name="mail" placeholder="邮箱" class="vmail vinput" type="email"><input name="link" placeholder="网址(http://)" class="vlink vinput" type="text"></div><div class="vedit"><textarea id="veditor" class="veditor vinput" placeholder="Just Go Go"></textarea><div class="vctrl"><span class="vemoji-btn">表情</span> | <span class="vpreview-btn">预览</span></div><div class="vemojis" style="display:none;"><i name="grinning" title="grinning">😀</i><i name="smiley" title="smiley">😃</i><i name="smile" title="smile">😄</i><i name="grin" title="grin">😁</i><i name="laughing" title="laughing">😆</i><i name="sweat_smile" title="sweat_smile">😅</i><i name="joy" title="joy">😂</i><i name="blush" title="blush">😊</i><i name="innocent" title="innocent">😇</i><i name="wink" title="wink">😉</i><i name="relieved" title="relieved">😌</i><i name="heart_eyes" title="heart_eyes">😍</i><i name="kissing_heart" title="kissing_heart">😘</i><i name="kissing" title="kissing">😗</i><i name="kissing_smiling_eyes" title="kissing_smiling_eyes">😙</i><i name="kissing_closed_eyes" title="kissing_closed_eyes">😚</i><i name="yum" title="yum">😋</i><i name="stuck_out_tongue_winking_eye" title="stuck_out_tongue_winking_eye">😜</i><i name="stuck_out_tongue_closed_eyes" title="stuck_out_tongue_closed_eyes">😝</i><i name="stuck_out_tongue" title="stuck_out_tongue">😛</i><i name="sunglasses" title="sunglasses">😎</i><i name="smirk" title="smirk">😏</i><i name="unamused" title="unamused">😒</i><i name="disappointed" title="disappointed">😞</i><i name="pensive" title="pensive">😔</i><i name="worried" title="worried">😟</i><i name="confused" title="confused">😕</i><i name="persevere" title="persevere">😣</i><i name="confounded" title="confounded">😖</i><i name="tired_face" title="tired_face">😫</i><i name="weary" title="weary">😩</i><i name="angry" title="angry">😠</i><i name="rage" title="rage">😡</i><i name="no_mouth" title="no_mouth">😶</i><i name="neutral_face" title="neutral_face">😐</i><i name="expressionless" title="expressionless">😑</i><i name="hushed" title="hushed">😯</i><i name="frowning" title="frowning">😦</i><i name="anguished" title="anguished">😧</i><i name="open_mouth" title="open_mouth">😮</i><i name="astonished" title="astonished">😲</i><i name="dizzy_face" title="dizzy_face">😵</i><i name="flushed" title="flushed">😳</i><i name="scream" title="scream">😱</i><i name="fearful" title="fearful">😨</i><i name="cold_sweat" title="cold_sweat">😰</i><i name="cry" title="cry">😢</i><i name="disappointed_relieved" title="disappointed_relieved">😥</i><i name="sob" title="sob">😭</i><i name="sweat" title="sweat">😓</i><i name="sleepy" title="sleepy">😪</i><i name="sleeping" title="sleeping">😴</i><i name="mask" title="mask">😷</i><i name="smiling_imp" title="smiling_imp">😈</i><i name="smiley_cat" title="smiley_cat">😺</i><i name="smile_cat" title="smile_cat">😸</i><i name="joy_cat" title="joy_cat">😹</i><i name="heart_eyes_cat" title="heart_eyes_cat">😻</i><i name="smirk_cat" title="smirk_cat">😼</i><i name="kissing_cat" title="kissing_cat">😽</i><i name="scream_cat" title="scream_cat">🙀</i><i name="crying_cat_face" title="crying_cat_face">😿</i><i name="pouting_cat" title="pouting_cat">😾</i><i name="cat" title="cat">🐱</i><i name="mouse" title="mouse">🐭</i><i name="cow" title="cow">🐮</i><i name="monkey_face" title="monkey_face">🐵</i><i name="hand" title="hand">✋</i><i name="fist" title="fist">✊</i><i name="v" title="v">✌️</i><i name="point_up" title="point_up">👆</i><i name="point_down" title="point_down">👇</i><i name="point_left" title="point_left">👈</i><i name="point_right" title="point_right">👉</i><i name="facepunch" title="facepunch">👊</i><i name="wave" title="wave">👋</i><i name="clap" title="clap">👏</i><i name="open_hands" title="open_hands">👐</i><i name="+1" title="+1">👍</i><i name="-1" title="-1">👎</i><i name="ok_hand" title="ok_hand">👌</i><i name="pray" title="pray">🙏</i><i name="ear" title="ear">👂</i><i name="eyes" title="eyes">👀</i><i name="nose" title="nose">👃</i><i name="lips" title="lips">👄</i><i name="tongue" title="tongue">👅</i><i name="heart" title="heart">❤️</i><i name="cupid" title="cupid">💘</i><i name="sparkling_heart" title="sparkling_heart">💖</i><i name="star" title="star">⭐️</i><i name="sparkles" title="sparkles">✨</i><i name="zap" title="zap">⚡️</i><i name="sunny" title="sunny">☀️</i><i name="cloud" title="cloud">☁️</i><i name="snowflake" title="snowflake">❄️</i><i name="umbrella" title="umbrella">☔️</i><i name="coffee" title="coffee">☕️</i><i name="airplane" title="airplane">✈️</i><i name="anchor" title="anchor">⚓️</i><i name="watch" title="watch">⌚️</i><i name="phone" title="phone">☎️</i><i name="hourglass" title="hourglass">⌛️</i><i name="email" title="email">✉️</i><i name="scissors" title="scissors">✂️</i><i name="black_nib" title="black_nib">✒️</i><i name="pencil2" title="pencil2">✏️</i><i name="x" title="x">❌</i><i name="recycle" title="recycle">♻️</i><i name="white_check_mark" title="white_check_mark">✅</i><i name="negative_squared_cross_mark" title="negative_squared_cross_mark">❎</i><i name="m" title="m">Ⓜ️</i><i name="i" title="i">ℹ️</i><i name="tm" title="tm">™️</i><i name="copyright" title="copyright">©️</i><i name="registered" title="registered">®️</i></div><div class="vinput vpreview" style="display:none;"></div></div><div class="vcontrol"><div class="col col-20" title="Markdown is supported"><a href="https://segmentfault.com/markdown" target="_blank"><svg class="markdown" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z"></path></svg></a></div><div class="col col-80 text-right"><button type="button" title="Cmd|Ctrl+Enter" class="vsubmit vbtn">回复</button></div></div><div style="display:none;" class="vmark"></div></div><div class="vinfo" style="display:none;"><div class="vcount col"></div></div><div class="vlist"></div><div class="vempty" style="display:block;"><pre style="text-align:left;">Code 429: Too many requests. [429 GET https://avoscloud.com/1.1/classes/Comment]</pre></div><div class="vpage txt-center"></div><div class="info"><div class="power txt-right">Powered By <a href="https://valine.js.org" target="_blank">Valine</a><br>v1.3.10</div></div></section></article></main></div></div><script>!function(i){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)t=n[l],Object.prototype.hasOwnProperty.call(p,t)&&p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var r=this.webpackJsonpblog=this.webpackJsonpblog||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.7cff77cf.chunk.js"></script><script src="/static/js/main.691d9270.chunk.js"></script></body></html>

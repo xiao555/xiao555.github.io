@@ -1,1 +1,404 @@
-<!DOCTYPE html><html lang="zh-hans"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="logo.jpeg"><link rel="manifest" href="/manifest.json"><title>打开天眼看文章</title><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://kit.fontawesome.com/b2fc37abd6.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-98427538-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-98427538-1")</script><link href="/static/css/2.5bcfae4a.chunk.css" rel="stylesheet"><link href="/static/css/main.f9f6d843.chunk.css" rel="stylesheet"><style type="text/css">.v{font-size:16px;text-align:left}.v *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:2;color:#555;-webkit-transition:all .3s ease;transition:all .3s ease}.v hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v.hide-avatar .vimg{display:none}.v a{position:relative;cursor:pointer;color:#1abc9c;display:inline-block}.v a:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v a:hover{color:#d7191a}.v a:hover:before{width:100%;left:0;right:auto}.v code,.v pre{background-color:#f6f6f6;color:#555;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0;font-family:Source Code Pro,courier new,Input Mono,PT Mono,SFMono-Regular,Consolas,Monaco,Menlo,PingFang SC,Liberation Mono,Microsoft YaHei,Courier，monospace}.v pre{padding:10px;overflow:auto;line-height:1.45}.v pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v input[type=checkbox],.v input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v .vwrap input{background:transparent}.v .vwrap .vedit{position:relative;padding-top:10px}.v .vwrap .vedit .vctrl{text-align:right;font-size:12px}.v .vwrap .vedit .vctrl span{padding:10px;display:inline-block;vertical-align:middle;cursor:pointer}.v .vwrap .vedit .vemojis{display:none;font-size:18px;text-align:justify;max-height:145px;overflow:auto;margin-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vemojis i{font-style:normal;padding:7px 0;width:38px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v .vwrap .vedit .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vpreview frame,.v .vwrap .vedit .vpreview iframe,.v .vwrap .vedit .vpreview img{max-width:100%;border:none}.v .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v .vwrap .vheader.item2 .vinput{width:50%}.v .vwrap .vheader.item1 .vinput{width:100%}.v .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v .vwrap .vheader.item2 .vinput,.v .vwrap .vheader .vinput{width:100%}}.v .vwrap .vcontrol{font-size:0;padding-top:15px}.v .vwrap .vcontrol .col{display:inline-block;font-size:16px;vertical-align:middle;color:#ccc}.v .vwrap .vcontrol .col.text-right{text-align:right}.v .vwrap .vcontrol .col svg{margin-right:2px;overflow:hidden;fill:currentColor;vertical-align:middle}.v .vwrap .vcontrol .col.col-20{width:20%}.v .vwrap .vcontrol .col.col-40{width:40%}.v .vwrap .vcontrol .col.col-60{width:60%}.v .vwrap .vcontrol .col.col-80{width:80%}.v .vwrap .vcontrol .col.split{width:50%}.v .vwrap .vmark{position:absolute;background:rgba(0,0,0,.65);width:100%;height:100%;left:0;top:0}.v .vwrap .vmark .valert{padding-top:3em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}.v .vwrap .vmark .valert .vcode{width:4.6875em;border-radius:.3125em;padding:.5em;background:#dedede}.v .vwrap .vmark .valert .vcode:focus{border-color:#3090e4;background-color:#fff}@media screen and (max-width:720px){.v .vwrap .vmark .valert{padding-top:5.5em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}}.v .power{color:#999;padding:.5em 0}.v .power,.v .power a{font-size:.75em}.v .vinfo{font-size:0;padding:5px}.v .vinfo .col{font-size:16px;display:inline-block;width:50%;vertical-align:middle}.v .vinfo .vcount .vnum{font-weight:600;font-size:1.25em}.v a{text-decoration:none;color:#555}.v a:hover{color:#222}.v ol,.v ul{padding:0;margin-left:1.25em}.v .txt-center{text-align:center}.v .txt-right{text-align:right}.v .pd5{padding:5px}.v .pd10{padding:10px}.v .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#313131;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:#ededed;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v .vbtn+.vbtn{margin-left:1.25em}.v .vbtn:active,.v .vbtn:hover{color:#3090e4;border-color:#3090e4;background-color:#fff}.v .vempty{padding:1.25em;text-align:center;color:#999}.v .vlist{width:100%}.v .vlist .vcard{padding-top:1.5em;position:relative;display:block}.v .vlist .vcard:after{content:"";clear:both;display:block}.v .vlist .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v .vlist .vcard .vimg{width:2.5em;height:2.5em}}.v .vlist .vcard .vhead{line-height:1.5;margin-top:0}.v .vlist .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v .vlist .vcard .vhead .vnick:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v .vlist .vcard .vhead .vnick:hover{color:#d7191a}.v .vlist .vcard .vhead .vnick:hover:before{width:100%;left:0;right:auto}.v .vlist .vcard .vhead .vsys{display:inline-block;padding:.2em .5em;background:#ededed;color:#b3b1b1;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v .vlist .vcard .vhead .vsys{display:none}}.v .vlist .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v .vlist .vcard .vh .vtime{color:#b3b3b3;font-size:.75em;margin-right:.875em}.v .vlist .vcard .vh .vmeta{line-height:1;position:relative}.v .vlist .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v .vlist .vcard:last-child .vh{border-bottom:none}.v .vlist .vcard .vcontent{word-wrap:break-word;word-break:break-all;text-align:justify;color:#4a4a4a;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v .vlist .vcard .vcontent frame,.v .vlist .vcard .vcontent iframe,.v .vlist .vcard .vcontent img{max-width:100%;border:none}.v .vlist .vcard .vcontent.expand{cursor:pointer;max-height:11.25em;overflow:hidden}.v .vlist .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;pointer-events:none;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9))}.v .vlist .vcard .vcontent.expand:after{display:block;content:"Click on expand";text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;pointer-events:none;background:hsla(0,0%,100%,.9)}.v .vlist .vcard .vquote{color:#666;margin-top:1em;padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v .vlist .vcard .vquote .vimg{width:2.225em;height:2.225em}.v .vpage .vmore{margin:1em 0}.v .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v .vloading{position:relative;padding:20px;display:block;height:80px}.v .vloading:before{-webkit-box-sizing:border-box;box-sizing:border-box;content:"";position:absolute;display:inline-block;top:20px;left:50%;margin-left:-20px;width:40px;height:40px;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}</style></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(i){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)t=n[l],Object.prototype.hasOwnProperty.call(p,t)&&p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var r=this.webpackJsonpblog=this.webpackJsonpblog||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.16fea087.chunk.js"></script><script src="/static/js/main.d56376db.chunk.js"></script></body></html>
+<!DOCTYPE html><html lang="zh-hans"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="logo.jpeg"><link rel="manifest" href="/manifest.json"><title>用Express + Socket.io + MongoDB实现简易聊天室 | 打开天眼看文章</title><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="//api.ip.sb/jsonip?callback=getIP"></script><script src="https://kit.fontawesome.com/b2fc37abd6.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-98427538-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-98427538-1")</script><link href="/static/css/2.5bcfae4a.chunk.css" rel="stylesheet"><link href="/static/css/main.f9f6d843.chunk.css" rel="stylesheet"><style type="text/css">.v{font-size:16px;text-align:left}.v *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:2;color:#555;-webkit-transition:all .3s ease;transition:all .3s ease}.v hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v.hide-avatar .vimg{display:none}.v a{position:relative;cursor:pointer;color:#1abc9c;display:inline-block}.v a:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v a:hover{color:#d7191a}.v a:hover:before{width:100%;left:0;right:auto}.v code,.v pre{background-color:#f6f6f6;color:#555;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0;font-family:Source Code Pro,courier new,Input Mono,PT Mono,SFMono-Regular,Consolas,Monaco,Menlo,PingFang SC,Liberation Mono,Microsoft YaHei,Courier，monospace}.v pre{padding:10px;overflow:auto;line-height:1.45}.v pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v input[type=checkbox],.v input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v .vwrap input{background:transparent}.v .vwrap .vedit{position:relative;padding-top:10px}.v .vwrap .vedit .vctrl{text-align:right;font-size:12px}.v .vwrap .vedit .vctrl span{padding:10px;display:inline-block;vertical-align:middle;cursor:pointer}.v .vwrap .vedit .vemojis{display:none;font-size:18px;text-align:justify;max-height:145px;overflow:auto;margin-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vemojis i{font-style:normal;padding:7px 0;width:38px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v .vwrap .vedit .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vpreview frame,.v .vwrap .vedit .vpreview iframe,.v .vwrap .vedit .vpreview img{max-width:100%;border:none}.v .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v .vwrap .vheader.item2 .vinput{width:50%}.v .vwrap .vheader.item1 .vinput{width:100%}.v .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v .vwrap .vheader.item2 .vinput,.v .vwrap .vheader .vinput{width:100%}}.v .vwrap .vcontrol{font-size:0;padding-top:15px}.v .vwrap .vcontrol .col{display:inline-block;font-size:16px;vertical-align:middle;color:#ccc}.v .vwrap .vcontrol .col.text-right{text-align:right}.v .vwrap .vcontrol .col svg{margin-right:2px;overflow:hidden;fill:currentColor;vertical-align:middle}.v .vwrap .vcontrol .col.col-20{width:20%}.v .vwrap .vcontrol .col.col-40{width:40%}.v .vwrap .vcontrol .col.col-60{width:60%}.v .vwrap .vcontrol .col.col-80{width:80%}.v .vwrap .vcontrol .col.split{width:50%}.v .vwrap .vmark{position:absolute;background:rgba(0,0,0,.65);width:100%;height:100%;left:0;top:0}.v .vwrap .vmark .valert{padding-top:3em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}.v .vwrap .vmark .valert .vcode{width:4.6875em;border-radius:.3125em;padding:.5em;background:#dedede}.v .vwrap .vmark .valert .vcode:focus{border-color:#3090e4;background-color:#fff}@media screen and (max-width:720px){.v .vwrap .vmark .valert{padding-top:5.5em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}}.v .power{color:#999;padding:.5em 0}.v .power,.v .power a{font-size:.75em}.v .vinfo{font-size:0;padding:5px}.v .vinfo .col{font-size:16px;display:inline-block;width:50%;vertical-align:middle}.v .vinfo .vcount .vnum{font-weight:600;font-size:1.25em}.v a{text-decoration:none;color:#555}.v a:hover{color:#222}.v ol,.v ul{padding:0;margin-left:1.25em}.v .txt-center{text-align:center}.v .txt-right{text-align:right}.v .pd5{padding:5px}.v .pd10{padding:10px}.v .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#313131;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:#ededed;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v .vbtn+.vbtn{margin-left:1.25em}.v .vbtn:active,.v .vbtn:hover{color:#3090e4;border-color:#3090e4;background-color:#fff}.v .vempty{padding:1.25em;text-align:center;color:#999}.v .vlist{width:100%}.v .vlist .vcard{padding-top:1.5em;position:relative;display:block}.v .vlist .vcard:after{content:"";clear:both;display:block}.v .vlist .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v .vlist .vcard .vimg{width:2.5em;height:2.5em}}.v .vlist .vcard .vhead{line-height:1.5;margin-top:0}.v .vlist .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v .vlist .vcard .vhead .vnick:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v .vlist .vcard .vhead .vnick:hover{color:#d7191a}.v .vlist .vcard .vhead .vnick:hover:before{width:100%;left:0;right:auto}.v .vlist .vcard .vhead .vsys{display:inline-block;padding:.2em .5em;background:#ededed;color:#b3b1b1;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v .vlist .vcard .vhead .vsys{display:none}}.v .vlist .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v .vlist .vcard .vh .vtime{color:#b3b3b3;font-size:.75em;margin-right:.875em}.v .vlist .vcard .vh .vmeta{line-height:1;position:relative}.v .vlist .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v .vlist .vcard:last-child .vh{border-bottom:none}.v .vlist .vcard .vcontent{word-wrap:break-word;word-break:break-all;text-align:justify;color:#4a4a4a;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v .vlist .vcard .vcontent frame,.v .vlist .vcard .vcontent iframe,.v .vlist .vcard .vcontent img{max-width:100%;border:none}.v .vlist .vcard .vcontent.expand{cursor:pointer;max-height:11.25em;overflow:hidden}.v .vlist .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;pointer-events:none;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9))}.v .vlist .vcard .vcontent.expand:after{display:block;content:"Click on expand";text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;pointer-events:none;background:hsla(0,0%,100%,.9)}.v .vlist .vcard .vquote{color:#666;margin-top:1em;padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v .vlist .vcard .vquote .vimg{width:2.225em;height:2.225em}.v .vpage .vmore{margin:1em 0}.v .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v .vloading{position:relative;padding:20px;display:block;height:80px}.v .vloading:before{-webkit-box-sizing:border-box;box-sizing:border-box;content:"";position:absolute;display:inline-block;top:20px;left:50%;margin-left:-20px;width:40px;height:40px;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}</style><script src="//js.fundebug.cn/fundebug.1.9.0.min.js" apikey="2c7e5b30c7cf402cb7fb35d14b62e7f778babbb70d054160af750065a180fdcd" async="true"></script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="app"><div class="progress-bar"><div class="bg-red"></div><div class="bg-orange"></div><div class="bg-yellow"></div><div class="bg-green"></div><div class="bg-blue"></div><div class="bg-indigo"></div><div class="bg-purple"></div></div><main class="main"><div class="sidebar text-left"><h1><a class="logo" href="/">打开天眼看文章</a></h1><p>TECH | LIFE | X</p><p class="font-sm"><a class="text-blue" title="about me" href="/about">@me |</a><a class="text-green" href="https://github.com/xiao555" title="github" target="_blank" rel="noopener noreferrer">@github</a></p><p class="font-sm"><a href="mailto:zhangruiwu32@gmail.com">zhangruiwu32@gmail.com</a></p><p><small>本站已存活 49 天</small></p><button class="border-0 px-0"><i class="fas fa-moon" aria-hidden="true"></i></button></div><article class="main-content"><h2>用Express + Socket.io + MongoDB实现简易聊天室</h2><p><small>2016-05-01</small><span id="simple-chat-room-with-express-%2B-socket.io-%2B-mongodb" class="leancloud_visitors ml-1"><small>阅读量</small> <small class="leancloud-visitors-count">1</small></span></p><section><p>最近做大作业需要研究一下Node.js，需要了解node与mongoDB的链接，前后端的通信，后端的逻辑结构等，怎么快速上手呢？那就做个聊天室吧。</p>
+<h2 id="安装nodejs和mongodb">安装Node.JS和MongoDB</h2>
+<p>Node.js就不多说了，MongoDB可以看我上一篇<a href="http://www.xiao555.club/2016/04/30/win7%20%E5%AE%89%E8%A3%85MongoDB/">博客</a></p>
+<h2 id="构建express项目">构建Express项目</h2>
+<p>找一个合适的地方：</p>
+<pre><code class="language-bash"><span class="hljs-attr">mkdir</span> <span class="hljs-string">chatroom</span>
+
+<span class="hljs-attr">cd</span> <span class="hljs-string">chatroom</span>
+
+<span class="hljs-attr">npm</span> <span class="hljs-string">install express</span>
+
+<span class="hljs-attr">express</span> <span class="hljs-string">-e  //-e 是用ejs作为模板引擎</span>
+
+<span class="hljs-attr">npm</span> <span class="hljs-string">install //安装依赖，目录在package.json中</span>
+</code></pre>
+<p>这样就创建好了，结构如下：</p>
+<pre><code class="language-bash">-<span class="ruby"> chatroom
+</span>
+    -<span class="ruby"> bin
+</span>        -<span class="ruby"> www           /<span class="hljs-regexp">/配置端口启动文件
+</span></span>    -<span class="ruby"><span class="hljs-regexp"> node_modules        /</span><span class="hljs-regexp">/下载的模块
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> express
+</span></span>    -<span class="ruby"><span class="hljs-regexp"> public            /</span><span class="hljs-regexp">/静态资源
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> images
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> javascripts
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> stylesheets
+</span></span>    -<span class="ruby"><span class="hljs-regexp"> routes            /</span><span class="hljs-regexp">/后端逻辑、路由
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> index.js
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> users.js
+</span></span>    -<span class="ruby"><span class="hljs-regexp"> views                /</span><span class="hljs-regexp">/视图
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> error.ejs
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> index.ejs
+</span></span>    -<span class="ruby"><span class="hljs-regexp"> app.js             /</span><span class="hljs-regexp">/入口文件，相当于main();
+</span></span>    -<span class="ruby"><span class="hljs-regexp"> package.json         /</span><span class="hljs-regexp">/配置信息</span></span></code></pre>
+<p>我按照个人习惯做一些调整</p>
+<pre><code>-<span class="ruby"> chatroom
+</span>
+    -<span class="ruby"> node_modules        /<span class="hljs-regexp">/下载的模块
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> express
+</span></span>    -<span class="ruby"><span class="hljs-regexp"> public            /</span><span class="hljs-regexp">/静态资源
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> img
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> js
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> css
+</span></span>    -<span class="ruby"><span class="hljs-regexp"> routes            /</span><span class="hljs-regexp">/后端逻辑、路由
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> index.js
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> users.js
+</span></span>    -<span class="ruby"><span class="hljs-regexp"> views                /</span><span class="hljs-regexp">/视图
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> error.ejs
+</span></span>        -<span class="ruby"><span class="hljs-regexp"> index.ejs
+</span></span>    -<span class="ruby"><span class="hljs-regexp"> app.js             /</span><span class="hljs-regexp">/入口文件，相当于main();
+</span></span>    -<span class="ruby"><span class="hljs-regexp"> package.json         /</span><span class="hljs-regexp">/配置信息</span></span></code></pre><p>我把public目录下目录改一下名称，www文件删了，用app.js作为启动文件，就需要修改一下app.js：</p>
+<pre><code class="language-javascript">var <span class="hljs-keyword">debug</span> = require(<span class="hljs-string">'debug'</span>)(<span class="hljs-string">'chat'</span>);
+//var users = require(<span class="hljs-string">'./routes/users'</span>);    //单页面不需要这个
+
+app.<span class="hljs-keyword">set</span>(<span class="hljs-string">'port'</span>, process.env.PORT || <span class="hljs-number">3000</span>);
+
+var <span class="hljs-keyword">server</span> = app.<span class="hljs-keyword">listen</span>(app.<span class="hljs-keyword">get</span>(<span class="hljs-string">'port'</span>), <span class="hljs-keyword">function</span>(){
+  <span class="hljs-keyword">debug</span>(<span class="hljs-string">'Express server listening on port '</span> + <span class="hljs-keyword">server</span>.address().port);
+})
+
+//app.use(<span class="hljs-string">'/users'</span>, users);</code></pre>
+<p>增加，注释这些后，运行 <code>DEBUG=chatroom &amp; node app.js</code> 或 <code>node app.js</code> ,然后浏览器打开<a href="127.0.0.1:3000">127.0.0.1:3000</a>,如下图所示，就说明配置好了</p>
+<p><img src="https://xiao555.netlify.com/005NJVkbjw1f3fsnv448uj311y0kg0vk.jpg" alt=""></p>
+<h2 id="实现前端页面">实现前端页面</h2>
+<p>这个没什么好说的，修改views目录下的index.ejs文件，效果如下：</p>
+<p><img src="https://xiao555.netlify.com/005NJVkbjw1f3ftv2386qj311y0kg0wl.jpg" alt=""></p>
+<h2 id="数据库设计">数据库设计</h2>
+<p>注意使用数据库前一定要先开启mongodb服务！</p>
+<p>安装 mongodb 和 mongoose 模块：</p>
+<pre><code class="language-bash">npm <span class="hljs-keyword">install</span> mongodb mongoose</code></pre>
+<p>在主目录下新建chat_server.js :</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> mongoose = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mongoose'</span>);
+
+<span class="hljs-comment">//连接数据库</span>
+<span class="hljs-keyword">var</span> db = mongoose.createConnection(<span class="hljs-string">'localhost'</span>,<span class="hljs-string">'chatroom'</span>);
+db.on(<span class="hljs-string">'error'</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-built_in">console</span>.error(err);
+});
+<span class="hljs-keyword">var</span> Schema = mongoose.Schema;
+
+<span class="hljs-comment">//聊天记录表</span>
+<span class="hljs-keyword">var</span> ChatSchema = <span class="hljs-keyword">new</span> Schema({
+    <span class="hljs-attr">nickname</span>: <span class="hljs-built_in">String</span>,
+    <span class="hljs-attr">time</span>: <span class="hljs-built_in">String</span>,
+    <span class="hljs-attr">content</span>: <span class="hljs-built_in">String</span>
+});
+<span class="hljs-keyword">var</span> ChatModel = db.model(<span class="hljs-string">'chats'</span>,ChatSchema);
+
+
+<span class="hljs-comment">// 这里的listen函数在 app.js 文件中被调用</span>
+exports.listen = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">_server</span>)</span>{
+    <span class="hljs-keyword">return</span> io.listen(_server);
+}</code></pre>
+<p>在app.js中增加：</p>
+<pre><code class="language-javascript"><span class="hljs-selector-tag">require</span>(<span class="hljs-string">'./chat\_server'</span>)<span class="hljs-selector-class">.listen</span>(server);</code></pre>
+<h2 id="前后端通信socketio">前后端通信Socket.io</h2>
+<p>借用这篇<a href="http://my.oschina.net/voler/blog/626226?fromerr=UumMewCx">博客</a>里讲的介绍一下socket.io：</p>
+<p>首先先简单讲解下Socket.io的原理. 操作系统有一个非常伟大的设计就是轮询机制,而Node.js中的callback机制正是基于此机制:</p>
+<p><img src="https://xiao555.netlify.com/084929_dx2L_1017135.png" alt=""></p>
+<p>JS的异步编程就是这么来的.但是对于类似聊天这种应用,使用轮询机制明显不合理.轮询机制在于你触发了一个事件后异步处理,但这里异步本身就是硬伤,毕竟聊天要实时的.</p>
+<p>而Node.js中有另外一种伟大的模型: 观察者模式. 即我就一直监听,监听到的某个事件后,执行相应的处理函数.</p>
+<p><img src="https://xiao555.netlify.com/084956_5TlW_1017135.png" alt=""></p>
+<h3 id="举个栗子">举个栗子</h3>
+<p>在chat_server.js中添加：</p>
+<pre><code class="language-javascript">var io = require('socket.io')<span class="hljs-literal">()</span>;
+var xssEscape = require('xss-escape');
+
+var nickname_list = <span class="hljs-literal">[]</span>;
+
+<span class="hljs-comment">// 检查是昵称是否已经存在</span>
+<span class="hljs-keyword">function</span> <span class="hljs-constructor">HasNickname(<span class="hljs-params">_nickname</span>)</span>{
+    for(var i=<span class="hljs-number">0</span>; i&lt;nickname_list.length; i++){
+        <span class="hljs-keyword">if</span>(nickname_list<span class="hljs-literal">[<span class="hljs-identifier">i</span>]</span><span class="hljs-operator"> == </span>_nickname){
+            return <span class="hljs-literal">true</span>;
+        }
+    }
+};
+
+<span class="hljs-comment">// 删除昵称</span>
+<span class="hljs-keyword">function</span> <span class="hljs-constructor">RemoveNickname(<span class="hljs-params">_nickname</span>)</span>{
+    for(var i=<span class="hljs-number">0</span>; i&lt; nickname_list.length; i++){
+        <span class="hljs-keyword">if</span>(nickname_list<span class="hljs-literal">[<span class="hljs-identifier">i</span>]</span><span class="hljs-operator"> == </span>_nickname){
+            nickname_list.splice(i, <span class="hljs-number">1</span>);
+        }
+    }
+}
+
+io.on('connection', <span class="hljs-keyword">function</span>(_socket){
+    console.log(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>id + ':connection');
+
+    <span class="hljs-comment">// 向当前用户发送命令和消息</span>
+    <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>emit('user_list', nickname_list);
+    <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>emit('need_nickname');
+    <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>emit('server_message<span class="hljs-character">','</span>欢迎来到聊天室 :)');
+
+    <span class="hljs-comment">// 监听当前用户的请求和数据</span>
+
+    <span class="hljs-comment">// 离开</span>
+    <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>on('disconnect', <span class="hljs-keyword">function</span><span class="hljs-literal">()</span>{
+        console.log(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>id + ':disconnect');
+        <span class="hljs-keyword">if</span>(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname != null<span class="hljs-operator"> &amp;&amp; </span><span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname != <span class="hljs-string">""</span>){
+            <span class="hljs-comment">// 广播 用户退出</span>
+            <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>broadcast.emit('user_quit', <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname);
+            <span class="hljs-constructor">RemoveNickname(<span class="hljs-params">_socket</span>.<span class="hljs-params">nickname</span>)</span>;
+        }
+    });
+
+    <span class="hljs-comment">// 添加 和 修改 昵称</span>
+    <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>on('change_nickname', <span class="hljs-keyword">function</span>(_nickname, clr){
+        console.log(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>id + ': change<span class="hljs-constructor">_nickname('+<span class="hljs-params">_nickname</span>+')</span>');
+
+        _nickname = xss<span class="hljs-constructor">Escape(<span class="hljs-params">_nickname</span>.<span class="hljs-params">trim</span>()</span>);
+
+        <span class="hljs-comment">// 半角替换为tt，模拟为全角字符判断长度</span>
+        var name_len = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_nickname</span>.</span></span>replace(/<span class="hljs-literal">[^\<span class="hljs-identifier">u0000</span>-\<span class="hljs-identifier">u00ff</span>]</span>/g, <span class="hljs-string">"tt"</span>).length;
+
+        <span class="hljs-comment">// 字符长度必须在4到16个字符之间</span>
+        <span class="hljs-keyword">if</span>(name_len &lt; <span class="hljs-number">4</span><span class="hljs-operator"> || </span>name_len &gt; <span class="hljs-number">16</span>){
+            return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>emit('change_nickname_error', '请填写正确的用户昵称，应在<span class="hljs-number">4</span>到<span class="hljs-number">16</span>个字符之间。')
+        }
+
+        <span class="hljs-comment">// 昵称重复</span>
+        <span class="hljs-keyword">if</span>(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname<span class="hljs-operator"> == </span>_nickname){
+            return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>emit('change_nickname_error', '你本来就叫这个名字。')
+        }
+
+        <span class="hljs-comment">// 昵称已经被占用</span>
+        <span class="hljs-keyword">if</span>(<span class="hljs-constructor">HasNickname(<span class="hljs-params">_nickname</span>)</span>){
+            return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>emit('change_nickname_error', '此昵称已经被占用。')
+        }
+
+        var old_name = '';
+        <span class="hljs-keyword">if</span>(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname != ''<span class="hljs-operator"> &amp;&amp; </span><span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname != null){
+            old_name = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname;
+            <span class="hljs-constructor">RemoveNickname(<span class="hljs-params">old_name</span>)</span>;
+        }
+
+        nickname_list.push(_nickname);
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname = _nickname;
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>color = clr;
+
+        console.log(nickname_list);
+
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>emit('change_nickname_done', old_name, _nickname, clr);
+
+        <span class="hljs-keyword">if</span>(old_name<span class="hljs-operator"> == </span>''){
+            <span class="hljs-comment">// 广播 用户加入</span>
+            return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>broadcast.emit('user_join', _nickname);
+        }<span class="hljs-keyword">else</span>{
+            <span class="hljs-comment">// 广播 用户改名</span>
+            return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>broadcast.emit('user_change_nickname', old_name, _nickname);
+        }
+    });
+
+    <span class="hljs-comment">// 说话</span>
+    <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>on('say', <span class="hljs-keyword">function</span>(_time, _content){
+        <span class="hljs-keyword">if</span>(''<span class="hljs-operator"> == </span><span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname<span class="hljs-operator"> || </span>null<span class="hljs-operator"> == </span><span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname){
+            return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>emit('need_nickname');
+        }
+
+        _content = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_content</span>.</span></span>trim<span class="hljs-literal">()</span>;
+        var chatinfo = <span class="hljs-keyword">new</span> <span class="hljs-constructor">ChatModel()</span>;
+        chatinfo.nickname = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname;
+        chatinfo.time = _time;
+        chatinfo.content = _content;
+        chatinfo.save(<span class="hljs-keyword">function</span>(err) {
+            <span class="hljs-keyword">if</span> (err) throw err;
+        });
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">ChatModel</span>.</span></span>find({nickname: <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname},<span class="hljs-keyword">function</span>(err,data) {
+            <span class="hljs-keyword">if</span> (err) {
+             console.log('存储失败' + err);
+             return;
+             } <span class="hljs-keyword">else</span> {
+             console.log('存储成功：' + data);
+             }
+        });
+        console.log(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname + ': say('+_content+<span class="hljs-character">')'</span>);
+        <span class="hljs-comment">// 广播 用户新消息</span>
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>broadcast.emit('user_say', <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname, xss<span class="hljs-constructor">Escape(<span class="hljs-params">_content</span>)</span>, <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>color);
+        return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>emit('say_done', <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>nickname, xss<span class="hljs-constructor">Escape(<span class="hljs-params">_content</span>)</span>, <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>color);
+    });
+
+    <span class="hljs-comment">//显示历史记录</span>
+    <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>on('show_history',<span class="hljs-keyword">function</span>(clr){
+        console.log('ok');
+        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">ChatModel</span>.</span></span>find({},<span class="hljs-keyword">function</span>(err,data) {
+            <span class="hljs-keyword">if</span> (err) {
+             console.error(err);
+             return;
+             } <span class="hljs-keyword">else</span> {
+                 console.log('data = ' + data);
+                 console.log(data<span class="hljs-literal">[<span class="hljs-number">0</span>]</span>.nickname);
+                 for(var i = <span class="hljs-number">0</span>;i &lt; data.length;i++){
+                    console.log(data<span class="hljs-literal">[<span class="hljs-identifier">i</span>]</span>.nickname, data<span class="hljs-literal">[<span class="hljs-identifier">i</span>]</span>.time, xss<span class="hljs-constructor">Escape(<span class="hljs-params">data</span>[<span class="hljs-params">i</span>].<span class="hljs-params">content</span>)</span>, clr);
+                    <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">_socket</span>.</span></span>emit('return_history', data<span class="hljs-literal">[<span class="hljs-identifier">i</span>]</span>.nickname, data<span class="hljs-literal">[<span class="hljs-identifier">i</span>]</span>.time, xss<span class="hljs-constructor">Escape(<span class="hljs-params">data</span>[<span class="hljs-params">i</span>].<span class="hljs-params">content</span>)</span>, clr);
+                }
+             }
+        });
+    });
+})</code></pre>
+<p>这是后端的响应机制，前端逻辑在public目录下js中的index.js中,这里就简单举个例子，显示历史消息：</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> chat_Utils,     <span class="hljs-comment">//聊天室 工具类</span>
+    chat_UI,         <span class="hljs-comment">//聊天室 界面逻辑</span>
+    chat_Socket;     <span class="hljs-comment">//聊天室 数据逻辑</span>
+
+<span class="hljs-comment">// 与后台服务器建立websocket连接</span>
+<span class="hljs-keyword">var</span> chat_server = <span class="hljs-string">"http://"</span> + location.hostname + <span class="hljs-string">':3000'</span>;
+<span class="hljs-keyword">var</span> socket = io.connect(chat_server);
+
+
+chat_UI = {
+    <span class="hljs-attr">init</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">this</span>.historyShow();        <span class="hljs-comment">//点击显示历史消息事件</span>
+    },
+    <span class="hljs-attr">historyShow</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>;
+            $(<span class="hljs-string">"#showHistory"</span>).on(<span class="hljs-string">'click'</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+                <span class="hljs-keyword">if</span>($(<span class="hljs-string">'#history-modal'</span>).css(<span class="hljs-string">'display'</span>) == <span class="hljs-string">'none'</span>) {
+                    $(<span class="hljs-string">'.history-list-body'</span>).empty();
+                }
+                $(<span class="hljs-string">"#history-modal"</span>).modal(<span class="hljs-string">'show'</span>);
+                chat_Socket.showHistory(chat_Utils.getUserColor());
+            })
+    },
+    <span class="hljs-attr">chatBodyToBottom</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">var</span> chat_body = $(<span class="hljs-string">'.chat-body'</span>);
+        <span class="hljs-keyword">var</span> height = chat_body.prop(<span class="hljs-string">'scrollHeight'</span>);
+        chat_body.prop(<span class="hljs-string">'scrollTop'</span>, height);
+    },
+    <span class="hljs-attr">addHistoryMessage</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">_time, _content, _name, clr</span>)</span>{
+        <span class="hljs-keyword">var</span> history_list = $(<span class="hljs-string">'.history-list-body'</span>);
+        _content = QxEmotion.Parse(_content);
+        <span class="hljs-keyword">var</span> msgAlignCls = _name ==$(<span class="hljs-string">'#my-nickname'</span>).text() ? <span class="hljs-string">'msg-right'</span>:<span class="hljs-string">'msg-left'</span>;
+        history_list.append(
+            <span class="hljs-string">'&lt;div class="msg-item clearfix '</span>+msgAlignCls+<span class="hljs-string">'"&gt;\
+                    &lt;div class="msg-avatar" style="background-color:'</span>+clr+<span class="hljs-string">';"&gt;&lt;i class="glyphicon glyphicon-user"&gt;&lt;/i&gt;&lt;/div&gt;\
+                    &lt;div class="msg-con-box" style="background-color:'</span>+clr+<span class="hljs-string">';"&gt;\
+                        &lt;p class="con"&gt;'</span>+_content+<span class="hljs-string">'&lt;/p&gt;\
+                        &lt;time class="time"&gt;'</span>+_time+<span class="hljs-string">'&lt;/time&gt;\
+                    &lt;/div&gt;\
+                &lt;/div&gt;'</span>
+            );
+        <span class="hljs-keyword">this</span>.chatBodyToBottom();
+
+    },
+};
+
+chat_Socket = {
+    <span class="hljs-attr">init</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">this</span>.chatHistoryEv();<span class="hljs-comment">//监听后端 获取历史消息</span>
+    },
+    <span class="hljs-attr">showHistory</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">clr</span>)</span>{
+        socket.emit(<span class="hljs-string">'show_history'</span>,clr);
+    },
+    <span class="hljs-attr">chatHistoryEv</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        socket.on(<span class="hljs-string">'return_history'</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">_nickname, _time, _content, clr</span>) </span>{
+            <span class="hljs-built_in">console</span>.log(_nickname, _time, _content, clr);
+            chat_UI.addHistoryMessage(_time, _content, _nickname, clr);
+        });
+    },
+}
+
+chat_UI.init();
+chat_Socket.init();</code></pre>
+<p>我们过一下思路，首先当用户点击显示历史消息时，调用chat_UI.historyShow函数，先清空一下历史记录列表，然后显示历史记录弹窗，调用chat_Socket.showHistory函数：</p>
+<pre><code class="language-javascript">historyShow:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>;
+            $(<span class="hljs-string">"#showHistory"</span>).on(<span class="hljs-string">'click'</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+                <span class="hljs-keyword">if</span>($(<span class="hljs-string">'#history-modal'</span>).css(<span class="hljs-string">'display'</span>) == <span class="hljs-string">'none'</span>) {
+                    $(<span class="hljs-string">'.history-list-body'</span>).empty();
+                }
+                $(<span class="hljs-string">"#history-modal"</span>).modal(<span class="hljs-string">'show'</span>);
+                chat_Socket.showHistory(chat_Utils.getUserColor());
+            })
+    },</code></pre>
+<p>chat_Socket.showHistory这个函数调用socket.emit发射show_history事件：</p>
+<pre><code class="language-javascript">showHistory:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(clr)</span></span>{
+        socket.emit(<span class="hljs-string">'show_history'</span>,clr);
+    },</code></pre>
+<p>后端chat_server.js 中用socket.on(‘show_history’)捕获了这一事件,从数据库中获取数据发送return_history事件到前端：</p>
+<pre><code class="language-javascript"><span class="hljs-comment">//显示历史记录</span>
+    _socket.on(<span class="hljs-string">'show_history'</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">clr</span>)</span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'ok'</span>);
+        ChatModel.find({},<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err,data</span>) </span>{
+            <span class="hljs-keyword">if</span> (err) {
+             <span class="hljs-built_in">console</span>.error(err);
+             <span class="hljs-keyword">return</span>;
+             } <span class="hljs-keyword">else</span> {
+                 <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;i &lt; data.length;i++){
+                    _socket.emit(<span class="hljs-string">'return_history'</span>, data[i].nickname, data[i].time, xssEscape(data[i].content), clr);
+                }
+             }
+        });
+    });</code></pre>
+<p>前端index.js 中 chat_Socket.chatHistoryEv()函数捕获return_history事件，调用chat_UI.addHistoryMessage添加到历史记录列表中：</p>
+<pre><code class="language-javascript">chatHistoryEv:function(){
+        socket.on(<span class="hljs-string">'return_history'</span>,function(<span class="hljs-variable">_nickname</span>, <span class="hljs-variable">_time</span>, <span class="hljs-variable">_content</span>, clr) {
+            console.<span class="hljs-built_in">log</span>(<span class="hljs-variable">_nickname</span>, <span class="hljs-variable">_time</span>, <span class="hljs-variable">_content</span>, clr);
+            chat_UI.addHistoryMessage(<span class="hljs-variable">_time</span>, <span class="hljs-variable">_content</span>, <span class="hljs-variable">_nickname</span>, clr);
+        });
+    },</code></pre>
+<p>整个显示历史记录的过程就结束了。</p>
+<h2 id="数据库的操作">数据库的操作</h2>
+<p>前面我们已经设计好了数据库：</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> mongoose = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mongoose'</span>);
+
+<span class="hljs-comment">//连接数据库</span>
+<span class="hljs-keyword">var</span> db = mongoose.createConnection(<span class="hljs-string">'localhost'</span>,<span class="hljs-string">'chatroom'</span>);
+db.on(<span class="hljs-string">'error'</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-built_in">console</span>.error(err);
+});
+<span class="hljs-keyword">var</span> Schema = mongoose.Schema;
+
+<span class="hljs-comment">//聊天记录表</span>
+<span class="hljs-keyword">var</span> ChatSchema = <span class="hljs-keyword">new</span> Schema({
+    <span class="hljs-attr">nickname</span>: <span class="hljs-built_in">String</span>,
+    <span class="hljs-attr">time</span>: <span class="hljs-built_in">String</span>,
+    <span class="hljs-attr">content</span>: <span class="hljs-built_in">String</span>
+});
+<span class="hljs-keyword">var</span> ChatModel = db.model(<span class="hljs-string">'chats'</span>,ChatSchema);</code></pre>
+<p>数据库的设计包括Schema 模式(数据记录的格式)、Model 编译模型、Documents 文档实例化。上面的代码中我们连接了chatroom数据库，设计了ChatSchema模式，编译了ChatModel 模型，编译好模型后我们创建一条新的记录只需要new一下就行。</p>
+<h3 id="保存新数据">保存新数据</h3>
+<pre><code class="language-javascript">var chatinfo = new ChatModel()<span class="hljs-comment">;</span>
+        chatinfo.nickname = _socket.nickname<span class="hljs-comment">;</span>
+        chatinfo.time = _time<span class="hljs-comment">;</span>
+        chatinfo.content = _content<span class="hljs-comment">;</span>
+        chatinfo.save(function(err) {
+            if (err) throw err<span class="hljs-comment">;</span>
+        })<span class="hljs-comment">;</span></code></pre>
+<h3 id="查询数据">查询数据</h3>
+<pre><code class="language-javascript">ChatModel.<span class="hljs-built_in">find</span>({nickname: _socket.nickname},<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err,data)</span></span> {
+            <span class="hljs-keyword">if</span> (err) {
+             console.<span class="hljs-built_in">log</span>(<span class="hljs-string">'存储失败'</span> + err);
+             <span class="hljs-keyword">return</span>;
+             } <span class="hljs-keyword">else</span> {
+             console.<span class="hljs-built_in">log</span>(<span class="hljs-string">'存储成功：'</span> + data);
+             }
+        });</code></pre>
+<p>除了.find() 查找所有符合的数据，还有.findOne() 查找一条数据，第二个参数中的data就是返回的数据。</p>
+<p>至此基本的逻辑和操作我们都了解了，接下来就是Codeing的时间了！</p>
+<h2 id="部署到vps上">部署到vps上</h2>
+<p>将项目搬到/var/www/chatroom/下，这里我是用git传到github上然后git clone过去的。</p>
+<h3 id="安装mongodb服务">安装mongodb服务</h3>
+<p>由于我的vps是32位的CentOS，一直很头痛这个32位还有CentOS,但是里面又配置了一些梯子，不想折腾就没换，连Docker也用不了。。。那怎么安装mongodb呢？</p>
+<p>参考：<a href="http://www.thinksaas.cn/topics/0/424/424694.html">CentOS 6.5系统中使用yum安装MongoDB 2.6 教程</a></p>
+<h4 id="创建mongodbrepo文件">创建mongodb.repo文件</h4>
+<p>在/etc/yum.repos.d/目录下创建文件mongodb.repo，它包含MongoDB仓库的配置信息，内容如下：</p>
+<pre><code><span class="hljs-section">[mongodb]</span>
+<span class="hljs-attr">name</span>=MongoDB Repository
+<span class="hljs-attr">baseurl</span>=http://downloads-distro.mongodb.org/repo/redhat/os/i686/
+<span class="hljs-attr">gpgcheck</span>=<span class="hljs-number">0</span>
+<span class="hljs-attr">enabled</span>=<span class="hljs-number">1</span></code></pre><h4 id="执行安装命令">执行安装命令</h4>
+<pre><code>sudo yum <span class="hljs-keyword">install</span> mongodb-org</code></pre><h4 id="启动mongodb">启动MongoDB</h4>
+<pre><code>sudo<span class="hljs-built_in"> service </span>mongod start</code></pre><h3 id="运行appjs">运行app.js</h3>
+<p>切换到项目目录，为了能一直自行程序，我们用forever模块：</p>
+<pre><code>sudo npm -g install <span class="hljs-keyword">forever</span> <span class="hljs-comment"> //安装</span>
+
+<span class="hljs-keyword">forever</span> <span class="hljs-built_in">start</span> app.js         <span class="hljs-comment"> //开启进程</span>
+
+<span class="hljs-keyword">forever</span> list                 <span class="hljs-comment"> //查看所有进程</span>
+
+<span class="hljs-keyword">forever</span> stopall                <span class="hljs-comment"> //关闭所有进程</span>
+</code></pre><p>现在在你服务器的3000端口我们的聊天室已经完美运行了！</p>
+</section><section id="vcomments" class="v"><div class="vwrap"><div class="vheader item3"><input name="nick" placeholder="昵称" class="vnick vinput" type="text"><input name="mail" placeholder="邮箱" class="vmail vinput" type="email"><input name="link" placeholder="网址(http://)" class="vlink vinput" type="text"></div><div class="vedit"><textarea id="veditor" class="veditor vinput" placeholder="Just Go Go"></textarea><div class="vctrl"><span class="vemoji-btn">表情</span> | <span class="vpreview-btn">预览</span></div><div class="vemojis" style="display:none;"><i name="grinning" title="grinning">😀</i><i name="smiley" title="smiley">😃</i><i name="smile" title="smile">😄</i><i name="grin" title="grin">😁</i><i name="laughing" title="laughing">😆</i><i name="sweat_smile" title="sweat_smile">😅</i><i name="joy" title="joy">😂</i><i name="blush" title="blush">😊</i><i name="innocent" title="innocent">😇</i><i name="wink" title="wink">😉</i><i name="relieved" title="relieved">😌</i><i name="heart_eyes" title="heart_eyes">😍</i><i name="kissing_heart" title="kissing_heart">😘</i><i name="kissing" title="kissing">😗</i><i name="kissing_smiling_eyes" title="kissing_smiling_eyes">😙</i><i name="kissing_closed_eyes" title="kissing_closed_eyes">😚</i><i name="yum" title="yum">😋</i><i name="stuck_out_tongue_winking_eye" title="stuck_out_tongue_winking_eye">😜</i><i name="stuck_out_tongue_closed_eyes" title="stuck_out_tongue_closed_eyes">😝</i><i name="stuck_out_tongue" title="stuck_out_tongue">😛</i><i name="sunglasses" title="sunglasses">😎</i><i name="smirk" title="smirk">😏</i><i name="unamused" title="unamused">😒</i><i name="disappointed" title="disappointed">😞</i><i name="pensive" title="pensive">😔</i><i name="worried" title="worried">😟</i><i name="confused" title="confused">😕</i><i name="persevere" title="persevere">😣</i><i name="confounded" title="confounded">😖</i><i name="tired_face" title="tired_face">😫</i><i name="weary" title="weary">😩</i><i name="angry" title="angry">😠</i><i name="rage" title="rage">😡</i><i name="no_mouth" title="no_mouth">😶</i><i name="neutral_face" title="neutral_face">😐</i><i name="expressionless" title="expressionless">😑</i><i name="hushed" title="hushed">😯</i><i name="frowning" title="frowning">😦</i><i name="anguished" title="anguished">😧</i><i name="open_mouth" title="open_mouth">😮</i><i name="astonished" title="astonished">😲</i><i name="dizzy_face" title="dizzy_face">😵</i><i name="flushed" title="flushed">😳</i><i name="scream" title="scream">😱</i><i name="fearful" title="fearful">😨</i><i name="cold_sweat" title="cold_sweat">😰</i><i name="cry" title="cry">😢</i><i name="disappointed_relieved" title="disappointed_relieved">😥</i><i name="sob" title="sob">😭</i><i name="sweat" title="sweat">😓</i><i name="sleepy" title="sleepy">😪</i><i name="sleeping" title="sleeping">😴</i><i name="mask" title="mask">😷</i><i name="smiling_imp" title="smiling_imp">😈</i><i name="smiley_cat" title="smiley_cat">😺</i><i name="smile_cat" title="smile_cat">😸</i><i name="joy_cat" title="joy_cat">😹</i><i name="heart_eyes_cat" title="heart_eyes_cat">😻</i><i name="smirk_cat" title="smirk_cat">😼</i><i name="kissing_cat" title="kissing_cat">😽</i><i name="scream_cat" title="scream_cat">🙀</i><i name="crying_cat_face" title="crying_cat_face">😿</i><i name="pouting_cat" title="pouting_cat">😾</i><i name="cat" title="cat">🐱</i><i name="mouse" title="mouse">🐭</i><i name="cow" title="cow">🐮</i><i name="monkey_face" title="monkey_face">🐵</i><i name="hand" title="hand">✋</i><i name="fist" title="fist">✊</i><i name="v" title="v">✌️</i><i name="point_up" title="point_up">👆</i><i name="point_down" title="point_down">👇</i><i name="point_left" title="point_left">👈</i><i name="point_right" title="point_right">👉</i><i name="facepunch" title="facepunch">👊</i><i name="wave" title="wave">👋</i><i name="clap" title="clap">👏</i><i name="open_hands" title="open_hands">👐</i><i name="+1" title="+1">👍</i><i name="-1" title="-1">👎</i><i name="ok_hand" title="ok_hand">👌</i><i name="pray" title="pray">🙏</i><i name="ear" title="ear">👂</i><i name="eyes" title="eyes">👀</i><i name="nose" title="nose">👃</i><i name="lips" title="lips">👄</i><i name="tongue" title="tongue">👅</i><i name="heart" title="heart">❤️</i><i name="cupid" title="cupid">💘</i><i name="sparkling_heart" title="sparkling_heart">💖</i><i name="star" title="star">⭐️</i><i name="sparkles" title="sparkles">✨</i><i name="zap" title="zap">⚡️</i><i name="sunny" title="sunny">☀️</i><i name="cloud" title="cloud">☁️</i><i name="snowflake" title="snowflake">❄️</i><i name="umbrella" title="umbrella">☔️</i><i name="coffee" title="coffee">☕️</i><i name="airplane" title="airplane">✈️</i><i name="anchor" title="anchor">⚓️</i><i name="watch" title="watch">⌚️</i><i name="phone" title="phone">☎️</i><i name="hourglass" title="hourglass">⌛️</i><i name="email" title="email">✉️</i><i name="scissors" title="scissors">✂️</i><i name="black_nib" title="black_nib">✒️</i><i name="pencil2" title="pencil2">✏️</i><i name="x" title="x">❌</i><i name="recycle" title="recycle">♻️</i><i name="white_check_mark" title="white_check_mark">✅</i><i name="negative_squared_cross_mark" title="negative_squared_cross_mark">❎</i><i name="m" title="m">Ⓜ️</i><i name="i" title="i">ℹ️</i><i name="tm" title="tm">™️</i><i name="copyright" title="copyright">©️</i><i name="registered" title="registered">®️</i></div><div class="vinput vpreview" style="display:none;"></div></div><div class="vcontrol"><div class="col col-20" title="Markdown is supported"><a href="https://segmentfault.com/markdown" target="_blank"><svg class="markdown" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z"></path></svg></a></div><div class="col col-80 text-right"><button type="button" title="Cmd|Ctrl+Enter" class="vsubmit vbtn">回复</button></div></div><div style="display:none;" class="vmark"></div></div><div class="vinfo" style="display:none;"><div class="vcount col"></div></div><div class="vlist"></div><div class="vempty" style="display:block;">快来做第一个评论的人吧~</div><div class="vpage txt-center"></div><div class="info"><div class="power txt-right">Powered By <a href="https://valine.js.org" target="_blank">Valine</a><br>v1.3.10</div></div></section></article></main></div></div><script>!function(i){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)t=n[l],Object.prototype.hasOwnProperty.call(p,t)&&p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var r=this.webpackJsonpblog=this.webpackJsonpblog||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.7cff77cf.chunk.js"></script><script src="/static/js/main.691d9270.chunk.js"></script></body></html>

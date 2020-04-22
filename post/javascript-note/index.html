@@ -1,1 +1,749 @@
-<!DOCTYPE html><html lang="zh-hans"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="logo.jpeg"><link rel="manifest" href="/manifest.json"><title>打开天眼看文章</title><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://kit.fontawesome.com/b2fc37abd6.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-98427538-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-98427538-1")</script><link href="/static/css/2.5bcfae4a.chunk.css" rel="stylesheet"><link href="/static/css/main.f9f6d843.chunk.css" rel="stylesheet"><style type="text/css">.v{font-size:16px;text-align:left}.v *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:2;color:#555;-webkit-transition:all .3s ease;transition:all .3s ease}.v hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v.hide-avatar .vimg{display:none}.v a{position:relative;cursor:pointer;color:#1abc9c;display:inline-block}.v a:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v a:hover{color:#d7191a}.v a:hover:before{width:100%;left:0;right:auto}.v code,.v pre{background-color:#f6f6f6;color:#555;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0;font-family:Source Code Pro,courier new,Input Mono,PT Mono,SFMono-Regular,Consolas,Monaco,Menlo,PingFang SC,Liberation Mono,Microsoft YaHei,Courier，monospace}.v pre{padding:10px;overflow:auto;line-height:1.45}.v pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v input[type=checkbox],.v input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v .vwrap input{background:transparent}.v .vwrap .vedit{position:relative;padding-top:10px}.v .vwrap .vedit .vctrl{text-align:right;font-size:12px}.v .vwrap .vedit .vctrl span{padding:10px;display:inline-block;vertical-align:middle;cursor:pointer}.v .vwrap .vedit .vemojis{display:none;font-size:18px;text-align:justify;max-height:145px;overflow:auto;margin-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vemojis i{font-style:normal;padding:7px 0;width:38px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v .vwrap .vedit .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vpreview frame,.v .vwrap .vedit .vpreview iframe,.v .vwrap .vedit .vpreview img{max-width:100%;border:none}.v .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v .vwrap .vheader.item2 .vinput{width:50%}.v .vwrap .vheader.item1 .vinput{width:100%}.v .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v .vwrap .vheader.item2 .vinput,.v .vwrap .vheader .vinput{width:100%}}.v .vwrap .vcontrol{font-size:0;padding-top:15px}.v .vwrap .vcontrol .col{display:inline-block;font-size:16px;vertical-align:middle;color:#ccc}.v .vwrap .vcontrol .col.text-right{text-align:right}.v .vwrap .vcontrol .col svg{margin-right:2px;overflow:hidden;fill:currentColor;vertical-align:middle}.v .vwrap .vcontrol .col.col-20{width:20%}.v .vwrap .vcontrol .col.col-40{width:40%}.v .vwrap .vcontrol .col.col-60{width:60%}.v .vwrap .vcontrol .col.col-80{width:80%}.v .vwrap .vcontrol .col.split{width:50%}.v .vwrap .vmark{position:absolute;background:rgba(0,0,0,.65);width:100%;height:100%;left:0;top:0}.v .vwrap .vmark .valert{padding-top:3em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}.v .vwrap .vmark .valert .vcode{width:4.6875em;border-radius:.3125em;padding:.5em;background:#dedede}.v .vwrap .vmark .valert .vcode:focus{border-color:#3090e4;background-color:#fff}@media screen and (max-width:720px){.v .vwrap .vmark .valert{padding-top:5.5em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}}.v .power{color:#999;padding:.5em 0}.v .power,.v .power a{font-size:.75em}.v .vinfo{font-size:0;padding:5px}.v .vinfo .col{font-size:16px;display:inline-block;width:50%;vertical-align:middle}.v .vinfo .vcount .vnum{font-weight:600;font-size:1.25em}.v a{text-decoration:none;color:#555}.v a:hover{color:#222}.v ol,.v ul{padding:0;margin-left:1.25em}.v .txt-center{text-align:center}.v .txt-right{text-align:right}.v .pd5{padding:5px}.v .pd10{padding:10px}.v .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#313131;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:#ededed;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v .vbtn+.vbtn{margin-left:1.25em}.v .vbtn:active,.v .vbtn:hover{color:#3090e4;border-color:#3090e4;background-color:#fff}.v .vempty{padding:1.25em;text-align:center;color:#999}.v .vlist{width:100%}.v .vlist .vcard{padding-top:1.5em;position:relative;display:block}.v .vlist .vcard:after{content:"";clear:both;display:block}.v .vlist .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v .vlist .vcard .vimg{width:2.5em;height:2.5em}}.v .vlist .vcard .vhead{line-height:1.5;margin-top:0}.v .vlist .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v .vlist .vcard .vhead .vnick:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v .vlist .vcard .vhead .vnick:hover{color:#d7191a}.v .vlist .vcard .vhead .vnick:hover:before{width:100%;left:0;right:auto}.v .vlist .vcard .vhead .vsys{display:inline-block;padding:.2em .5em;background:#ededed;color:#b3b1b1;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v .vlist .vcard .vhead .vsys{display:none}}.v .vlist .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v .vlist .vcard .vh .vtime{color:#b3b3b3;font-size:.75em;margin-right:.875em}.v .vlist .vcard .vh .vmeta{line-height:1;position:relative}.v .vlist .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v .vlist .vcard:last-child .vh{border-bottom:none}.v .vlist .vcard .vcontent{word-wrap:break-word;word-break:break-all;text-align:justify;color:#4a4a4a;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v .vlist .vcard .vcontent frame,.v .vlist .vcard .vcontent iframe,.v .vlist .vcard .vcontent img{max-width:100%;border:none}.v .vlist .vcard .vcontent.expand{cursor:pointer;max-height:11.25em;overflow:hidden}.v .vlist .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;pointer-events:none;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9))}.v .vlist .vcard .vcontent.expand:after{display:block;content:"Click on expand";text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;pointer-events:none;background:hsla(0,0%,100%,.9)}.v .vlist .vcard .vquote{color:#666;margin-top:1em;padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v .vlist .vcard .vquote .vimg{width:2.225em;height:2.225em}.v .vpage .vmore{margin:1em 0}.v .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v .vloading{position:relative;padding:20px;display:block;height:80px}.v .vloading:before{-webkit-box-sizing:border-box;box-sizing:border-box;content:"";position:absolute;display:inline-block;top:20px;left:50%;margin-left:-20px;width:40px;height:40px;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}</style></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(i){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)t=n[l],Object.prototype.hasOwnProperty.call(p,t)&&p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var r=this.webpackJsonpblog=this.webpackJsonpblog||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.16fea087.chunk.js"></script><script src="/static/js/main.d56376db.chunk.js"></script></body></html>
+<!DOCTYPE html><html lang="zh-hans"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="logo.jpeg"><link rel="manifest" href="/manifest.json"><title>JavaScript 笔记 | 打开天眼看文章</title><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="//api.ip.sb/jsonip?callback=getIP"></script><script src="https://kit.fontawesome.com/b2fc37abd6.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-98427538-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-98427538-1")</script><link href="/static/css/2.5bcfae4a.chunk.css" rel="stylesheet"><link href="/static/css/main.f9f6d843.chunk.css" rel="stylesheet"><style type="text/css">.v{font-size:16px;text-align:left}.v *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:2;color:#555;-webkit-transition:all .3s ease;transition:all .3s ease}.v hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v.hide-avatar .vimg{display:none}.v a{position:relative;cursor:pointer;color:#1abc9c;display:inline-block}.v a:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v a:hover{color:#d7191a}.v a:hover:before{width:100%;left:0;right:auto}.v code,.v pre{background-color:#f6f6f6;color:#555;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0;font-family:Source Code Pro,courier new,Input Mono,PT Mono,SFMono-Regular,Consolas,Monaco,Menlo,PingFang SC,Liberation Mono,Microsoft YaHei,Courier，monospace}.v pre{padding:10px;overflow:auto;line-height:1.45}.v pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v input[type=checkbox],.v input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v .vwrap input{background:transparent}.v .vwrap .vedit{position:relative;padding-top:10px}.v .vwrap .vedit .vctrl{text-align:right;font-size:12px}.v .vwrap .vedit .vctrl span{padding:10px;display:inline-block;vertical-align:middle;cursor:pointer}.v .vwrap .vedit .vemojis{display:none;font-size:18px;text-align:justify;max-height:145px;overflow:auto;margin-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vemojis i{font-style:normal;padding:7px 0;width:38px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v .vwrap .vedit .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vpreview frame,.v .vwrap .vedit .vpreview iframe,.v .vwrap .vedit .vpreview img{max-width:100%;border:none}.v .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v .vwrap .vheader.item2 .vinput{width:50%}.v .vwrap .vheader.item1 .vinput{width:100%}.v .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v .vwrap .vheader.item2 .vinput,.v .vwrap .vheader .vinput{width:100%}}.v .vwrap .vcontrol{font-size:0;padding-top:15px}.v .vwrap .vcontrol .col{display:inline-block;font-size:16px;vertical-align:middle;color:#ccc}.v .vwrap .vcontrol .col.text-right{text-align:right}.v .vwrap .vcontrol .col svg{margin-right:2px;overflow:hidden;fill:currentColor;vertical-align:middle}.v .vwrap .vcontrol .col.col-20{width:20%}.v .vwrap .vcontrol .col.col-40{width:40%}.v .vwrap .vcontrol .col.col-60{width:60%}.v .vwrap .vcontrol .col.col-80{width:80%}.v .vwrap .vcontrol .col.split{width:50%}.v .vwrap .vmark{position:absolute;background:rgba(0,0,0,.65);width:100%;height:100%;left:0;top:0}.v .vwrap .vmark .valert{padding-top:3em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}.v .vwrap .vmark .valert .vcode{width:4.6875em;border-radius:.3125em;padding:.5em;background:#dedede}.v .vwrap .vmark .valert .vcode:focus{border-color:#3090e4;background-color:#fff}@media screen and (max-width:720px){.v .vwrap .vmark .valert{padding-top:5.5em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}}.v .power{color:#999;padding:.5em 0}.v .power,.v .power a{font-size:.75em}.v .vinfo{font-size:0;padding:5px}.v .vinfo .col{font-size:16px;display:inline-block;width:50%;vertical-align:middle}.v .vinfo .vcount .vnum{font-weight:600;font-size:1.25em}.v a{text-decoration:none;color:#555}.v a:hover{color:#222}.v ol,.v ul{padding:0;margin-left:1.25em}.v .txt-center{text-align:center}.v .txt-right{text-align:right}.v .pd5{padding:5px}.v .pd10{padding:10px}.v .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#313131;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:#ededed;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v .vbtn+.vbtn{margin-left:1.25em}.v .vbtn:active,.v .vbtn:hover{color:#3090e4;border-color:#3090e4;background-color:#fff}.v .vempty{padding:1.25em;text-align:center;color:#999}.v .vlist{width:100%}.v .vlist .vcard{padding-top:1.5em;position:relative;display:block}.v .vlist .vcard:after{content:"";clear:both;display:block}.v .vlist .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v .vlist .vcard .vimg{width:2.5em;height:2.5em}}.v .vlist .vcard .vhead{line-height:1.5;margin-top:0}.v .vlist .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v .vlist .vcard .vhead .vnick:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v .vlist .vcard .vhead .vnick:hover{color:#d7191a}.v .vlist .vcard .vhead .vnick:hover:before{width:100%;left:0;right:auto}.v .vlist .vcard .vhead .vsys{display:inline-block;padding:.2em .5em;background:#ededed;color:#b3b1b1;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v .vlist .vcard .vhead .vsys{display:none}}.v .vlist .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v .vlist .vcard .vh .vtime{color:#b3b3b3;font-size:.75em;margin-right:.875em}.v .vlist .vcard .vh .vmeta{line-height:1;position:relative}.v .vlist .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v .vlist .vcard:last-child .vh{border-bottom:none}.v .vlist .vcard .vcontent{word-wrap:break-word;word-break:break-all;text-align:justify;color:#4a4a4a;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v .vlist .vcard .vcontent frame,.v .vlist .vcard .vcontent iframe,.v .vlist .vcard .vcontent img{max-width:100%;border:none}.v .vlist .vcard .vcontent.expand{cursor:pointer;max-height:11.25em;overflow:hidden}.v .vlist .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;pointer-events:none;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9))}.v .vlist .vcard .vcontent.expand:after{display:block;content:"Click on expand";text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;pointer-events:none;background:hsla(0,0%,100%,.9)}.v .vlist .vcard .vquote{color:#666;margin-top:1em;padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v .vlist .vcard .vquote .vimg{width:2.225em;height:2.225em}.v .vpage .vmore{margin:1em 0}.v .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v .vloading{position:relative;padding:20px;display:block;height:80px}.v .vloading:before{-webkit-box-sizing:border-box;box-sizing:border-box;content:"";position:absolute;display:inline-block;top:20px;left:50%;margin-left:-20px;width:40px;height:40px;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}</style><script src="//js.fundebug.cn/fundebug.1.9.0.min.js" apikey="2c7e5b30c7cf402cb7fb35d14b62e7f778babbb70d054160af750065a180fdcd" async="true"></script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="app"><div class="progress-bar"><div class="bg-red"></div><div class="bg-orange"></div><div class="bg-yellow"></div><div class="bg-green"></div><div class="bg-blue"></div><div class="bg-indigo"></div><div class="bg-purple"></div></div><main class="main"><div class="sidebar text-left"><h1><a class="logo" href="/">打开天眼看文章</a></h1><p>TECH | LIFE | X</p><p class="font-sm"><a class="text-blue" title="about me" href="/about">@me |</a><a class="text-green" href="https://github.com/xiao555" title="github" target="_blank" rel="noopener noreferrer">@github</a></p><p class="font-sm"><a href="mailto:zhangruiwu32@gmail.com">zhangruiwu32@gmail.com</a></p><p><small>本站已存活 49 天</small></p><button class="border-0 px-0"><i class="fas fa-moon" aria-hidden="true"></i></button></div><article class="main-content"><h2>JavaScript 笔记</h2><p><small>2017-09-06</small><span id="javascript-note" class="leancloud_visitors ml-1"><small>阅读量</small> <small class="leancloud-visitors-count"></small></span></p><section><h3 id="1-对象字面量解析">1. 对象字面量解析</h3>
+<pre><code class="language-javascript">({<span class="hljs-attribute">a</span>: <span class="hljs-number">1</span>}<span class="hljs-selector-class">.a</span>)
+({<span class="hljs-attribute">a</span>: <span class="hljs-number">1</span>})<span class="hljs-selector-class">.a</span></code></pre>
+<p>声明对象字面值时，语句开头不应该用{，因为js解释器会认为这是语句块（block）的开始。</p>
+<h3 id="2-数字的点操作符">2. 数字的点操作符</h3>
+<pre><code class="language-javascript">(<span class="hljs-number">1</span>).<span class="hljs-keyword">to</span><span class="hljs-constructor">String()</span> <span class="hljs-comment">// "1"</span>
+<span class="hljs-number">1.</span>.<span class="hljs-keyword">to</span><span class="hljs-constructor">String()</span>
+<span class="hljs-number">1</span> .<span class="hljs-keyword">to</span><span class="hljs-constructor">String()</span></code></pre>
+<p>js解释器会把数字后的.当做小数点而不是点操作符。</p>
+<h3 id="3--连等赋值">3.  连等赋值</h3>
+<pre><code class="language-javascript"><span class="hljs-keywords">var</span> a = {n: <span class="hljs-number">1</span>};
+<span class="hljs-keywords">var</span> b = a;
+a.<span class="hljs-symbol">x</span> = a = {n: <span class="hljs-number">2</span>};
+console.log(a.<span class="hljs-symbol">x</span>);<span class="hljs-comment">// --&gt; undefined</span>
+console.log(b.<span class="hljs-symbol">x</span>);<span class="hljs-comment">// --&gt; {n:2}</span></code></pre>
+<p><a href="http://justjavac.com/javascript/2012/04/05/javascript-continuous-assignment-operator.html">写了 10 年 Javascript 未必全了解的连续赋值运算</a>
+<code>a.x = a = {n:2}</code>后，b.x检测到了 a.x 指向的 <code>a = { n: 2 }</code>的引用，然后由于 a 重新赋值后，b 和 a的引用断裂了，所以 b 的值是 <code>{ n: 1, x: a }</code>, 赋值后的 a 已经没有 x 了， 所以 a.x 是 undefined。</p>
+<h3 id="4-逗号操作符">4. 逗号操作符</h3>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> x = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">var</span> temp = {
+    x: <span class="hljs-number">40</span>,
+    foo: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.x;
+    }
+};
+(temp.foo)(); <span class="hljs-comment">// 40</span>
+(temp.foo, temp.foo)(); <span class="hljs-comment">// 20，而不是40</span>
+
+<span class="hljs-keyword">var</span> f = (<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span><span class="hljs-params">()</span></span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">"1"</span>; }, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">g</span><span class="hljs-params">()</span></span>{ <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>; })();
+
+<span class="hljs-keyword">typeof</span> f; <span class="hljs-comment">// "number"</span></code></pre>
+<p>逗号操作符会从左到右计算它的操作数，返回最后一个操作数的值。所以<code>(temp.foo, temp.foo)();</code>等价于<code>var fun = temp.foo; fun();，</code> fun调用时this指向window，所以返回20。</p>
+<h3 id="5--parseint传入数字">5.  parseInt传入数字</h3>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-title">parseInt</span><span class="hljs-params">(<span class="hljs-number">0.000008</span>)</span></span> <span class="hljs-comment">// &gt;&gt; 0</span>
+<span class="hljs-function"><span class="hljs-title">parseInt</span><span class="hljs-params">(<span class="hljs-number">0.0000008</span>)</span></span> <span class="hljs-comment">// &gt;&gt; 8</span></code></pre>
+<p>parseInt(arg)时会调用arg.toString()。</p>
+<pre><code class="language-javascript"><span class="hljs-params">(0.000008)</span><span class="hljs-string">.toString</span><span class="hljs-params">()</span> <span class="hljs-string">//</span> <span class="hljs-string">"0.000008"</span>
+<span class="hljs-params">(0.0000008)</span><span class="hljs-string">.toString</span><span class="hljs-params">()</span> <span class="hljs-string">//</span> <span class="hljs-string">"8e-7"</span></code></pre>
+<h3 id="6-利用给定接口获得闭包内部对象">6. 利用给定接口获得闭包内部对象</h3>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> o = (<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">var</span> person = {
+        name: <span class="hljs-string">'Vincent'</span>,
+        age: <span class="hljs-number">24</span>,
+    };
+    <span class="hljs-keyword">return</span> {
+        run: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(k)</span> </span>{
+            <span class="hljs-keyword">return</span> person[k];
+        },
+    }
+}());</code></pre>
+<p>在不改变上面的代码情况下， 怎么得到原有的 person 对象？</p>
+<pre><code class="language-javascript"><span class="hljs-built_in">Object</span>.defineProperty(<span class="hljs-built_in">Object</span>.prototype, <span class="hljs-string">'self'</span>, {
+    <span class="hljs-attr">get</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;},
+    <span class="hljs-attr">set</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>},
+    <span class="hljs-attr">configurable</span>: <span class="hljs-literal">true</span>
+    <span class="hljs-comment">// 该属性的存在是确保该属性可被delete方法删除</span>
+});
+
+<span class="hljs-keyword">var</span> person = o.run(<span class="hljs-string">'self'</span>);
+<span class="hljs-keyword">delete</span> <span class="hljs-built_in">Object</span>.prototype.self;
+<span class="hljs-comment">//由于不推荐使用prototype来扩展自己定义的属性（扩展标准规定的除外），这里把扩展再去掉。</span>
+
+<span class="hljs-comment">// 其他思路</span>
+person = [<span class="hljs-string">"name"</span>, <span class="hljs-string">"age"</span>].reduce(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">obj,k</span>)</span>{ obj[k] = o.run(k); <span class="hljs-keyword">return</span> obj }, {})</code></pre>
+<h3 id="7-位操作符">7. 位操作符</h3>
+<p>实现浮点数转整数，或者说取出数字的整数部分。比如-12.921 --&gt; -12，12.921 --&gt; 12等等。</p>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">convertToInt</span>(<span class="hljs-params">num</span>) </span>{
+      <span class="hljs-keyword">return</span> num &gt;&gt; <span class="hljs-number">0</span>;
+}
+convertToInt(-Math.<span class="hljs-literal">PI</span>); <span class="hljs-comment">// -3</span>
+convertToInt(<span class="hljs-number">12.921</span>); <span class="hljs-comment">// 12</span></code></pre>
+<p>有符号右移&gt;&gt;
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators">按位操作符
+</a></p>
+<h3 id="8-functionprototypecallapply-的-this-问题">8. Function.prototype.call/apply 的 this 问题</h3>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nsm</span>(<span class="hljs-params"></span>) </span>{<span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>);}
+nsm(); <span class="hljs-comment">// Window{top: xxxx}</span>
+nsm.call(<span class="hljs-literal">null</span>/<span class="hljs-literal">undefined</span>); <span class="hljs-comment">// Window{top: xxxx}</span>
+nsm.call(<span class="hljs-number">1</span>); <span class="hljs-comment">// Number {[[PrimitiveValue]]: 1}</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sm</span>(<span class="hljs-params"></span>) </span>{<span class="hljs-string">'use strict'</span>; <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>);}
+sm(); <span class="hljs-comment">// undefined</span>
+sm.call(<span class="hljs-literal">null</span>); <span class="hljs-comment">// null</span>
+sm.call(<span class="hljs-literal">undefined</span>); <span class="hljs-comment">// undefined</span>
+sm.call(<span class="hljs-number">1</span>); <span class="hljs-comment">// 1</span></code></pre>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/call">Function.prototype.call()</a>
+非严格模式下，this默认指向全局对象，call/apply显式指定this参数时也会强制转换参数为对象（如果不是对象）。其中，null/undefined被替换为全局对象，基础类型被转换为包装对象。</p>
+<p>严格模式下，this默认为undefined，且call/apply显式指定this参数时也不会有强制转换。</p>
+<h3 id="9-数组的展开扁平">9. 数组的展开/扁平</h3>
+<p><code>[1,2,[2,3,[4,5]]]</code>---&gt;<code>[1,2,2,3,4,5]</code></p>
+<pre><code class="language-javascript"><span class="hljs-keyword">function</span> flatten(arr) {
+    <span class="hljs-keyword">if</span>(!is<span class="hljs-constructor">Array(<span class="hljs-params">arr</span>)</span><span class="hljs-operator"> || </span>!arr.length) {
+        return <span class="hljs-literal">[]</span>;
+    } <span class="hljs-keyword">else</span> {
+        return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Array</span>.</span></span>prototype.concat.apply(<span class="hljs-literal">[]</span>, arr.map(<span class="hljs-keyword">function</span>(<span class="hljs-keyword">val</span>) {
+            return is<span class="hljs-constructor">Array(<span class="hljs-params">val</span>)</span> ? flatten(<span class="hljs-keyword">val</span>) : <span class="hljs-keyword">val</span>;
+        }));
+    }
+
+    <span class="hljs-keyword">function</span> is<span class="hljs-constructor">Array(<span class="hljs-params">arr</span>)</span> {
+        return <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Object</span>.</span></span>prototype.toString.call(arr).slice(<span class="hljs-number">8</span>, -<span class="hljs-number">1</span>).<span class="hljs-keyword">to</span><span class="hljs-constructor">LowerCase()</span><span class="hljs-operator"> === </span>'<span class="hljs-built_in">array</span>';
+    }
+}
+flatten(<span class="hljs-literal">[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,[<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,[<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]</span>]]);
+<span class="hljs-comment">// [1, 2, 2, 3, 4, 5]</span></code></pre>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/concat">Array.prototype.concat</a></p>
+<h3 id="10-delete-操作符">10. delete 操作符</h3>
+<pre><code class="language-javascript"> (<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(x)</span></span>{
+    <span class="hljs-keyword">delete</span> x;
+    <span class="hljs-keyword">return</span> x;
+})(<span class="hljs-number">1</span>);
+<span class="hljs-comment">// 返回 1</span></code></pre>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/delete">delete</a>
+对局部变量和函数名delete是无效的，delete只能删除属性。delete obj.propName 才是合法的形式。下面以代码详细解释：</p>
+<pre><code class="language-javascript"><span class="hljs-comment">// ========例1========</span>
+(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>) </span>{
+    <span class="hljs-string">'use strict'</span>;
+    <span class="hljs-keyword">delete</span> x;
+})(<span class="hljs-number">1</span>);
+<span class="hljs-comment">// Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.</span>
+<span class="hljs-comment">// 在严格模式下，删除不合法的标识符x（x是变量）</span>
+
+<span class="hljs-comment">// ========例2========</span>
+(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-string">'use strict'</span>;
+    <span class="hljs-keyword">var</span> obj = {};
+    <span class="hljs-built_in">Object</span>.defineProperty(obj, <span class="hljs-string">'x'</span>, {
+        <span class="hljs-attr">configurable</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-attr">writable</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">enumerable</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">value</span>: <span class="hljs-string">'hi'</span>
+    });
+    <span class="hljs-keyword">delete</span> obj.x;
+})()
+<span class="hljs-comment">// Uncaught TypeError: Cannot delete property 'x' of #&lt;Object&gt;</span>
+<span class="hljs-comment">// 合法的删除形式，但属性x是non-configurable的，严格模式下报错</span>
+
+<span class="hljs-comment">// ========例3========</span>
+<span class="hljs-built_in">window</span>.x = <span class="hljs-number">100</span>;
+<span class="hljs-built_in">window</span>.y = <span class="hljs-number">100</span>;
+(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(x, <span class="hljs-built_in">window</span>.x, <span class="hljs-built_in">window</span>.y);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">delete</span> x, <span class="hljs-keyword">delete</span> y);
+    <span class="hljs-built_in">console</span>.log(x, <span class="hljs-built_in">window</span>.x, <span class="hljs-built_in">window</span>.y);
+    <span class="hljs-keyword">return</span> x;
+})(<span class="hljs-number">1</span>);
+<span class="hljs-comment">// 1 100 100</span>
+<span class="hljs-comment">// false true</span>
+<span class="hljs-comment">// 1 100 undefined</span>
+
+<span class="hljs-comment">// delete x失败，因为x是变量（函数内局部变量x覆盖全局变量x），delete y成功，y是全局对象window的属性。</span>
+<span class="hljs-comment">// 非严格模式下，可以 delete y 的写法，但此时是尝试删除全局对象的同名属性y（y在作用域中不是变量或函数名）。</span></code></pre>
+<h3 id="11-找出字符串中出现最多的字母">11. 找出字符串中出现最多的字母</h3>
+<p>假设字符串'ababccdeajxac'，请找出出现次数最多的字符？</p>
+<p>最先想到的解法是用map纪录每个字符的次数，然后找出最多的即可：</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">function</span> getMaxNumberOfChar(str) {
+    <span class="hljs-keyword">return</span> (str + <span class="hljs-string">''</span>).split(<span class="hljs-string">''</span>).reduce(<span class="hljs-keyword">function</span>(pre, cur, <span class="hljs-keyword">index</span>, arr) {
+        cur <span class="hljs-keyword">in</span> pre ? pre[cur]++ : (pre[cur] = <span class="hljs-number">1</span>);
+        pre[cur] &gt; pre.<span class="hljs-keyword">value</span> &amp;&amp; (pre.char = cur, pre.<span class="hljs-keyword">value</span> = pre[cur]);
+        <span class="hljs-keyword">return</span> pre;
+    }, {<span class="hljs-keyword">value</span>: <span class="hljs-number">0</span>});
+}
+getMaxNumberOfChar(<span class="hljs-string">'ababccdeajxac'</span>) // <span class="hljs-keyword">Object</span> {<span class="hljs-keyword">value</span>: <span class="hljs-number">4</span>, a: <span class="hljs-number">4</span>, <span class="hljs-type">char</span>: "a", b: <span class="hljs-number">2</span>, c: <span class="hljs-number">3</span>…}</code></pre>
+<p>此外，可以考虑用正则来辅助处理：</p>
+<pre><code class="language-javascript"><span class="hljs-selector-tag">function</span> <span class="hljs-selector-tag">getMaxNumberOfChar</span>(str) {
+    <span class="hljs-selector-tag">return</span> (str + <span class="hljs-string">''</span>)<span class="hljs-selector-class">.split</span>(<span class="hljs-string">''</span>)<span class="hljs-selector-class">.sort</span>()<span class="hljs-selector-class">.join</span>(<span class="hljs-string">''</span>)<span class="hljs-selector-class">.match</span>(/(\w)\<span class="hljs-number">1</span>*/g)<span class="hljs-selector-class">.reduce</span>(function(pre, cur) {
+        <span class="hljs-selector-tag">return</span> <span class="hljs-selector-tag">cur</span><span class="hljs-selector-class">.length</span> &gt; <span class="hljs-selector-tag">pre</span><span class="hljs-selector-class">.value</span> ? {<span class="hljs-attribute">value</span>: cur.length, <span class="hljs-attribute">char</span>: cur[<span class="hljs-number">0</span>]} : <span class="hljs-selector-tag">pre</span>;
+    }, {<span class="hljs-attribute">value</span>: <span class="hljs-number">0</span>})
+}
+getMaxNumberOfChar(<span class="hljs-string">'ababccdeajxac'</span>) <span class="hljs-comment">// Object {value: 4, char: "a"}</span></code></pre>
+<h3 id="12--storage-event">12.  storage event</h3>
+<p>当你用<code>localStorage</code>或<code>sessionStorage</code>的API去更改Storage时，会触发storage事件：</p>
+<pre><code class="language-javascript"><span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'storage'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'storage'</span>, e);
+});</code></pre>
+<p>这里没有什么特别的，但基本所有问题的根源，或者说要特别注意的是：本页面更改Storage只能在同域名的<strong>其它</strong>页面去捕获storage事件。</p>
+<h3 id="13-一个函数柯里化问题及更多">13. 一个函数柯里化问题及更多</h3>
+<p>要求实现sum函数如下：</p>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-title">sum</span><span class="hljs-params">(<span class="hljs-number">1</span>)</span></span> <span class="hljs-comment">// 1</span>
+<span class="hljs-function"><span class="hljs-title">sum</span><span class="hljs-params">(<span class="hljs-number">1</span>)</span><span class="hljs-params">(<span class="hljs-number">2</span>)</span></span> <span class="hljs-comment">// 3</span>
+<span class="hljs-function"><span class="hljs-title">sum</span><span class="hljs-params">(<span class="hljs-number">1</span>)</span><span class="hljs-params">(<span class="hljs-number">2</span>)</span><span class="hljs-params">(<span class="hljs-number">3</span>)</span></span> <span class="hljs-comment">// 6</span></code></pre>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span><span class="hljs-params">(item)</span> </span>{
+    <span class="hljs-keyword">var</span> cur = item;
+    <span class="hljs-keyword">var</span> inner = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(next)</span> </span>{
+        <span class="hljs-keyword">if</span> (next != <span class="hljs-literal">null</span>) cur += next;
+        <span class="hljs-keyword">return</span> inner;
+    };
+    inner.toString = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> cur;
+    }
+    <span class="hljs-keyword">return</span> inner;
+}</code></pre>
+<p>console.log(), 如果传入的是函数，则会调用toString()方法打印函数，这里改写了inner的toString函数，达到输出结果的目的</p>
+<h3 id="14-typeof">14. typeOf</h3>
+<pre><code class="language-javascript"><span class="hljs-selector-tag">Object</span><span class="hljs-selector-class">.prototype</span><span class="hljs-selector-class">.toString</span><span class="hljs-selector-class">.call</span>(<span class="hljs-selector-tag">obj</span>)<span class="hljs-selector-class">.slice</span>(8, <span class="hljs-selector-tag">-1</span>);</code></pre>
+<h3 id="15--运算规则的图形化表示">15.  <code>==</code>运算规则的图形化表示</h3>
+<p><a href="https://camo.githubusercontent.com/af251d0062891ec9d9ff4b9dc7886b4522c743d0/687474703a2f2f7777312e73696e61696d672e636e2f6c617267652f61363630636162326779316663796a666d776330336a323078733067796a7630">link</a></p>
+<pre><code>前面说得很乱，根据我们得到的最终的图<span class="hljs-number">3</span>，我们总结一下==运算的规则：
+
+<span class="hljs-number">1.</span> <span class="hljs-literal">undefined</span> == <span class="hljs-literal">null</span>，结果是<span class="hljs-literal">true</span>。且它俩与所有其他值比较的结果都是<span class="hljs-literal">false</span>。
+
+<span class="hljs-number">2.</span> <span class="hljs-built_in">String</span> == <span class="hljs-built_in">Boolean</span>，需要两个操作数同时转为<span class="hljs-built_in">Number</span>。
+
+<span class="hljs-number">3.</span> <span class="hljs-built_in">String</span>/<span class="hljs-built_in">Boolean</span> == <span class="hljs-built_in">Number</span>，需要<span class="hljs-built_in">String</span>/<span class="hljs-built_in">Boolean</span>转为<span class="hljs-built_in">Number</span>。
+
+<span class="hljs-number">4.</span> <span class="hljs-built_in">Object</span> == Primitive，需要<span class="hljs-built_in">Object</span>转为Primitive(具体通过valueOf和toString方法)。
+
+瞧见没有，一共只有<span class="hljs-number">4</span>条规则！是不是很清晰、很简单。</code></pre><p>原文:   <a href="https://github.com/jawil/blog/issues/1">从'[]== ! []'为true来剖析JavaScript各种蛋疼的类型转换</a></p>
+<h3 id="16-变量提升预加载">16. 变量提升/预加载</h3>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> foo = <span class="hljs-number">1</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span> (!foo) {
+        <span class="hljs-keyword">var</span> foo = <span class="hljs-number">10</span>;
+    }
+    <span class="hljs-built_in">console</span>.log(foo);
+}
+bar(); <span class="hljs-comment">// 10</span>
+
+faz(<span class="hljs-string">'faz'</span>); <span class="hljs-comment">// faz</span>
+<span class="hljs-keyword">if</span>(<span class="hljs-literal">true</span>){
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">x</span>)</span>{
+        <span class="hljs-built_in">console</span>.log(x);
+    }
+}
+<span class="hljs-keyword">if</span>(<span class="hljs-literal">false</span>){
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bar</span>(<span class="hljs-params">x</span>)</span>{
+        <span class="hljs-built_in">console</span>.log(x);
+    }
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">faz</span>(<span class="hljs-params">x</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(x);
+}
+foo(<span class="hljs-string">'foo'</span>); <span class="hljs-comment">// foo</span>
+bar(<span class="hljs-string">'bar'</span>); <span class="hljs-comment">// Uncaught TypeError: bar is not a function</span></code></pre>
+<p>对于变量的定义，无论是否存在逻辑判断，JavaScript都会进行预解析，而对于函数声明，JavaScript并不会对逻辑判断中的进行预加载，只会对函数主体中暴露的进行预加载。</p>
+<h3 id="17-预加载顺序">17. 预加载顺序</h3>
+<pre><code class="language-javascript"><span class="hljs-built_in">console</span>.log(x) <span class="hljs-comment">// function</span>
+<span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+<span class="hljs-built_in">console</span>.log(x) <span class="hljs-comment">//10</span>
+x = <span class="hljs-number">20</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">x</span>(<span class="hljs-params"></span>)</span>{}
+<span class="hljs-built_in">console</span>.log(x) <span class="hljs-comment">//20</span>
+
+(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x,y</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(x); <span class="hljs-comment">// ƒ x(){}</span>
+    <span class="hljs-built_in">console</span>.log(y); <span class="hljs-comment">//2</span>
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>,y=<span class="hljs-number">20</span>;
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">x</span>(<span class="hljs-params"></span>)</span>{}
+    <span class="hljs-built_in">console</span>.log(x); <span class="hljs-comment">//10</span>
+    <span class="hljs-built_in">console</span>.log(y);  <span class="hljs-comment">//20</span>
+})(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>)</code></pre>
+<pre><code>    <span class="hljs-number">1.</span> 函数的参数，如果有参数直接赋值
+    <span class="hljs-number">2.</span> 函数内部的函数声明，如果有则前置，如果函数名与参数重复则覆盖掉参数
+    <span class="hljs-number">3.</span> 函数内部的变量声明，如果有则前置，如果变量名与 函数声明重复 会忽略该变量声明，只是忽略声明 赋值语句仍有效</code></pre><h3 id="18-查找数组中最大小值">18. 查找数组中最大/小值</h3>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> numbers = [<span class="hljs-number">5</span>, <span class="hljs-number">458</span> , <span class="hljs-number">120</span> , <span class="hljs-number">-215</span> ];
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.min.apply(<span class="hljs-literal">null</span>, numbers));
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Math</span>.max.apply(<span class="hljs-literal">null</span>, numbers));</code></pre>
+<h3 id="19-判断一个对象是不是数组">19. 判断一个对象是不是数组</h3>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isArray</span>(<span class="hljs-params">myArray</span>) </span>{
+    <span class="hljs-keyword">return</span> myArray.<span class="hljs-keyword">constructor</span>.toString(<span class="hljs-params"></span>).indexOf(<span class="hljs-params">"<span class="hljs-built_in">Array</span>"</span>) &gt; -1;
+}</code></pre>
+<h3 id="20-this">20. this</h3>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> length = <span class="hljs-number">10</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fn</span><span class="hljs-params">()</span> <span class="hljs-comment">{
+    console.log(this.length)
+}</span>;</span>
+<span class="hljs-keyword">var</span> obj = <span class="hljs-comment">{
+    length: 5,
+    method: function (fn) {
+        fn();
+        arguments[0]();
+        fn.call(obj, 12);
+    }</span>
+};
+obj<span class="hljs-function">.<span class="hljs-keyword">method</span><span class="hljs-params">(fn, 1)</span>;</span> <span class="hljs-comment">// 10 2 5</span></code></pre>
+<p><a href="https://segmentfault.com/a/1190000007964935">一个小小的JavaScript题目</a></p>
+<h3 id="21-运算符优先级问题">21. 运算符优先级问题</h3>
+<pre><code class="language-javascript"><span class="hljs-keyword">var</span> str = <span class="hljs-string">'why I am '</span> + <span class="hljs-keyword">typeof</span> + <span class="hljs-string">''</span>; <span class="hljs-comment">// so what is str?</span></code></pre>
+<p><code>str</code> 是 <code>why I am number</code>,  思考一下，上面的代码应该等同于<code>'why I am ' + (typeof (+ ''))</code>。
+<code>typeof</code> 运算符优先级高于<code>+</code>，并且是<code>right-to-left</code></p>
+<h3 id="22-prefix-increment-operator的问题">22. Prefix Increment Operator(++)的问题</h3>
+<p>关于前自增运算符的一个有意思的问题：</p>
+<pre><code class="language-javascript">++<span class="hljs-string">'52'</span>.<span class="hljs-built_in">split</span>(<span class="hljs-string">''</span>)[<span class="hljs-number">0</span>]<span class="hljs-comment"> //返回的是？</span></code></pre>
+<p>这道题来自<a href="http://www.zhangxinxu.com/wordpress/2013/05/%E7%90%86%E8%A7%A3another-javascript-quiz-%E9%A2%98%E7%9B%AE/">Another JavaScript quiz</a>第8题，主要是优先级问题，应该返回6，看完答案应该没什么难理解的。但是，题目的某个注意点:</p>
+<pre><code class="language-javascript">++'5'
+<span class="hljs-comment">// Uncaught ReferenceError: Invalid left-hand side expression in prefix operation</span></code></pre>
+<p>却非常有意思。所以问题是为什么++'5'报错而++'52'.split('')[0]可以正确执行？</p>
+<p>阅读<a href="http://es5.github.io/#x11.4.4">http://es5.github.io/#x11.4.4</a>，可以看到_Prefix Increment Operator_操作的第5步PutValue(expr, newValue)要求expr是引用。</p>
+<p>而在这里:</p>
+<ul>
+<li><code>'5'</code>是值，不是引用，所以报错。</li>
+<li><code>'52'.split('')[0]</code>返回的是<code>['5','2'][0]</code>，对象的属性访问返回的是引用，所以可以正确执行。</li>
+</ul>
+<pre><code class="language-javascript"><span class="hljs-keywords">var</span> <span class="hljs-symbol">x</span> = <span class="hljs-string">'5'</span>;
+++<span class="hljs-symbol">x</span>  <span class="hljs-comment">// 6</span>
+
+++<span class="hljs-string">'5'</span>[<span class="hljs-number">0</span>] <span class="hljs-comment">// 6</span></code></pre>
+<h3 id="23-异步的throw将不会被promise捕获">23. 异步的<code>throw</code>将不会被<code>Promise</code>捕获</h3>
+<p>我们知道，在<code>Promise</code>内部<code>throw</code>，<code>promise</code>将会变成<code>rejected</code>状态，并且通过<code>catch</code>可以捕获错误（也就是说，我们可以不用显示调用<code>reject</code>）。示例如下：</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+  <span class="hljs-comment">// alternative: reject('hi')</span>
+  <span class="hljs-keyword">throw</span> <span class="hljs-string">'hi'</span>
+})
+<span class="hljs-comment">// 这里的 reason 就是 hi</span>
+promise.catch(<span class="hljs-function"><span class="hljs-params">reason</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(reason))</code></pre>
+<p>但请注意，异步的<code>throw</code>将不会被捕获到。</p>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">timeoutPromiseThrow</span>(<span class="hljs-params">delay</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve,reject</span>) =&gt;</span> {
+        setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+            <span class="hljs-keyword">throw</span> ( <span class="hljs-string">"Timeout!"</span> );
+        }, delay );
+    } );
+}
+
+<span class="hljs-keyword">const</span> th = timeoutPromiseThrow(<span class="hljs-number">2000</span>).catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> { <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"throw "</span> + err); })
+<span class="hljs-comment">// th 将永远是 pending 状态。</span></code></pre>
+<p>解释：<code>promise</code>内部有类似<code>try{} catch...</code>的机制，但显然，异步的<code>throw</code>是无法被捕获的，异步请显式调用<code>reject</code>。</p>
+<h3 id="24-jsonparse-的一个摸不着头脑的报错unexpected-token-o-in-json">24. <code>JSON.parse</code> 的一个摸不着头脑的报错<code>Unexpected token o in JSON</code></h3>
+<pre><code class="language-javascript">JSON.parse<span class="hljs-params">(obj)</span> <span class="hljs-string">//</span> obj.toString<span class="hljs-params">()</span> <span class="hljs-params">---</span>&gt; <span class="hljs-string">"[object Object]"</span></code></pre>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON">JSON语法</a></p>
+<pre><code class="language-javascript">JSON.parse(<span class="hljs-string">'[1, "b"]'</span>)
+<span class="hljs-regexp">//</span> [<span class="hljs-number">1</span>, <span class="hljs-string">"b"</span>]</code></pre>
+<h3 id="25-javascript-中参数是值传递还是引用传递？">25. JavaScript 中参数是值传递还是引用传递？</h3>
+<p><a href="https://stackoverflow.com/questions/518000/is-javascript-a-pass-by-reference-or-pass-by-value-language">StackOverflow</a> :
+JavaScript 既不是值传递，也不是引用传递，而是 call by sharing .</p>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">changeStuff</span>(<span class="hljs-params">a, b, c</span>)
+</span>{
+  a = a * <span class="hljs-number">10</span>;
+  b.item = <span class="hljs-string">"changed"</span>;
+  c = {<span class="hljs-attr">item</span>: <span class="hljs-string">"changed"</span>};
+}
+
+<span class="hljs-keyword">var</span> num = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">var</span> obj1 = {<span class="hljs-attr">item</span>: <span class="hljs-string">"unchanged"</span>};
+<span class="hljs-keyword">var</span> obj2 = {<span class="hljs-attr">item</span>: <span class="hljs-string">"unchanged"</span>};
+
+changeStuff(num, obj1, obj2);
+
+<span class="hljs-built_in">console</span>.log(num);   <span class="hljs-comment">// 10</span>
+<span class="hljs-built_in">console</span>.log(obj1.item);    <span class="hljs-comment">// changed</span>
+<span class="hljs-built_in">console</span>.log(obj2.item);    <span class="hljs-comment">// unchanged</span></code></pre>
+<pre><code>    <span class="hljs-number">1.</span> 传值：参数指向新内存（新内存复制了值），操作参数和原来的变量（指向的内存）没有半毛钱的关系。
+    <span class="hljs-number">2.</span> 传引用：参数指向同一份内存（没有复制值），操作参数即操作原来的变量（指向的内存）。
+    <span class="hljs-number">3.</span> call by sharing：参数指向新内存，但新内存复制了原来的内存地址，直接赋值的话相当于覆盖了新内存的内容，不会影响原来的变量；但是改变对象的属性其实还是操作了原来的对象。</code></pre><p>Java 中传参数的本质是赋值操作，primitive 就是本身的值，object 就是内存地址。</p>
+<p>以上问题来自于<a href="https://github.com/creeperyang/blog/issues/2">JavaScript问题集锦</a>, 以及看的时候查阅的其他资料</p>
+<h3 id="26-javascript的操作符优先级从高到低排序">26. JavaScript的操作符优先级,从高到低排序</h3>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Operator_Precedence">MDN</a></p>
+<h3 id="27--一道颇有难度的javascript题">27.  <a href="https://segmentfault.com/a/1190000007979730">一道颇有难度的JavaScript题</a></h3>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Foo</span>(<span class="hljs-params"></span>) </span>{
+    getName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'1'</span>);
+    };
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+}
+Foo.getName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'2'</span>);
+};
+Foo.prototype.getName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'3'</span>);
+};
+<span class="hljs-keyword">var</span> getName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'4'</span>);
+};
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getName</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-number">5</span>);
+}
+
+Foo.getName();  <span class="hljs-comment">// 2</span>
+getName();    <span class="hljs-comment">// 4</span>
+Foo().getName(); <span class="hljs-comment">// 1</span>
+getName();  <span class="hljs-comment">// 1</span>
+<span class="hljs-keyword">new</span> Foo.getName(); <span class="hljs-comment">// 2</span>
+<span class="hljs-keyword">new</span> Foo().getName();   <span class="hljs-comment">// 3</span>
+<span class="hljs-keyword">new</span> <span class="hljs-keyword">new</span> Foo().getName();   <span class="hljs-comment">// 3</span></code></pre>
+<p>new 优先级？</p>
+<h3 id="28-实现-functionprototypebind">28. 实现 <code>Function.prototype.bind()</code></h3>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">(num1, num2)</span> </span>{
+    <span class="hljs-keyword">this</span>.num1 = num1;
+    <span class="hljs-keyword">this</span>.num2 = num2;
+}
+
+obj = {}
+test1 = test.bind(obj, <span class="hljs-number">456</span>)
+test1(<span class="hljs-number">123</span>)
+obj.num1 <span class="hljs-comment">// 456</span>
+obj.num2 <span class="hljs-comment">// 123</span></code></pre>
+<pre><code class="language-javascript"><span class="hljs-built_in">Function</span>.prototype.bind = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">var</span> fn = <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">var</span> args = <span class="hljs-built_in">Array</span>.prototype.slice.call(<span class="hljs-built_in">arguments</span>);
+    <span class="hljs-keyword">var</span> context = args.shift();
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">return</span> fn.apply(context,
+            args.concat(<span class="hljs-built_in">Array</span>.prototype.slice.call(<span class="hljs-built_in">arguments</span>)));
+    };
+};</code></pre>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/apply">Function.prototype.apply()</a>
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">Function.prototype.bind()</a></p>
+<h3 id="29-函数节流和函数防抖">29. 函数节流和函数防抖</h3>
+<pre><code class="language-javascript"><span class="hljs-comment">// 简单的节流函数</span>
+<span class="hljs-comment">//fun 要执行的函数</span>
+<span class="hljs-comment">//delay 延迟</span>
+<span class="hljs-comment">//time  在time时间内必须执行一次</span>
+function throttle(<span class="hljs-function"><span class="hljs-keyword">fun</span>, delay, time) {</span>
+    <span class="hljs-keyword">var</span> timeout,
+        startTime = new Date();
+    <span class="hljs-keyword">return</span> function() {
+        <span class="hljs-keyword">var</span> context = <span class="hljs-keyword">this</span>,
+            args = arguments,
+            curTime = new Date();
+        clearTimeout(timeout);
+        <span class="hljs-comment">// 如果达到了规定的触发时间间隔，触发 handler</span>
+        <span class="hljs-keyword">if</span> (curTime - startTime &gt;= time) {
+            <span class="hljs-function"><span class="hljs-keyword">fun</span>.<span class="hljs-title">apply</span><span class="hljs-params">(context, args)</span></span>;
+            startTime = curTime;
+            <span class="hljs-comment">// 没达到触发间隔，重新设定定时器</span>
+        } <span class="hljs-keyword">else</span> {
+            timeout = setTimeout(function(){
+                <span class="hljs-function"><span class="hljs-keyword">fun</span>.<span class="hljs-title">apply</span><span class="hljs-params">(context, args)</span></span>;
+            }, delay);
+        }
+    };
+};</code></pre>
+<pre><code class="language-javascript"><span class="hljs-comment">// 简单的防抖函数</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">debounce</span>(<span class="hljs-params">fn, delay</span>) </span>{
+  <span class="hljs-comment">// 持久化一个定时器 timer</span>
+  <span class="hljs-keyword">let</span> timer = <span class="hljs-literal">null</span>;
+  <span class="hljs-comment">// 闭包函数可以访问 timer</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// 通过 'this' 和 'arguments'</span>
+    <span class="hljs-comment">// 获得函数的作用域和参数</span>
+    <span class="hljs-keyword">let</span> context = <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">let</span> args = <span class="hljs-built_in">arguments</span>;
+    <span class="hljs-comment">// 如果事件被触发，清除 timer 并重新开始计时</span>
+    clearTimeout(timer);
+    timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      fn.apply(context, args);
+    }, delay);
+  }
+}</code></pre>
+<p><a href="https://blog.coding.net/blog/the-difference-between-throttle-and-debounce-in-underscorejs">浅谈 Underscore.js 中 _.throttle 和 _.debounce 的差异</a></p>
+<h3 id="30--懒加载-lazyload">30.  懒加载 lazyload</h3>
+<pre><code class="language-javascript"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">var</span> num = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'img'</span>).length;
+    <span class="hljs-keyword">var</span> img = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">"img"</span>);
+    <span class="hljs-keyword">var</span> n = <span class="hljs-number">0</span>; <span class="hljs-comment">//存储图片加载到的位置，避免每次都从第一张图片开始遍历</span>
+    lazyload(); <span class="hljs-comment">//页面载入完毕加载可是区域内的图片</span>
+    <span class="hljs-built_in">window</span>.onscroll = lazyload;
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">lazyload</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-comment">//监听页面滚动事件</span>
+        <span class="hljs-keyword">var</span> seeHeight = <span class="hljs-built_in">document</span>.documentElement.clientHeight; <span class="hljs-comment">//可见区域高度</span>
+        <span class="hljs-keyword">var</span> scrollTop = <span class="hljs-built_in">document</span>.documentElement.scrollTop || <span class="hljs-built_in">document</span>.body.scrollTop; <span class="hljs-comment">//滚动条距离顶部高度</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = n; i &lt; num; i++) {
+            <span class="hljs-keyword">if</span> (img[i].offsetTop &lt; seeHeight + scrollTop) {
+                <span class="hljs-keyword">if</span> (img[i].getAttribute(<span class="hljs-string">"src"</span>) == <span class="hljs-string">"default.jpg"</span>) {
+                    img[i].src = img[i].getAttribute(<span class="hljs-string">"data-src"</span>);
+                }
+                n = i + <span class="hljs-number">1</span>;
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+<p>使用节流函数进行性能优化</p>
+<pre><code class="language-javascript"><span class="hljs-comment">// 简单的节流函数</span>
+<span class="hljs-comment">//fun 要执行的函数</span>
+<span class="hljs-comment">//delay 延迟</span>
+<span class="hljs-comment">//time  在time时间内必须执行一次</span>
+function throttle(<span class="hljs-function"><span class="hljs-keyword">fun</span>, delay, time) {</span>
+    <span class="hljs-keyword">var</span> timeout,
+        startTime = new Date();
+    <span class="hljs-keyword">return</span> function() {
+        <span class="hljs-keyword">var</span> context = <span class="hljs-keyword">this</span>,
+            args = arguments,
+            curTime = new Date();
+        clearTimeout(timeout);
+        <span class="hljs-comment">// 如果达到了规定的触发时间间隔，触发 handler</span>
+        <span class="hljs-keyword">if</span> (curTime - startTime &gt;= time) {
+            <span class="hljs-function"><span class="hljs-keyword">fun</span>.<span class="hljs-title">apply</span><span class="hljs-params">(context, args)</span></span>;
+            startTime = curTime;
+            <span class="hljs-comment">// 没达到触发间隔，重新设定定时器</span>
+        } <span class="hljs-keyword">else</span> {
+            timeout = setTimeout(function(){
+                <span class="hljs-function"><span class="hljs-keyword">fun</span>.<span class="hljs-title">apply</span><span class="hljs-params">(context, args)</span></span>;
+            }, delay);
+        }
+    };
+};
+<span class="hljs-comment">// 实际想绑定在 scroll 事件上的 handler</span>
+function lazyload(event) {}
+<span class="hljs-comment">// 采用了节流函数</span>
+window.addEventListener(<span class="hljs-string">'scroll'</span>,throttle(lazyload,<span class="hljs-number">500</span>,<span class="hljs-number">1000</span>));</code></pre>
+<p>使用去抖函数进行性能优化</p>
+<pre><code class="language-javascript"><span class="hljs-comment">// debounce函数用来包裹我们的事件</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">debounce</span>(<span class="hljs-params">fn, delay</span>) </span>{
+  <span class="hljs-comment">// 持久化一个定时器 timer</span>
+  <span class="hljs-keyword">let</span> timer = <span class="hljs-literal">null</span>;
+  <span class="hljs-comment">// 闭包函数可以访问 timer</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// 通过 'this' 和 'arguments'</span>
+    <span class="hljs-comment">// 获得函数的作用域和参数</span>
+    <span class="hljs-keyword">let</span> context = <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">let</span> args = <span class="hljs-built_in">arguments</span>;
+    <span class="hljs-comment">// 如果事件被触发，清除 timer 并重新开始计时</span>
+    clearTimeout(timer);
+    timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      fn.apply(context, args);
+    }, delay);
+  }
+}
+<span class="hljs-comment">// 实际想绑定在 scroll 事件上的 handler</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">lazyload</span>(<span class="hljs-params">event</span>) </span>{}
+<span class="hljs-comment">// 采用了去抖函数</span>
+<span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">'scroll'</span>,throttle(lazyload,<span class="hljs-number">500</span>));</code></pre>
+<p><a href="https://i.jakeyu.top//2016/11/26/%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD/">实现图片懒加载(lazyload)</a></p>
+<h3 id="31-new-操作符都做了什么？">31. new 操作符都做了什么？</h3>
+<pre><code><span class="hljs-number">1.</span> 创建一个新的对象
+<span class="hljs-number">2.</span> 将构造函数的<span class="hljs-keyword">this</span>指向这个新对象
+<span class="hljs-number">3.</span> 执行构造函数的代码，为这个对象添加属性，方法等
+<span class="hljs-number">4.</span> 返回新对象</code></pre><h3 id="32-原生ajax">32. 原生Ajax</h3>
+<pre><code class="language-javascript"><span class="hljs-keyword">if</span>(<span class="hljs-built_in">window</span>.ActiveXObject){
+    xmlHttp=<span class="hljs-keyword">new</span> ActiveXObject(<span class="hljs-string">"Microsoft.XMLHTTP"</span>);
+}<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(<span class="hljs-built_in">window</span>.XMLHttpRequest)
+    xmlHttp=<span class="hljs-keyword">new</span> XMLHttpRequest();
+}
+
+<span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest()
+xhr.onreadystatechange = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">switch</span> (xhr.readyState) {
+    <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'未初始化, 尚未调用open()'</span>);
+      <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'启动, 已调用open(), 未调用send()'</span>);
+      <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'发送, 已调用send(), 为未收到响应'</span>);
+      <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'接受, 已接受到部分数据'</span>);
+      <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>:
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'完成, 已接受全部数据'</span>);
+      <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">default</span>:
+      <span class="hljs-keyword">break</span>;
+  }
+}
+<span class="hljs-comment">// xhr.onload = function(e) {</span>
+<span class="hljs-comment">//  var res = e.target.response.message</span>
+<span class="hljs-comment">// }</span>
+<span class="hljs-comment">// xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');</span>
+<span class="hljs-comment">// xhr.responseType = 'json';</span>
+<span class="hljs-comment">// 避免缓存： url+时间戳</span>
+xhr.open(<span class="hljs-string">'GET'</span>, URL);
+xhr.send(<span class="hljs-literal">null</span>);
+
+httpRequest.open(<span class="hljs-string">'POST'</span>, url);
+httpRequest.setRequestHeader(<span class="hljs-string">'Content-Type'</span>, <span class="hljs-string">'application/x-www-form-urlencoded'</span>);
+httpRequest.send(<span class="hljs-string">'userName='</span> + <span class="hljs-built_in">encodeURIComponent</span>(userName));</code></pre>
+<p><a href="https://segmentfault.com/a/1190000004100271">脱离jQuery，使用原生Ajax</a></p>
+<h3 id="33-封装一个轮播图组件">33. 封装一个轮播图组件</h3>
+<pre><code>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"> $ </span>) </span>{
+    $.fn.initCarousel = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.data(<span class="hljs-string">'target'</span>));
+      <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>,
+          target = $(<span class="hljs-keyword">this</span>.data(<span class="hljs-string">'target'</span>)),
+          elementName = <span class="hljs-keyword">this</span>.data(<span class="hljs-string">'element'</span>),
+          elements = target.find(elementName),
+          time = <span class="hljs-literal">null</span>,
+          timeNav = <span class="hljs-literal">null</span>,
+          curImg = <span class="hljs-literal">null</span>,
+          curIndex = <span class="hljs-number">1</span>,
+          init = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-built_in">console</span>.log(elements);
+            curImg = $(target.find(elementName + <span class="hljs-string">'.cur'</span>)[<span class="hljs-number">0</span>]);
+            self.find(<span class="hljs-string">'li'</span>).removeClass(<span class="hljs-string">'hover'</span>);
+            self.find(<span class="hljs-string">'li'</span>).eq(curIndex).addClass(<span class="hljs-string">'hover'</span>);
+            curImg.fadeOut(<span class="hljs-number">10</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+              curImg.removeClass(<span class="hljs-string">'cur'</span>);
+              elements.eq(curIndex - <span class="hljs-number">1</span>).addClass(<span class="hljs-string">'cur'</span>).fadeIn(<span class="hljs-number">500</span>)
+            });
+            curIndex++;
+            curIndex = curIndex == elements.length ? <span class="hljs-number">0</span> : curIndex++;
+            time = setTimeout(init, <span class="hljs-number">3000</span>)
+          };
+      time = setTimeout(init, <span class="hljs-number">3000</span>);
+      <span class="hljs-keyword">this</span>.find(<span class="hljs-string">'li'</span>).bind(<span class="hljs-string">'mouseenter'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+        curIndex = $(<span class="hljs-keyword">this</span>).index();
+        <span class="hljs-built_in">console</span>.log(curIndex);
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>)
+        self.find(<span class="hljs-string">"li"</span>).removeClass(<span class="hljs-string">"hover"</span>);
+        clearTimeout(time);
+        clearTimeout(timeNav);
+        timeNav = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          elements.hide();
+          elements.removeClass(<span class="hljs-string">'cur'</span>);
+          elements.eq(curIndex - <span class="hljs-number">1</span>).addClass(<span class="hljs-string">'cur'</span>).show()
+        }, <span class="hljs-number">200</span>)
+        $(<span class="hljs-keyword">this</span>).addClass(<span class="hljs-string">'hover'</span>);
+        curIndex = curIndex == elements.length ? <span class="hljs-number">0</span> : curIndex + <span class="hljs-number">1</span>;
+        time = setTimeout(init, <span class="hljs-number">3000</span>)
+      })
+    };
+})( jQuery );
+$(<span class="hljs-string">'.slide'</span>).initCarousel();</code></pre><h3 id="34-输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列12473568和中序遍历序列47215386，则重建二叉树并返回。">34. 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。</h3>
+<pre><code class="language-javascript">作者：faremax
+链接：https:<span class="hljs-comment">//www.nowcoder.com/discuss/49349</span>
+来源：牛客网
+
+<span class="hljs-comment">/* function TreeNode(x) {
+    this.val = x;
+    this.left = null;
+    this.right = null;
+} */</span>
+<span class="hljs-keyword">function</span> re<span class="hljs-constructor">ConstructBinaryTree(<span class="hljs-params">pre</span>, <span class="hljs-params">vin</span>)</span>{
+    <span class="hljs-keyword">if</span>(pre.length<span class="hljs-operator"> == </span><span class="hljs-number">0</span><span class="hljs-operator"> || </span>vin.length<span class="hljs-operator"> == </span><span class="hljs-number">0</span>){
+        return null;
+    };
+    var index = vin.index<span class="hljs-constructor">Of(<span class="hljs-params">pre</span>[0])</span>;
+    var left = vin.slice(<span class="hljs-number">0</span>,index);
+    var right = vin.slice(index+<span class="hljs-number">1</span>);
+    var node = <span class="hljs-keyword">new</span> <span class="hljs-constructor">TreeNode(<span class="hljs-params">vin</span>[<span class="hljs-params">index</span>])</span>;
+    node.left = re<span class="hljs-constructor">ConstructBinaryTree(<span class="hljs-params">pre</span>.<span class="hljs-params">slice</span>(1,<span class="hljs-params">index</span>+1)</span>,left);
+    node.right = re<span class="hljs-constructor">ConstructBinaryTree(<span class="hljs-params">pre</span>.<span class="hljs-params">slice</span>(<span class="hljs-params">index</span>+1)</span>,right);
+    return node;
+}</code></pre>
+<h3 id="35-用两个栈来实现一个队列，完成队列的push和pop操作。-队列中的元素为int类型。">35. 用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。</h3>
+<pre><code class="language-javascript">作者：faremax
+链接：https://www.nowcoder.com/discuss/<span class="hljs-number">49349</span>
+来源：牛客网
+
+<span class="hljs-built_in">var</span> stack1 = [];
+<span class="hljs-built_in">var</span> stack2 = [];
+function <span class="hljs-built_in">push</span>(node){
+    stack1.<span class="hljs-built_in">push</span>(node);
+}
+function <span class="hljs-built_in">pop</span>(){
+    <span class="hljs-built_in">var</span> temp = stack1.<span class="hljs-built_in">pop</span>();
+    <span class="hljs-keyword">while</span>(temp){
+        stack2.<span class="hljs-built_in">push</span>(temp);
+        temp = stack1.<span class="hljs-built_in">pop</span>();
+    }
+    <span class="hljs-built_in">var</span> result = stack2.<span class="hljs-built_in">pop</span>();
+    temp = stack2.<span class="hljs-built_in">pop</span>();
+    <span class="hljs-keyword">while</span>(temp){
+        stack1.<span class="hljs-built_in">push</span>(temp);
+        temp = stack2.<span class="hljs-built_in">pop</span>();
+    }
+    <span class="hljs-built_in">return</span> result;
+}</code></pre>
+<h3 id="36-大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项。n39">36. 大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项。n&lt;=39</h3>
+<pre><code class="language-javascript">作者：faremax
+链接：https:<span class="hljs-comment">//www.nowcoder.com/discuss/49349</span>
+来源：牛客网
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Fibonacci</span><span class="hljs-params">(n)</span></span>{
+    <span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>, b = <span class="hljs-number">1</span>, temp;
+    <span class="hljs-keyword">if</span>(n &lt;= <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">2</span>; i &lt;= n; i++){
+      temp = b;
+      b = a + b;
+      a = temp;
+    }
+    <span class="hljs-keyword">return</span> a;
+}</code></pre>
+<h3 id="37-一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法。">37. 一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法。</h3>
+<p>我们可以用21的小矩形横着或者竖着去覆盖更大的矩形。请问用n个21的小矩形无重叠地覆盖一个2*n的大矩形，总共有多少种方法？</p>
+<pre><code class="language-javascript">作者：faremax
+链接：https:<span class="hljs-comment">//www.nowcoder.com/discuss/49349</span>
+来源：牛客网
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">jumpFloor</span>(<span class="hljs-params"><span class="hljs-built_in">number</span></span>)</span>{
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">number</span> &lt; <span class="hljs-number">1</span>){
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">number</span> === <span class="hljs-number">1</span>){
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    }
+    <span class="hljs-keyword">if</span>(<span class="hljs-built_in">number</span> === <span class="hljs-number">2</span>){
+        <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>;
+    }
+    <span class="hljs-keyword">var</span> temp = <span class="hljs-number">0</span>, a = <span class="hljs-number">1</span>, b = <span class="hljs-number">2</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">3</span>; i &lt;= <span class="hljs-built_in">number</span>; i++){
+        temp = a + b;
+        a = b;
+        b = temp;
+    }
+    <span class="hljs-keyword">return</span> temp;
+}</code></pre>
+<h3 id="38-一只青蛙一次可以跳上1级台阶，也可以跳上2级它也可以跳上n级。求该青蛙跳上一个n级的台阶总共有多少种跳法。">38. 一只青蛙一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。求该青蛙跳上一个n级的台阶总共有多少种跳法。</h3>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">jumpFloorII</span>(<span class="hljs-params"><span class="hljs-built_in">number</span></span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.pow(<span class="hljs-number">2</span>, <span class="hljs-built_in">number</span> - <span class="hljs-number">1</span>);
+}</code></pre>
+<h3 id="39-输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。">39. 输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。</h3>
+<pre><code class="language-javascript">作者：faremax
+链接：https:<span class="hljs-comment">//www.nowcoder.com/discuss/49349</span>
+来源：牛客网
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">NumberOf1</span><span class="hljs-params">(n)</span></span>{
+    <span class="hljs-keyword">if</span>(n &lt; <span class="hljs-number">0</span>){
+        n = n &gt;&gt;&gt; <span class="hljs-number">0</span>;
+    }
+    <span class="hljs-keyword">var</span> arr = n.toString(<span class="hljs-number">2</span>).split(<span class="hljs-string">''</span>);
+    <span class="hljs-keyword">return</span> arr.reduce(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(a,b)</span></span>{
+        <span class="hljs-keyword">return</span> b === <span class="hljs-string">"1"</span> ? a + <span class="hljs-number">1</span> : a;
+    },<span class="hljs-number">0</span>);
+}</code></pre>
+<h3 id="40-输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。">40. 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。</h3>
+<pre><code class="language-javascript">作者：faremax
+链接：https:<span class="hljs-comment">//www.nowcoder.com/discuss/49349</span>
+来源：牛客网
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reOrderArray</span><span class="hljs-params">(array)</span></span>{
+    <span class="hljs-keyword">var</span> result = [];
+    <span class="hljs-keyword">var</span> even = [];
+    <span class="hljs-keyword">array</span>.<span class="hljs-keyword">forEach</span>(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(item)</span></span>{
+        <span class="hljs-keyword">if</span>((item &amp; <span class="hljs-number">1</span>) === <span class="hljs-number">1</span>){
+            result.push(item);
+        } <span class="hljs-keyword">else</span> {
+            even.push(item);
+        }
+    });
+    <span class="hljs-keyword">return</span> result.concat(even);
+}</code></pre>
+<h3 id="41">41.</h3>
+<pre><code class="language-javascript">ar a = {};
+<span class="hljs-keyword">var</span> b = {<span class="hljs-attr">key</span>: <span class="hljs-string">'b'</span>};
+<span class="hljs-keyword">var</span> c = {<span class="hljs-attr">key</span>: <span class="hljs-string">'c'</span>};
+a[b] = <span class="hljs-number">123</span>, a[c] = <span class="hljs-number">456</span>;
+<span class="hljs-built_in">console</span>.log(a[b]); <span class="hljs-comment">// 456</span></code></pre>
+<h3 id="42">42.</h3>
+<pre><code class="language-javascript">(<span class="hljs-name">function</span>(<span class="hljs-name">x</span>){
+    return (<span class="hljs-name">function</span>(<span class="hljs-name">y</span>){
+        console.log(<span class="hljs-name">x</span>)<span class="hljs-comment">;</span>
+    })(<span class="hljs-number">2</span>)<span class="hljs-comment">;</span>
+})(<span class="hljs-number">1</span>) // <span class="hljs-number">1</span></code></pre>
+<h3 id="43">43.</h3>
+<pre><code class="language-javascript">for(<span class="hljs-name">var</span> i=0<span class="hljs-comment">;i&lt;5;i++){</span>
+    setTimeout((<span class="hljs-name">function</span>(<span class="hljs-name">i</span>){console.log(<span class="hljs-name">i</span>)})(<span class="hljs-name">i</span>),i*1000)<span class="hljs-comment">;</span>
+}
+// <span class="hljs-number">0</span> <span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span> <span class="hljs-number">4</span></code></pre>
+<h3 id="文章：">文章：</h3>
+<ol>
+<li><a href="http://yujiangshui.com/javascript-prototype-and-create-object/">JavaScript 原型理解与创建对象应用</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures">闭包 | MDN</a></li>
+<li><a href="http://yanhaijing.com/es5/">ECMAScript5.1中文版</a></li>
+<li><a href="http://www.jianshu.com/p/cd3fee40ef59">前端基础进阶系列</a></li>
+</ol>
+</section><section id="vcomments" class="v"><div class="vwrap"><div class="vheader item3"><input name="nick" placeholder="昵称" class="vnick vinput" type="text"><input name="mail" placeholder="邮箱" class="vmail vinput" type="email"><input name="link" placeholder="网址(http://)" class="vlink vinput" type="text"></div><div class="vedit"><textarea id="veditor" class="veditor vinput" placeholder="Just Go Go"></textarea><div class="vctrl"><span class="vemoji-btn">表情</span> | <span class="vpreview-btn">预览</span></div><div class="vemojis" style="display:none;"><i name="grinning" title="grinning">😀</i><i name="smiley" title="smiley">😃</i><i name="smile" title="smile">😄</i><i name="grin" title="grin">😁</i><i name="laughing" title="laughing">😆</i><i name="sweat_smile" title="sweat_smile">😅</i><i name="joy" title="joy">😂</i><i name="blush" title="blush">😊</i><i name="innocent" title="innocent">😇</i><i name="wink" title="wink">😉</i><i name="relieved" title="relieved">😌</i><i name="heart_eyes" title="heart_eyes">😍</i><i name="kissing_heart" title="kissing_heart">😘</i><i name="kissing" title="kissing">😗</i><i name="kissing_smiling_eyes" title="kissing_smiling_eyes">😙</i><i name="kissing_closed_eyes" title="kissing_closed_eyes">😚</i><i name="yum" title="yum">😋</i><i name="stuck_out_tongue_winking_eye" title="stuck_out_tongue_winking_eye">😜</i><i name="stuck_out_tongue_closed_eyes" title="stuck_out_tongue_closed_eyes">😝</i><i name="stuck_out_tongue" title="stuck_out_tongue">😛</i><i name="sunglasses" title="sunglasses">😎</i><i name="smirk" title="smirk">😏</i><i name="unamused" title="unamused">😒</i><i name="disappointed" title="disappointed">😞</i><i name="pensive" title="pensive">😔</i><i name="worried" title="worried">😟</i><i name="confused" title="confused">😕</i><i name="persevere" title="persevere">😣</i><i name="confounded" title="confounded">😖</i><i name="tired_face" title="tired_face">😫</i><i name="weary" title="weary">😩</i><i name="angry" title="angry">😠</i><i name="rage" title="rage">😡</i><i name="no_mouth" title="no_mouth">😶</i><i name="neutral_face" title="neutral_face">😐</i><i name="expressionless" title="expressionless">😑</i><i name="hushed" title="hushed">😯</i><i name="frowning" title="frowning">😦</i><i name="anguished" title="anguished">😧</i><i name="open_mouth" title="open_mouth">😮</i><i name="astonished" title="astonished">😲</i><i name="dizzy_face" title="dizzy_face">😵</i><i name="flushed" title="flushed">😳</i><i name="scream" title="scream">😱</i><i name="fearful" title="fearful">😨</i><i name="cold_sweat" title="cold_sweat">😰</i><i name="cry" title="cry">😢</i><i name="disappointed_relieved" title="disappointed_relieved">😥</i><i name="sob" title="sob">😭</i><i name="sweat" title="sweat">😓</i><i name="sleepy" title="sleepy">😪</i><i name="sleeping" title="sleeping">😴</i><i name="mask" title="mask">😷</i><i name="smiling_imp" title="smiling_imp">😈</i><i name="smiley_cat" title="smiley_cat">😺</i><i name="smile_cat" title="smile_cat">😸</i><i name="joy_cat" title="joy_cat">😹</i><i name="heart_eyes_cat" title="heart_eyes_cat">😻</i><i name="smirk_cat" title="smirk_cat">😼</i><i name="kissing_cat" title="kissing_cat">😽</i><i name="scream_cat" title="scream_cat">🙀</i><i name="crying_cat_face" title="crying_cat_face">😿</i><i name="pouting_cat" title="pouting_cat">😾</i><i name="cat" title="cat">🐱</i><i name="mouse" title="mouse">🐭</i><i name="cow" title="cow">🐮</i><i name="monkey_face" title="monkey_face">🐵</i><i name="hand" title="hand">✋</i><i name="fist" title="fist">✊</i><i name="v" title="v">✌️</i><i name="point_up" title="point_up">👆</i><i name="point_down" title="point_down">👇</i><i name="point_left" title="point_left">👈</i><i name="point_right" title="point_right">👉</i><i name="facepunch" title="facepunch">👊</i><i name="wave" title="wave">👋</i><i name="clap" title="clap">👏</i><i name="open_hands" title="open_hands">👐</i><i name="+1" title="+1">👍</i><i name="-1" title="-1">👎</i><i name="ok_hand" title="ok_hand">👌</i><i name="pray" title="pray">🙏</i><i name="ear" title="ear">👂</i><i name="eyes" title="eyes">👀</i><i name="nose" title="nose">👃</i><i name="lips" title="lips">👄</i><i name="tongue" title="tongue">👅</i><i name="heart" title="heart">❤️</i><i name="cupid" title="cupid">💘</i><i name="sparkling_heart" title="sparkling_heart">💖</i><i name="star" title="star">⭐️</i><i name="sparkles" title="sparkles">✨</i><i name="zap" title="zap">⚡️</i><i name="sunny" title="sunny">☀️</i><i name="cloud" title="cloud">☁️</i><i name="snowflake" title="snowflake">❄️</i><i name="umbrella" title="umbrella">☔️</i><i name="coffee" title="coffee">☕️</i><i name="airplane" title="airplane">✈️</i><i name="anchor" title="anchor">⚓️</i><i name="watch" title="watch">⌚️</i><i name="phone" title="phone">☎️</i><i name="hourglass" title="hourglass">⌛️</i><i name="email" title="email">✉️</i><i name="scissors" title="scissors">✂️</i><i name="black_nib" title="black_nib">✒️</i><i name="pencil2" title="pencil2">✏️</i><i name="x" title="x">❌</i><i name="recycle" title="recycle">♻️</i><i name="white_check_mark" title="white_check_mark">✅</i><i name="negative_squared_cross_mark" title="negative_squared_cross_mark">❎</i><i name="m" title="m">Ⓜ️</i><i name="i" title="i">ℹ️</i><i name="tm" title="tm">™️</i><i name="copyright" title="copyright">©️</i><i name="registered" title="registered">®️</i></div><div class="vinput vpreview" style="display:none;"></div></div><div class="vcontrol"><div class="col col-20" title="Markdown is supported"><a href="https://segmentfault.com/markdown" target="_blank"><svg class="markdown" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z"></path></svg></a></div><div class="col col-80 text-right"><button type="button" title="Cmd|Ctrl+Enter" class="vsubmit vbtn">回复</button></div></div><div style="display:none;" class="vmark"></div></div><div class="vinfo" style="display:none;"><div class="vcount col"></div></div><div class="vlist"></div><div class="vempty" style="display:block;"><pre style="text-align:left;">Code 429: Too many requests. [429 GET https://avoscloud.com/1.1/classes/Comment]</pre></div><div class="vpage txt-center"></div><div class="info"><div class="power txt-right">Powered By <a href="https://valine.js.org" target="_blank">Valine</a><br>v1.3.10</div></div></section></article></main></div></div><script>!function(i){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)t=n[l],Object.prototype.hasOwnProperty.call(p,t)&&p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var r=this.webpackJsonpblog=this.webpackJsonpblog||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.7cff77cf.chunk.js"></script><script src="/static/js/main.691d9270.chunk.js"></script></body></html>

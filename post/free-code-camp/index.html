@@ -1,1 +1,478 @@
-<!DOCTYPE html><html lang="zh-hans"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="logo.jpeg"><link rel="manifest" href="/manifest.json"><title>打开天眼看文章</title><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://kit.fontawesome.com/b2fc37abd6.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-98427538-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-98427538-1")</script><link href="/static/css/2.5bcfae4a.chunk.css" rel="stylesheet"><link href="/static/css/main.f9f6d843.chunk.css" rel="stylesheet"><style type="text/css">.v{font-size:16px;text-align:left}.v *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:2;color:#555;-webkit-transition:all .3s ease;transition:all .3s ease}.v hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v.hide-avatar .vimg{display:none}.v a{position:relative;cursor:pointer;color:#1abc9c;display:inline-block}.v a:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v a:hover{color:#d7191a}.v a:hover:before{width:100%;left:0;right:auto}.v code,.v pre{background-color:#f6f6f6;color:#555;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0;font-family:Source Code Pro,courier new,Input Mono,PT Mono,SFMono-Regular,Consolas,Monaco,Menlo,PingFang SC,Liberation Mono,Microsoft YaHei,Courier，monospace}.v pre{padding:10px;overflow:auto;line-height:1.45}.v pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v input[type=checkbox],.v input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v .vwrap input{background:transparent}.v .vwrap .vedit{position:relative;padding-top:10px}.v .vwrap .vedit .vctrl{text-align:right;font-size:12px}.v .vwrap .vedit .vctrl span{padding:10px;display:inline-block;vertical-align:middle;cursor:pointer}.v .vwrap .vedit .vemojis{display:none;font-size:18px;text-align:justify;max-height:145px;overflow:auto;margin-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vemojis i{font-style:normal;padding:7px 0;width:38px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v .vwrap .vedit .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vpreview frame,.v .vwrap .vedit .vpreview iframe,.v .vwrap .vedit .vpreview img{max-width:100%;border:none}.v .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v .vwrap .vheader.item2 .vinput{width:50%}.v .vwrap .vheader.item1 .vinput{width:100%}.v .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v .vwrap .vheader.item2 .vinput,.v .vwrap .vheader .vinput{width:100%}}.v .vwrap .vcontrol{font-size:0;padding-top:15px}.v .vwrap .vcontrol .col{display:inline-block;font-size:16px;vertical-align:middle;color:#ccc}.v .vwrap .vcontrol .col.text-right{text-align:right}.v .vwrap .vcontrol .col svg{margin-right:2px;overflow:hidden;fill:currentColor;vertical-align:middle}.v .vwrap .vcontrol .col.col-20{width:20%}.v .vwrap .vcontrol .col.col-40{width:40%}.v .vwrap .vcontrol .col.col-60{width:60%}.v .vwrap .vcontrol .col.col-80{width:80%}.v .vwrap .vcontrol .col.split{width:50%}.v .vwrap .vmark{position:absolute;background:rgba(0,0,0,.65);width:100%;height:100%;left:0;top:0}.v .vwrap .vmark .valert{padding-top:3em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}.v .vwrap .vmark .valert .vcode{width:4.6875em;border-radius:.3125em;padding:.5em;background:#dedede}.v .vwrap .vmark .valert .vcode:focus{border-color:#3090e4;background-color:#fff}@media screen and (max-width:720px){.v .vwrap .vmark .valert{padding-top:5.5em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}}.v .power{color:#999;padding:.5em 0}.v .power,.v .power a{font-size:.75em}.v .vinfo{font-size:0;padding:5px}.v .vinfo .col{font-size:16px;display:inline-block;width:50%;vertical-align:middle}.v .vinfo .vcount .vnum{font-weight:600;font-size:1.25em}.v a{text-decoration:none;color:#555}.v a:hover{color:#222}.v ol,.v ul{padding:0;margin-left:1.25em}.v .txt-center{text-align:center}.v .txt-right{text-align:right}.v .pd5{padding:5px}.v .pd10{padding:10px}.v .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#313131;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:#ededed;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v .vbtn+.vbtn{margin-left:1.25em}.v .vbtn:active,.v .vbtn:hover{color:#3090e4;border-color:#3090e4;background-color:#fff}.v .vempty{padding:1.25em;text-align:center;color:#999}.v .vlist{width:100%}.v .vlist .vcard{padding-top:1.5em;position:relative;display:block}.v .vlist .vcard:after{content:"";clear:both;display:block}.v .vlist .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v .vlist .vcard .vimg{width:2.5em;height:2.5em}}.v .vlist .vcard .vhead{line-height:1.5;margin-top:0}.v .vlist .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v .vlist .vcard .vhead .vnick:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v .vlist .vcard .vhead .vnick:hover{color:#d7191a}.v .vlist .vcard .vhead .vnick:hover:before{width:100%;left:0;right:auto}.v .vlist .vcard .vhead .vsys{display:inline-block;padding:.2em .5em;background:#ededed;color:#b3b1b1;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v .vlist .vcard .vhead .vsys{display:none}}.v .vlist .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v .vlist .vcard .vh .vtime{color:#b3b3b3;font-size:.75em;margin-right:.875em}.v .vlist .vcard .vh .vmeta{line-height:1;position:relative}.v .vlist .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v .vlist .vcard:last-child .vh{border-bottom:none}.v .vlist .vcard .vcontent{word-wrap:break-word;word-break:break-all;text-align:justify;color:#4a4a4a;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v .vlist .vcard .vcontent frame,.v .vlist .vcard .vcontent iframe,.v .vlist .vcard .vcontent img{max-width:100%;border:none}.v .vlist .vcard .vcontent.expand{cursor:pointer;max-height:11.25em;overflow:hidden}.v .vlist .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;pointer-events:none;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9))}.v .vlist .vcard .vcontent.expand:after{display:block;content:"Click on expand";text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;pointer-events:none;background:hsla(0,0%,100%,.9)}.v .vlist .vcard .vquote{color:#666;margin-top:1em;padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v .vlist .vcard .vquote .vimg{width:2.225em;height:2.225em}.v .vpage .vmore{margin:1em 0}.v .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v .vloading{position:relative;padding:20px;display:block;height:80px}.v .vloading:before{-webkit-box-sizing:border-box;box-sizing:border-box;content:"";position:absolute;display:inline-block;top:20px;left:50%;margin-left:-20px;width:40px;height:40px;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}</style></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(i){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)t=n[l],Object.prototype.hasOwnProperty.call(p,t)&&p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var r=this.webpackJsonpblog=this.webpackJsonpblog||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.16fea087.chunk.js"></script><script src="/static/js/main.d56376db.chunk.js"></script></body></html>
+<!DOCTYPE html><html lang="zh-hans"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="logo.jpeg"><link rel="manifest" href="/manifest.json"><title>FreeCodeCamp学习笔记 | 打开天眼看文章</title><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="//api.ip.sb/jsonip?callback=getIP"></script><script src="https://kit.fontawesome.com/b2fc37abd6.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-98427538-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-98427538-1")</script><link href="/static/css/2.5bcfae4a.chunk.css" rel="stylesheet"><link href="/static/css/main.f9f6d843.chunk.css" rel="stylesheet"><style type="text/css">.v{font-size:16px;text-align:left}.v *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:2;color:#555;-webkit-transition:all .3s ease;transition:all .3s ease}.v hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v.hide-avatar .vimg{display:none}.v a{position:relative;cursor:pointer;color:#1abc9c;display:inline-block}.v a:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v a:hover{color:#d7191a}.v a:hover:before{width:100%;left:0;right:auto}.v code,.v pre{background-color:#f6f6f6;color:#555;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0;font-family:Source Code Pro,courier new,Input Mono,PT Mono,SFMono-Regular,Consolas,Monaco,Menlo,PingFang SC,Liberation Mono,Microsoft YaHei,Courier，monospace}.v pre{padding:10px;overflow:auto;line-height:1.45}.v pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v input[type=checkbox],.v input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v .vwrap input{background:transparent}.v .vwrap .vedit{position:relative;padding-top:10px}.v .vwrap .vedit .vctrl{text-align:right;font-size:12px}.v .vwrap .vedit .vctrl span{padding:10px;display:inline-block;vertical-align:middle;cursor:pointer}.v .vwrap .vedit .vemojis{display:none;font-size:18px;text-align:justify;max-height:145px;overflow:auto;margin-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vemojis i{font-style:normal;padding:7px 0;width:38px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v .vwrap .vedit .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vpreview frame,.v .vwrap .vedit .vpreview iframe,.v .vwrap .vedit .vpreview img{max-width:100%;border:none}.v .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v .vwrap .vheader.item2 .vinput{width:50%}.v .vwrap .vheader.item1 .vinput{width:100%}.v .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v .vwrap .vheader.item2 .vinput,.v .vwrap .vheader .vinput{width:100%}}.v .vwrap .vcontrol{font-size:0;padding-top:15px}.v .vwrap .vcontrol .col{display:inline-block;font-size:16px;vertical-align:middle;color:#ccc}.v .vwrap .vcontrol .col.text-right{text-align:right}.v .vwrap .vcontrol .col svg{margin-right:2px;overflow:hidden;fill:currentColor;vertical-align:middle}.v .vwrap .vcontrol .col.col-20{width:20%}.v .vwrap .vcontrol .col.col-40{width:40%}.v .vwrap .vcontrol .col.col-60{width:60%}.v .vwrap .vcontrol .col.col-80{width:80%}.v .vwrap .vcontrol .col.split{width:50%}.v .vwrap .vmark{position:absolute;background:rgba(0,0,0,.65);width:100%;height:100%;left:0;top:0}.v .vwrap .vmark .valert{padding-top:3em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}.v .vwrap .vmark .valert .vcode{width:4.6875em;border-radius:.3125em;padding:.5em;background:#dedede}.v .vwrap .vmark .valert .vcode:focus{border-color:#3090e4;background-color:#fff}@media screen and (max-width:720px){.v .vwrap .vmark .valert{padding-top:5.5em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}}.v .power{color:#999;padding:.5em 0}.v .power,.v .power a{font-size:.75em}.v .vinfo{font-size:0;padding:5px}.v .vinfo .col{font-size:16px;display:inline-block;width:50%;vertical-align:middle}.v .vinfo .vcount .vnum{font-weight:600;font-size:1.25em}.v a{text-decoration:none;color:#555}.v a:hover{color:#222}.v ol,.v ul{padding:0;margin-left:1.25em}.v .txt-center{text-align:center}.v .txt-right{text-align:right}.v .pd5{padding:5px}.v .pd10{padding:10px}.v .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#313131;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:#ededed;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v .vbtn+.vbtn{margin-left:1.25em}.v .vbtn:active,.v .vbtn:hover{color:#3090e4;border-color:#3090e4;background-color:#fff}.v .vempty{padding:1.25em;text-align:center;color:#999}.v .vlist{width:100%}.v .vlist .vcard{padding-top:1.5em;position:relative;display:block}.v .vlist .vcard:after{content:"";clear:both;display:block}.v .vlist .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v .vlist .vcard .vimg{width:2.5em;height:2.5em}}.v .vlist .vcard .vhead{line-height:1.5;margin-top:0}.v .vlist .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v .vlist .vcard .vhead .vnick:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v .vlist .vcard .vhead .vnick:hover{color:#d7191a}.v .vlist .vcard .vhead .vnick:hover:before{width:100%;left:0;right:auto}.v .vlist .vcard .vhead .vsys{display:inline-block;padding:.2em .5em;background:#ededed;color:#b3b1b1;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v .vlist .vcard .vhead .vsys{display:none}}.v .vlist .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v .vlist .vcard .vh .vtime{color:#b3b3b3;font-size:.75em;margin-right:.875em}.v .vlist .vcard .vh .vmeta{line-height:1;position:relative}.v .vlist .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v .vlist .vcard:last-child .vh{border-bottom:none}.v .vlist .vcard .vcontent{word-wrap:break-word;word-break:break-all;text-align:justify;color:#4a4a4a;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v .vlist .vcard .vcontent frame,.v .vlist .vcard .vcontent iframe,.v .vlist .vcard .vcontent img{max-width:100%;border:none}.v .vlist .vcard .vcontent.expand{cursor:pointer;max-height:11.25em;overflow:hidden}.v .vlist .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;pointer-events:none;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9))}.v .vlist .vcard .vcontent.expand:after{display:block;content:"Click on expand";text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;pointer-events:none;background:hsla(0,0%,100%,.9)}.v .vlist .vcard .vquote{color:#666;margin-top:1em;padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v .vlist .vcard .vquote .vimg{width:2.225em;height:2.225em}.v .vpage .vmore{margin:1em 0}.v .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v .vloading{position:relative;padding:20px;display:block;height:80px}.v .vloading:before{-webkit-box-sizing:border-box;box-sizing:border-box;content:"";position:absolute;display:inline-block;top:20px;left:50%;margin-left:-20px;width:40px;height:40px;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}</style><script src="//js.fundebug.cn/fundebug.1.9.0.min.js" apikey="2c7e5b30c7cf402cb7fb35d14b62e7f778babbb70d054160af750065a180fdcd" async="true"></script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="app"><div class="progress-bar"><div class="bg-red"></div><div class="bg-orange"></div><div class="bg-yellow"></div><div class="bg-green"></div><div class="bg-blue"></div><div class="bg-indigo"></div><div class="bg-purple"></div></div><main class="main"><div class="sidebar text-left"><h1><a class="logo" href="/">打开天眼看文章</a></h1><p>TECH | LIFE | X</p><p class="font-sm"><a class="text-blue" title="about me" href="/about">@me |</a><a class="text-green" href="https://github.com/xiao555" title="github" target="_blank" rel="noopener noreferrer">@github</a></p><p class="font-sm"><a href="mailto:zhangruiwu32@gmail.com">zhangruiwu32@gmail.com</a></p><p><small>本站已存活 49 天</small></p><button class="border-0 px-0"><i class="fas fa-moon" aria-hidden="true"></i></button></div><article class="main-content"><h2>FreeCodeCamp学习笔记</h2><p><small>2016-03-25</small><span id="free-code-camp" class="leancloud_visitors ml-1"><small>阅读量</small> <small class="leancloud-visitors-count"></small></span></p><section><p>寒假将过，感觉不能荒废了，要找点事做，于是整理了一下这个。</p>
+<p>额，先<a href="http://weibo.com/p/1001593933059845084440?from=singleweibo&amp;mod=recommand_article&amp;sudaref=www.baidu.com">介绍一下freecodecamp</a>吧：</p>
+<p>FreeCodeCamp 是一个基于 MEAN 架构的开源社区，它可以帮助人们学习编程以及构建他们的非盈利项目，内容以前端为主。</p>
+<p>在GitHub上，FreeCodeCamp拥有超过5万Star， 而且还在持续增长之中，对于大多数项目而言，增加一个Star也不容易。2015年，在《软件开发时代》杂志(SD Times)总结的GitHub优秀项目中，FreeCodeCamp名列前十。目前，该社区有7159次代码提交和250个代码贡献者。</p>
+<p>如此神奇的一个开源项目，到底有哪些优势呢？</p>
+<p>1.学习编程技能，比如HTML5、CSS3、JavaScript、数据库、Git、Node.js、Angular.js和敏捷开发。</p>
+<p>3.从事自由和开源项目。</p>
+<p>5.获得实时帮助。</p>
+<p>下面进入正题。</p>
+<h2 id="html5-and-css">HTML5 and CSS</h2>
+<h3 id="1-say-hello-to-html-elements">1. Say Hello to HTML Elements</h3>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">h1\</span>&gt;</span>Hello<span class="hljs-tag">&lt;/<span class="hljs-name">h1\</span>&gt;</span></code></pre><h3 id="2-headline-with-the-h2-element">2. Headline with the h2 Element</h3>
+<p>添加一个h2元素：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">h1\</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">h1\</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2\</span>&gt;</span>CatPhotoApp<span class="hljs-tag">&lt;/<span class="hljs-name">h2\</span>&gt;</span></code></pre><h3 id="3-inform-with-the-paragraph-element">3. Inform with the Paragraph Element</h3>
+<p>添加一个p元素：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">h1\</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">h1\</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2\</span>&gt;</span>CatPhotoApp<span class="hljs-tag">&lt;/<span class="hljs-name">h2\</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p\</span>&gt;</span>Hello Paragraph<span class="hljs-tag">&lt;/<span class="hljs-name">p\</span>&gt;</span></code></pre><h3 id="4-uncomment-html">4. Uncomment HTML</h3>
+<p>取消注释：</p>
+<pre><code><span class="hljs-comment">&lt;!--
+&lt;h1&gt;Hello World&lt;/h1&gt;
+
+&lt;h2&gt;CatPhotoApp&lt;/h2&gt;
+
+&lt;p&gt;Hello Paragraph&lt;/p&gt;
+\--&gt;</span></code></pre><pre><code>去掉`<span class="hljs-comment">&lt;!--`和`--&gt;</span>`即可。</code></pre><h3 id="5-comment-out-html">5. Comment out HTML</h3>
+<p>注释h1和p：</p>
+<pre><code><span class="hljs-comment">&lt;!--
+&lt;h1&gt;Hello World&lt;/h1&gt;
+\--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2\</span>&gt;</span>CatPhotoApp<span class="hljs-tag">&lt;/<span class="hljs-name">h2\</span>&gt;</span>
+<span class="hljs-comment">&lt;!--
+&lt;p&gt;Hello Paragraph&lt;/p&gt;
+\--&gt;</span></code></pre><h3 id="6-fill-in-the-blank-with-placeholder-text">6. Fill in the Blank with Placeholder Text</h3>
+<p>把那段红色段落复制粘贴到p元素：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p\</span>&gt;</span>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.<span class="hljs-tag">&lt;/<span class="hljs-name">p\</span>&gt;</span></code></pre><h3 id="7-delete-html-elements">7. Delete HTML Elements</h3>
+<p>删除h1元素：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>CatPhotoApp<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre><h3 id="8-change-the-color-of-text">8. Change the Color of Text</h3>
+<p>啊哈，进入CSS的部分了==
+给h2上红色：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: red"</span>&gt;</span>CatPhotoApp<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></code></pre><h3 id="9-use-css-selectors-to-style-elements">9. Use CSS Selectors to Style Elements</h3>
+<p>这里删掉h2元素里的style，创建style元素，并为h2设置color属性为blue(然而例子中给的是red，还要自己修改一下- -！)</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">h2</span> {<span class="hljs-attribute">color</span>:blue;}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>CatPhotoApp<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></code></pre><h3 id="10-use-a-css-class-to-style-an-element">10. Use a CSS Class to Style an Element</h3>
+<p>给h2加个class属性，在style元素里吧h2换成.red-text，blue换成red：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.red-text</span> {
+    <span class="hljs-attribute">color</span>: red;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"red-text"</span>&gt;</span>CatPhotoApp<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>`</code></pre><h3 id="11-style-multiple-elements-with-a-css-class">11. Style Multiple Elements with a CSS Class</h3>
+<p>给<code>&lt;p&gt;</code>加一个red-text的class属性</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.red-text</span> {
+    <span class="hljs-attribute">color</span>: red;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"red-text"</span>&gt;</span>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre><h3 id="12-change-the-font-size-of-an-element">12. Change the Font Size of an Element</h3>
+<p>设置字体大小font-size，没啥好说的</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">font-size</span>:<span class="hljs-number">16px</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"red-text"</span>&gt;</span>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre><h3 id="13-set-the-font-family-of-an-element">13. Set the Font Family of an Element</h3>
+<p>设置字体font-family：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+
+  <span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+    <span class="hljs-attribute">font-family</span>:Monospace;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"red-text"</span>&gt;</span>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre><h3 id="14-import-a-google-font">14. Import a Google Font</h3>
+<p>设置Lobster字体</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://fonts.googleapis.com/css?family=Lobster"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">h2</span> {
+    <span class="hljs-attribute">font-family</span>:Lobster;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"red-text"</span>&gt;</span>CatPhotoApp<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></code></pre><h3 id="15-specify-how-fonts-should-degrade">15. Specify How Fonts Should Degrade</h3>
+<p>设置字体降级,注释掉Google字体的请求，观察变化</p>
+<pre><code><span class="hljs-comment">&lt;!--&lt;link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"&gt;--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+
+  <span class="hljs-selector-tag">h2</span> {
+    <span class="hljs-attribute">font-family</span>: Lobster, Monospace;
+  }
+
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"red-text"</span>&gt;</span>CatPhotoApp<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></code></pre><h3 id="16-add-images-to-your-website">16. Add Images to your Website</h3>
+<p>添加图片：</p>
+<pre><code>&lt;img <span class="hljs-attribute">src</span>=<span class="hljs-string">"https://bit.ly/fcc-relaxing-cat"</span>&gt;</code></pre><h3 id="17-size-your-images">17. Size your Images</h3>
+<p>设置图片大小：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.smaller-image</span> {
+    <span class="hljs-attribute">width</span>:<span class="hljs-number">100px</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"smaller-image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://bit.ly/fcc-relaxing-cat"</span>&gt;</span></code></pre><h3 id="18-add-borders-around-your-elements">18. Add Borders Around your Elements</h3>
+<p>添加边线：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.smaller-image</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+  }
+  <span class="hljs-selector-class">.thick-green-border</span> {
+    <span class="hljs-attribute">border-color</span>: green;
+    <span class="hljs-attribute">border-width</span>:<span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">border-style</span>:solid;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"smaller-image thick-green-border"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://bit.ly/fcc-relaxing-cat"</span>&gt;</span></code></pre><h3 id="19-add-rounded-corners-with-a-border-radius">19. Add Rounded Corners with a Border Radius</h3>
+<p>添加圆角border-radius：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.thick-green-border</span> {
+    <span class="hljs-attribute">border-color</span>: green;
+    <span class="hljs-attribute">border-width</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">border-style</span>: solid;
+    <span class="hljs-attribute">border-radius</span>:<span class="hljs-number">10px</span>;
+  }
+
+  <span class="hljs-selector-class">.smaller-image</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"smaller-image thick-green-border"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://bit.ly/fcc-relaxing-cat"</span>&gt;</span></code></pre><h3 id="20-make-circular-images-with-a-border-radius">20. Make Circular Images with a Border Radius</h3>
+<p>制作圆形图片：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.thick-green-border</span> {
+    <span class="hljs-attribute">border-color</span>: green;
+    <span class="hljs-attribute">border-width</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">border-style</span>: solid;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+  }
+  <span class="hljs-selector-class">.smaller-image</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"smaller-image thick-green-border"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://bit.ly/fcc-relaxing-cat"</span>&gt;</span></code></pre><h3 id="21-link-to-external-pages-with-anchor-elements">21. Link to External Pages with Anchor Elements</h3>
+<p>设置链接：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://freecatphotoapp.com"</span>&gt;</span>cat photos<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre><h3 id="22-nest-an-anchor-element-within-a-paragraph">22. Nest an Anchor Element within a Paragraph</h3>
+<p>使用嵌套：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>View more <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://www.freecatphotoapp.com"</span>&gt;</span>cat photos<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre><h3 id="23-make-dead-links-using-the-hash-symbol">23. Make Dead Links using the Hash Symbol</h3>
+<p>死链接：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Click here for <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>cat photos<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre><h3 id="24-turn-an-image-into-a-link"><a href="#24-_Turn_an_Image_into_a_Link" title="24. Turn an Image into a Link"></a>24. Turn an Image into a Link</h3>
+<p>把图片变成链接：</p>
+<pre><code>&lt;a <span class="hljs-attribute">href</span>=<span class="hljs-string">"#"</span>&gt;&lt;img <span class="hljs-attribute">class</span>=<span class="hljs-string">"smaller-image thick-green-border"</span> <span class="hljs-attribute">src</span>=<span class="hljs-string">"https://bit.ly/fcc-relaxing-cat"</span>&gt;&lt;/a&gt;</code></pre><h3 id="25-add-alt-text-to-an-image-for-accessibility">25. Add Alt Text to an Image for Accessibility</h3>
+<p>给图片添加alt属性：</p>
+<pre><code>&lt;a <span class="hljs-attribute">href</span>=<span class="hljs-string">"#"</span>&gt;&lt;img <span class="hljs-attribute">class</span>=<span class="hljs-string">"smaller-image thick-green-border"</span> <span class="hljs-attribute">src</span>=<span class="hljs-string">"https://bit.ly/fcc-relaxing-cat"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-string">"A cute orange cat lying on its back"</span>&gt;&lt;/a&gt;</code></pre><h3 id="26-create-a-bulleted-unordered-list">26. Create a Bulleted Unordered List</h3>
+<p>创建子弹无序列表(中文是这样吗？好吧是项目符号无序列表),删除两个<code>&lt;p&gt;</code>，列表是三个cat喜欢的东西。</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>milk<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>cheese<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>girl<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre><h3 id="27-create-an-ordered-list">27. Create an Ordered List</h3>
+<p>创建一个有序列表，内容是三个cat讨厌的东西:</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>boy<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>gays<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>html<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre><h3 id="28-create-a-text-field">28. Create a Text Field</h3>
+<p>创建一个文本字段：</p>
+<pre><code>&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span>&gt;</code></pre><h3 id="29-add-placeholder-text-to-a-text-field">29. Add Placeholder Text to a Text Field</h3>
+<p>添加占位文本到一个文本字段:</p>
+<pre><code>&lt;input <span class="hljs-attribute">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-string">"cat photo URL"</span>&gt;</code></pre><h3 id="30-create-a-form-element">30. Create a Form Element</h3>
+<p>创建一个表单元素,嵌套input元素:</p>
+<pre><code>&lt;form <span class="hljs-attribute">action</span>=<span class="hljs-string">"/submit-cat-photo"</span>&gt;&lt;input <span class="hljs-attribute">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-string">"cat photo URL"</span>&gt;&lt;/form&gt;</code></pre><h3 id="31-add-a-submit-button-to-a-form">31. Add a Submit Button to a Form</h3>
+<p>为表单添加提交按钮：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"/submit-cat-photo"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"cat photo URL"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre><h3 id="32-use-html5-to-require-a-field">32. Use HTML5 to Require a Field</h3>
+<p>使用HTML5需要一个字段(required):</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"/submit-cat-photo"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"cat photo URL"</span> <span class="hljs-attr">required</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></code></pre><h3 id="33-create-a-set-of-radio-buttons">33. Create a Set of Radio Buttons</h3>
+<p>设置单选框：</p>
+<pre><code>&lt;<span class="hljs-keyword">label</span>&gt;&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"indoor-outdoor"</span>&gt; indoor&lt;/<span class="hljs-keyword">label</span>&gt;&lt;/<span class="hljs-keyword">br</span>&gt;
+&lt;<span class="hljs-keyword">label</span>&gt;&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"indoor-outdoor"</span>&gt; outdoor&lt;/<span class="hljs-keyword">label</span>&gt;</code></pre><h3 id="34-create-a-set-of-checkboxes">34. Create a Set of Checkboxes</h3>
+<p>设置复选框：</p>
+<pre><code>&lt;<span class="hljs-keyword">form</span> action=<span class="hljs-string">"/submit-cat-photo"</span>&gt;
+  &lt;<span class="hljs-keyword">label</span>&gt;&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"indoor-outdoor"</span>&gt; Indoor&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;<span class="hljs-keyword">label</span>&gt;&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"indoor-outdoor"</span>&gt; Outdoor&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"cat photo URL"</span> required&gt;
+  &lt;button <span class="hljs-keyword">type</span>=<span class="hljs-string">"submit"</span>&gt;Submit&lt;/button&gt;
+  &lt;<span class="hljs-keyword">label</span>&gt;&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"personality"</span>&gt; Loving&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;<span class="hljs-keyword">label</span>&gt;&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"personality"</span>&gt; Loving&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;<span class="hljs-keyword">label</span>&gt;&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"personality"</span>&gt; Loving&lt;/<span class="hljs-keyword">label</span>&gt;
+&lt;/<span class="hljs-keyword">form</span>&gt;</code></pre><h3 id="35-check-radio-buttons-and-checkboxes-by-default">35. Check Radio Buttons and Checkboxes by Default</h3>
+<p>检查默认单选按钮和复选框(第一个单选和复选添加checked):</p>
+<pre><code>&lt;<span class="hljs-keyword">label</span>&gt;&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"indoor-outdoor"</span> checked&gt; Indoor&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;<span class="hljs-keyword">label</span>&gt;&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"indoor-outdoor"</span>&gt; Outdoor&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;<span class="hljs-keyword">label</span>&gt;&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">"personality"</span> checked&gt; Loving&lt;/<span class="hljs-keyword">label</span>&gt;</code></pre><h3 id="36-nest-many-elements-within-a-single-div-element">36. Nest Many Elements within a Single Div Element</h3>
+<p>用简单的div元素嵌套一些元素：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Things cats love:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>cat nip<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>laser pointers<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>lasagna<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Top 3 things cats hate:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>flea treatment<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>thunder<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>other cats<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="37-give-a-background-color-to-a-div-element">37. Give a Background Color to a Div Element</h3>
+<p>为div元素设置背景色：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.gray-background</span>{
+    <span class="hljs-attribute">background-color</span>:gray;
+  }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"gray-background"</span>&gt;</span></code></pre><h3 id="38-set-the-id-of-an-element">38. Set the ID of an Element</h3>
+<p>为元素设置id：</p>
+<pre><code>&lt;form <span class="hljs-attribute">id</span>=<span class="hljs-string">"cat-photo-form"</span> <span class="hljs-attribute">action</span>=<span class="hljs-string">"/submit-cat-photo"</span>&gt;</code></pre><h3 id="39-use-an-id-attribute-to-style-an-element">39. Use an ID Attribute to Style an Element</h3>
+<p>使用ID属性设计元素：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-id">#cat-photo-form</span> {
+    <span class="hljs-attribute">background-color</span>:green;
+  }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="40-adjusting-the-padding-of-an-element">40. Adjusting the Padding of an Element</h3>
+<p>设置内边距：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.green-box</span> {
+    <span class="hljs-attribute">background-color</span>: green;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+  }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="41-adjust-the-margin-of-an-element">41. Adjust the Margin of an Element</h3>
+<p>设置内边距：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.green-box</span> {
+    <span class="hljs-attribute">background-color</span>: green;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span>;
+  }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="43-add-a-negative-margin-to-an-element">43. Add a Negative Margin to an Element</h3>
+<p>设置负的外边距：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.green-box</span> {
+    <span class="hljs-attribute">background-color</span>: green;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">margin</span>: -<span class="hljs-number">15px</span>;
+  }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="44-add-different-padding-to-each-side-of-an-element">44. Add Different Padding to Each Side of an Element</h3>
+<p>为元素的每一边添加不同的内边距：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.green-box</span> {
+    <span class="hljs-attribute">background-color</span>: green;
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">40px</span>;
+    <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">40px</span>;
+  }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="45-add-different-margins-to-each-side-of-an-element">45. Add Different Margins to Each Side of an Element</h3>
+<p>为元素的每一边添加不同的外边距：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.green-box</span> {
+    <span class="hljs-attribute">background-color</span>: green;
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">40px</span>;
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">40px</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="46-use-clockwise-notation-to-specify-the-padding-of-an-element">46. Use Clockwise Notation to Specify the Padding of an Element</h3>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.green-box</span> {
+    <span class="hljs-attribute">background-color</span>: green;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">40px</span> <span class="hljs-number">20px</span> <span class="hljs-number">20px</span> <span class="hljs-number">40px</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="47-use-clockwise-notation-to-specify-the-margin-of-an-element">47. Use Clockwise Notation to Specify the Margin of an Element</h3>
+<p>用顺时针符号来指定一个元素的外边距：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.green-box</span> {
+    <span class="hljs-attribute">background-color</span>: green;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">40px</span> <span class="hljs-number">20px</span> <span class="hljs-number">20px</span> <span class="hljs-number">40px</span>;
+  }
+&lt;<span class="hljs-selector-tag">style</span>&gt;</span></code></pre><h3 id="48-style-the-html-body-element">48. Style the HTML Body Element</h3>
+<p>设计html body元素的样式：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">background-color</span>: black;
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="49-inherit-styles-from-the-body-element">49. Inherit Styles from the Body Element</h3>
+<p>从body元素继承样式：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: black;
+    <span class="hljs-attribute">color</span>: green;
+    <span class="hljs-attribute">font-family</span>: Monospace;
+  }
+
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></code></pre><h3 id="50-prioritize-one-style-over-another">50. Prioritize One Style Over Another</h3>
+<p>优先考虑一个样式：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: black;
+    <span class="hljs-attribute">font-family</span>: Monospace;
+    <span class="hljs-attribute">color</span>: green;
+  }
+  <span class="hljs-selector-class">.pink-text</span>{
+    <span class="hljs-attribute">color</span>:pink;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pink-text"</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></code></pre><h3 id="51-override-styles-in-subsequent-css">51. Override Styles in Subsequent CSS</h3>
+<p>在后来的CSS中覆盖样式,注释中的样式跟未注释的一样：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: black;
+    <span class="hljs-attribute">font-family</span>: Monospace;
+    <span class="hljs-attribute">color</span>: green;
+  }
+  <span class="hljs-selector-class">.pink-text</span> {
+    <span class="hljs-attribute">color</span>: pink;
+  }
+  <span class="hljs-selector-class">.blue-text</span>{
+    <span class="hljs-attribute">color</span>:blue;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"blue-text pink-text"</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- &lt;h1 class="pink-text blue-text"&gt;Hello World!&lt;/h1&gt; --&gt;</span></code></pre><h3 id="52-override-class-declarations-by-styling-id-attributes">52. Override Class Declarations by Styling ID Attributes</h3>
+<p>用ID属性式样覆盖类声明(英语不好。。。)：</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+
+<span class="hljs-selector-id">#orange-text</span> {
+    <span class="hljs-attribute">color</span>:orange;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="53-override-class-declarations-with-inline-styles">53. Override Class Declarations with Inline Styles</h3>
+<p>用内联样式覆盖类声明：</p>
+<pre><code>&lt;h1 id=<span class="hljs-string">"orange-text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"pink-text blue-text"</span> style=<span class="hljs-string">"color:white"</span>&gt;Hello World!<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span></code></pre><h3 id="54-override-all-other-styles-by-using-important">54. Override All Other Styles by using Important</h3>
+<p>使用 important 覆盖其他所有样式</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.pink-text</span> {
+    <span class="hljs-attribute">color</span>: pink <span class="hljs-meta">!important</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="55-use-hex-code-for-specific-colors">55. Use Hex Code for Specific Colors</h3>
+<p>为特殊的颜色使用十六进制代码</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#000</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="56-use-hex-code-to-color-elements-white">56. Use Hex Code to Color Elements White</h3>
+<p>使用十六进制的白色元素</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="57-use-hex-code-to-color-elements-red">57. Use Hex Code to Color Elements Red</h3>
+<p>使用十六进制的红色元素</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#FF0000</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="58-use-hex-code-to-color-elements-green">58. Use Hex Code to Color Elements Green</h3>
+<p>使用十六进制的绿色元素</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#00FF00</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="59-use-hex-code-to-color-elements-blue">59. Use Hex Code to Color Elements Blue</h3>
+<p>使用十六进制的蓝色元素</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0000FF</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="60-use-hex-code-to-mix-colors">60. Use Hex Code to Mix Colors</h3>
+<p>使用十六进制代码混合颜色</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#FFA500</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="61-use-hex-code-to-color-elements-gray">61. Use Hex Code to Color Elements Gray</h3>
+<p>使用十六进制的灰色元素</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#808080</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="62-use-hex-code-for-specific-shades-of-gray">62. Use Hex Code for Specific Shades of Gray</h3>
+<p>使用十六进制代码为了特殊灰度的灰色</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#111111</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="63-use-abbreviated-hex-code">63. Use Abbreviated Hex Code</h3>
+<p>使用缩写十六进制代码</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F00</span> ;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="64-use-rgb-values-to-color-elements">64. Use RGB values to Color Elements</h3>
+<p>使用RGB值颜色元素</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(0, 0, 0);
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="65-use-rgb-to-color-elements-white">65. Use RGB to Color Elements White</h3>
+<p>使用RGB颜色白色的元素</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>:  <span class="hljs-built_in">rgb</span>(255, 255, 255);
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="66-use-rgb-to-color-elements-red">66. Use RGB to Color Elements Red</h3>
+<p>使用RGB颜色红色的元素</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(255, 0, 0);
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="67-use-rgb-to-color-elements-green">67. Use RGB to Color Elements Green</h3>
+<p>使用RGB 颜色绿色的元素</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(0, 255, 0);
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="68-use-rgb-to-color-elements-blue">68. Use RGB to Color Elements Blue</h3>
+<p>使用RGB 颜色蓝色的元素</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(0, 0, 255);
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h3 id="69-use-rgb-to-mix-colors">69. Use RGB to Mix Colors</h3>
+<p>使用RGB 颜色混合的元素</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(255, 165, 0);
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span></code></pre><h2 id="basic-javascript">Basic JavaScript</h2>
+<h3 id="1-comment-your-javascript-code">1. Comment your JavaScript Code</h3>
+<p>注释你的Javascript代码</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">Script</span>&gt;</span><span class="actionscript">
+<span class="hljs-comment">// This is an in-line comment.</span>
+<span class="hljs-comment">/* This is a
+   multi-line comment */</span>
+   </span><span class="hljs-tag">&lt;/<span class="hljs-name">Script</span>&gt;</span></code></pre><h3 id="2-declare-javascript-variables">2. Declare JavaScript Variables</h3>
+<p>声明JavaScript变量</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">Script</span>&gt;</span><span class="actionscript">
+<span class="hljs-comment">// Define myName below this line</span>
+
+<span class="hljs-keyword">var</span> myName;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">Script</span>&gt;</span></code></pre><h3 id="3-storing-values-with-the-equal-operator">3. Storing Values with the Equal Operator</h3>
+<p>用=存储值</p>
+<pre><code>&lt;Script&gt;
+// Only change code below this line
+<span class="hljs-attribute">a</span> = <span class="hljs-number">7</span><span class="hljs-comment">;</span>
+<span class="hljs-attribute">b</span> = a<span class="hljs-comment">;</span>
+&lt;/Script&gt;</code></pre><h3 id="4-initializing-variables-with-the-equal-operator">4. Initializing Variables with the Equal Operator</h3>
+<p>用= 初始化变量</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>&gt;</span><span class="actionscript">
+<span class="hljs-comment">// Only change code below this line</span>
+<span class="hljs-keyword">var</span> a = <span class="hljs-number">9</span>;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre><h3 id="5-understanding-uninitialized-variables">5. Understanding Uninitialized Variables</h3>
+<p>了解未初始化变量</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>&gt;</span><span class="actionscript">
+<span class="hljs-comment">// Initialize these three variables</span>
+<span class="hljs-keyword">var</span> a = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">var</span> b = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">var</span> c = <span class="hljs-string">"I am a"</span>;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre><h3 id="6">6.</h3>
+</section><section id="vcomments" class="v"><div class="vwrap"><div class="vheader item3"><input name="nick" placeholder="昵称" class="vnick vinput" type="text"><input name="mail" placeholder="邮箱" class="vmail vinput" type="email"><input name="link" placeholder="网址(http://)" class="vlink vinput" type="text"></div><div class="vedit"><textarea id="veditor" class="veditor vinput" placeholder="Just Go Go"></textarea><div class="vctrl"><span class="vemoji-btn">表情</span> | <span class="vpreview-btn">预览</span></div><div class="vemojis" style="display:none;"><i name="grinning" title="grinning">😀</i><i name="smiley" title="smiley">😃</i><i name="smile" title="smile">😄</i><i name="grin" title="grin">😁</i><i name="laughing" title="laughing">😆</i><i name="sweat_smile" title="sweat_smile">😅</i><i name="joy" title="joy">😂</i><i name="blush" title="blush">😊</i><i name="innocent" title="innocent">😇</i><i name="wink" title="wink">😉</i><i name="relieved" title="relieved">😌</i><i name="heart_eyes" title="heart_eyes">😍</i><i name="kissing_heart" title="kissing_heart">😘</i><i name="kissing" title="kissing">😗</i><i name="kissing_smiling_eyes" title="kissing_smiling_eyes">😙</i><i name="kissing_closed_eyes" title="kissing_closed_eyes">😚</i><i name="yum" title="yum">😋</i><i name="stuck_out_tongue_winking_eye" title="stuck_out_tongue_winking_eye">😜</i><i name="stuck_out_tongue_closed_eyes" title="stuck_out_tongue_closed_eyes">😝</i><i name="stuck_out_tongue" title="stuck_out_tongue">😛</i><i name="sunglasses" title="sunglasses">😎</i><i name="smirk" title="smirk">😏</i><i name="unamused" title="unamused">😒</i><i name="disappointed" title="disappointed">😞</i><i name="pensive" title="pensive">😔</i><i name="worried" title="worried">😟</i><i name="confused" title="confused">😕</i><i name="persevere" title="persevere">😣</i><i name="confounded" title="confounded">😖</i><i name="tired_face" title="tired_face">😫</i><i name="weary" title="weary">😩</i><i name="angry" title="angry">😠</i><i name="rage" title="rage">😡</i><i name="no_mouth" title="no_mouth">😶</i><i name="neutral_face" title="neutral_face">😐</i><i name="expressionless" title="expressionless">😑</i><i name="hushed" title="hushed">😯</i><i name="frowning" title="frowning">😦</i><i name="anguished" title="anguished">😧</i><i name="open_mouth" title="open_mouth">😮</i><i name="astonished" title="astonished">😲</i><i name="dizzy_face" title="dizzy_face">😵</i><i name="flushed" title="flushed">😳</i><i name="scream" title="scream">😱</i><i name="fearful" title="fearful">😨</i><i name="cold_sweat" title="cold_sweat">😰</i><i name="cry" title="cry">😢</i><i name="disappointed_relieved" title="disappointed_relieved">😥</i><i name="sob" title="sob">😭</i><i name="sweat" title="sweat">😓</i><i name="sleepy" title="sleepy">😪</i><i name="sleeping" title="sleeping">😴</i><i name="mask" title="mask">😷</i><i name="smiling_imp" title="smiling_imp">😈</i><i name="smiley_cat" title="smiley_cat">😺</i><i name="smile_cat" title="smile_cat">😸</i><i name="joy_cat" title="joy_cat">😹</i><i name="heart_eyes_cat" title="heart_eyes_cat">😻</i><i name="smirk_cat" title="smirk_cat">😼</i><i name="kissing_cat" title="kissing_cat">😽</i><i name="scream_cat" title="scream_cat">🙀</i><i name="crying_cat_face" title="crying_cat_face">😿</i><i name="pouting_cat" title="pouting_cat">😾</i><i name="cat" title="cat">🐱</i><i name="mouse" title="mouse">🐭</i><i name="cow" title="cow">🐮</i><i name="monkey_face" title="monkey_face">🐵</i><i name="hand" title="hand">✋</i><i name="fist" title="fist">✊</i><i name="v" title="v">✌️</i><i name="point_up" title="point_up">👆</i><i name="point_down" title="point_down">👇</i><i name="point_left" title="point_left">👈</i><i name="point_right" title="point_right">👉</i><i name="facepunch" title="facepunch">👊</i><i name="wave" title="wave">👋</i><i name="clap" title="clap">👏</i><i name="open_hands" title="open_hands">👐</i><i name="+1" title="+1">👍</i><i name="-1" title="-1">👎</i><i name="ok_hand" title="ok_hand">👌</i><i name="pray" title="pray">🙏</i><i name="ear" title="ear">👂</i><i name="eyes" title="eyes">👀</i><i name="nose" title="nose">👃</i><i name="lips" title="lips">👄</i><i name="tongue" title="tongue">👅</i><i name="heart" title="heart">❤️</i><i name="cupid" title="cupid">💘</i><i name="sparkling_heart" title="sparkling_heart">💖</i><i name="star" title="star">⭐️</i><i name="sparkles" title="sparkles">✨</i><i name="zap" title="zap">⚡️</i><i name="sunny" title="sunny">☀️</i><i name="cloud" title="cloud">☁️</i><i name="snowflake" title="snowflake">❄️</i><i name="umbrella" title="umbrella">☔️</i><i name="coffee" title="coffee">☕️</i><i name="airplane" title="airplane">✈️</i><i name="anchor" title="anchor">⚓️</i><i name="watch" title="watch">⌚️</i><i name="phone" title="phone">☎️</i><i name="hourglass" title="hourglass">⌛️</i><i name="email" title="email">✉️</i><i name="scissors" title="scissors">✂️</i><i name="black_nib" title="black_nib">✒️</i><i name="pencil2" title="pencil2">✏️</i><i name="x" title="x">❌</i><i name="recycle" title="recycle">♻️</i><i name="white_check_mark" title="white_check_mark">✅</i><i name="negative_squared_cross_mark" title="negative_squared_cross_mark">❎</i><i name="m" title="m">Ⓜ️</i><i name="i" title="i">ℹ️</i><i name="tm" title="tm">™️</i><i name="copyright" title="copyright">©️</i><i name="registered" title="registered">®️</i></div><div class="vinput vpreview" style="display:none;"></div></div><div class="vcontrol"><div class="col col-20" title="Markdown is supported"><a href="https://segmentfault.com/markdown" target="_blank"><svg class="markdown" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z"></path></svg></a></div><div class="col col-80 text-right"><button type="button" title="Cmd|Ctrl+Enter" class="vsubmit vbtn">回复</button></div></div><div style="display:none;" class="vmark"></div></div><div class="vinfo" style="display:none;"><div class="vcount col"></div></div><div class="vlist"></div><div class="vempty" style="display:block;"><pre style="text-align:left;">Code 429: Too many requests. [429 GET https://avoscloud.com/1.1/classes/Comment]</pre></div><div class="vpage txt-center"></div><div class="info"><div class="power txt-right">Powered By <a href="https://valine.js.org" target="_blank">Valine</a><br>v1.3.10</div></div></section></article></main></div></div><script>!function(i){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)t=n[l],Object.prototype.hasOwnProperty.call(p,t)&&p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var r=this.webpackJsonpblog=this.webpackJsonpblog||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.7cff77cf.chunk.js"></script><script src="/static/js/main.691d9270.chunk.js"></script></body></html>

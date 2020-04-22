@@ -1,1 +1,405 @@
-<!DOCTYPE html><html lang="zh-hans"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="logo.jpeg"><link rel="manifest" href="/manifest.json"><title>打开天眼看文章</title><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://kit.fontawesome.com/b2fc37abd6.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-98427538-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-98427538-1")</script><link href="/static/css/2.5bcfae4a.chunk.css" rel="stylesheet"><link href="/static/css/main.f9f6d843.chunk.css" rel="stylesheet"><style type="text/css">.v{font-size:16px;text-align:left}.v *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:2;color:#555;-webkit-transition:all .3s ease;transition:all .3s ease}.v hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v.hide-avatar .vimg{display:none}.v a{position:relative;cursor:pointer;color:#1abc9c;display:inline-block}.v a:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v a:hover{color:#d7191a}.v a:hover:before{width:100%;left:0;right:auto}.v code,.v pre{background-color:#f6f6f6;color:#555;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0;font-family:Source Code Pro,courier new,Input Mono,PT Mono,SFMono-Regular,Consolas,Monaco,Menlo,PingFang SC,Liberation Mono,Microsoft YaHei,Courier，monospace}.v pre{padding:10px;overflow:auto;line-height:1.45}.v pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v input[type=checkbox],.v input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v .vwrap input{background:transparent}.v .vwrap .vedit{position:relative;padding-top:10px}.v .vwrap .vedit .vctrl{text-align:right;font-size:12px}.v .vwrap .vedit .vctrl span{padding:10px;display:inline-block;vertical-align:middle;cursor:pointer}.v .vwrap .vedit .vemojis{display:none;font-size:18px;text-align:justify;max-height:145px;overflow:auto;margin-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vemojis i{font-style:normal;padding:7px 0;width:38px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v .vwrap .vedit .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vpreview frame,.v .vwrap .vedit .vpreview iframe,.v .vwrap .vedit .vpreview img{max-width:100%;border:none}.v .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v .vwrap .vheader.item2 .vinput{width:50%}.v .vwrap .vheader.item1 .vinput{width:100%}.v .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v .vwrap .vheader.item2 .vinput,.v .vwrap .vheader .vinput{width:100%}}.v .vwrap .vcontrol{font-size:0;padding-top:15px}.v .vwrap .vcontrol .col{display:inline-block;font-size:16px;vertical-align:middle;color:#ccc}.v .vwrap .vcontrol .col.text-right{text-align:right}.v .vwrap .vcontrol .col svg{margin-right:2px;overflow:hidden;fill:currentColor;vertical-align:middle}.v .vwrap .vcontrol .col.col-20{width:20%}.v .vwrap .vcontrol .col.col-40{width:40%}.v .vwrap .vcontrol .col.col-60{width:60%}.v .vwrap .vcontrol .col.col-80{width:80%}.v .vwrap .vcontrol .col.split{width:50%}.v .vwrap .vmark{position:absolute;background:rgba(0,0,0,.65);width:100%;height:100%;left:0;top:0}.v .vwrap .vmark .valert{padding-top:3em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}.v .vwrap .vmark .valert .vcode{width:4.6875em;border-radius:.3125em;padding:.5em;background:#dedede}.v .vwrap .vmark .valert .vcode:focus{border-color:#3090e4;background-color:#fff}@media screen and (max-width:720px){.v .vwrap .vmark .valert{padding-top:5.5em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}}.v .power{color:#999;padding:.5em 0}.v .power,.v .power a{font-size:.75em}.v .vinfo{font-size:0;padding:5px}.v .vinfo .col{font-size:16px;display:inline-block;width:50%;vertical-align:middle}.v .vinfo .vcount .vnum{font-weight:600;font-size:1.25em}.v a{text-decoration:none;color:#555}.v a:hover{color:#222}.v ol,.v ul{padding:0;margin-left:1.25em}.v .txt-center{text-align:center}.v .txt-right{text-align:right}.v .pd5{padding:5px}.v .pd10{padding:10px}.v .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#313131;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:#ededed;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v .vbtn+.vbtn{margin-left:1.25em}.v .vbtn:active,.v .vbtn:hover{color:#3090e4;border-color:#3090e4;background-color:#fff}.v .vempty{padding:1.25em;text-align:center;color:#999}.v .vlist{width:100%}.v .vlist .vcard{padding-top:1.5em;position:relative;display:block}.v .vlist .vcard:after{content:"";clear:both;display:block}.v .vlist .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v .vlist .vcard .vimg{width:2.5em;height:2.5em}}.v .vlist .vcard .vhead{line-height:1.5;margin-top:0}.v .vlist .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v .vlist .vcard .vhead .vnick:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v .vlist .vcard .vhead .vnick:hover{color:#d7191a}.v .vlist .vcard .vhead .vnick:hover:before{width:100%;left:0;right:auto}.v .vlist .vcard .vhead .vsys{display:inline-block;padding:.2em .5em;background:#ededed;color:#b3b1b1;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v .vlist .vcard .vhead .vsys{display:none}}.v .vlist .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v .vlist .vcard .vh .vtime{color:#b3b3b3;font-size:.75em;margin-right:.875em}.v .vlist .vcard .vh .vmeta{line-height:1;position:relative}.v .vlist .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v .vlist .vcard:last-child .vh{border-bottom:none}.v .vlist .vcard .vcontent{word-wrap:break-word;word-break:break-all;text-align:justify;color:#4a4a4a;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v .vlist .vcard .vcontent frame,.v .vlist .vcard .vcontent iframe,.v .vlist .vcard .vcontent img{max-width:100%;border:none}.v .vlist .vcard .vcontent.expand{cursor:pointer;max-height:11.25em;overflow:hidden}.v .vlist .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;pointer-events:none;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9))}.v .vlist .vcard .vcontent.expand:after{display:block;content:"Click on expand";text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;pointer-events:none;background:hsla(0,0%,100%,.9)}.v .vlist .vcard .vquote{color:#666;margin-top:1em;padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v .vlist .vcard .vquote .vimg{width:2.225em;height:2.225em}.v .vpage .vmore{margin:1em 0}.v .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v .vloading{position:relative;padding:20px;display:block;height:80px}.v .vloading:before{-webkit-box-sizing:border-box;box-sizing:border-box;content:"";position:absolute;display:inline-block;top:20px;left:50%;margin-left:-20px;width:40px;height:40px;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}</style></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(i){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)t=n[l],Object.prototype.hasOwnProperty.call(p,t)&&p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var r=this.webpackJsonpblog=this.webpackJsonpblog||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.16fea087.chunk.js"></script><script src="/static/js/main.d56376db.chunk.js"></script></body></html>
+<!DOCTYPE html><html lang="zh-hans"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="logo.jpeg"><link rel="manifest" href="/manifest.json"><title>如何写 Webpack 配置文件 | 打开天眼看文章</title><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="//api.ip.sb/jsonip?callback=getIP"></script><script src="https://kit.fontawesome.com/b2fc37abd6.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-98427538-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-98427538-1")</script><link href="/static/css/2.5bcfae4a.chunk.css" rel="stylesheet"><link href="/static/css/main.f9f6d843.chunk.css" rel="stylesheet"><style type="text/css">.v{font-size:16px;text-align:left}.v *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:2;color:#555;-webkit-transition:all .3s ease;transition:all .3s ease}.v hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v.hide-avatar .vimg{display:none}.v a{position:relative;cursor:pointer;color:#1abc9c;display:inline-block}.v a:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v a:hover{color:#d7191a}.v a:hover:before{width:100%;left:0;right:auto}.v code,.v pre{background-color:#f6f6f6;color:#555;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0;font-family:Source Code Pro,courier new,Input Mono,PT Mono,SFMono-Regular,Consolas,Monaco,Menlo,PingFang SC,Liberation Mono,Microsoft YaHei,Courier，monospace}.v pre{padding:10px;overflow:auto;line-height:1.45}.v pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v input[type=checkbox],.v input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v .vwrap input{background:transparent}.v .vwrap .vedit{position:relative;padding-top:10px}.v .vwrap .vedit .vctrl{text-align:right;font-size:12px}.v .vwrap .vedit .vctrl span{padding:10px;display:inline-block;vertical-align:middle;cursor:pointer}.v .vwrap .vedit .vemojis{display:none;font-size:18px;text-align:justify;max-height:145px;overflow:auto;margin-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vemojis i{font-style:normal;padding:7px 0;width:38px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v .vwrap .vedit .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v .vwrap .vedit .vpreview frame,.v .vwrap .vedit .vpreview iframe,.v .vwrap .vedit .vpreview img{max-width:100%;border:none}.v .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v .vwrap .vheader.item2 .vinput{width:50%}.v .vwrap .vheader.item1 .vinput{width:100%}.v .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v .vwrap .vheader.item2 .vinput,.v .vwrap .vheader .vinput{width:100%}}.v .vwrap .vcontrol{font-size:0;padding-top:15px}.v .vwrap .vcontrol .col{display:inline-block;font-size:16px;vertical-align:middle;color:#ccc}.v .vwrap .vcontrol .col.text-right{text-align:right}.v .vwrap .vcontrol .col svg{margin-right:2px;overflow:hidden;fill:currentColor;vertical-align:middle}.v .vwrap .vcontrol .col.col-20{width:20%}.v .vwrap .vcontrol .col.col-40{width:40%}.v .vwrap .vcontrol .col.col-60{width:60%}.v .vwrap .vcontrol .col.col-80{width:80%}.v .vwrap .vcontrol .col.split{width:50%}.v .vwrap .vmark{position:absolute;background:rgba(0,0,0,.65);width:100%;height:100%;left:0;top:0}.v .vwrap .vmark .valert{padding-top:3em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}.v .vwrap .vmark .valert .vcode{width:4.6875em;border-radius:.3125em;padding:.5em;background:#dedede}.v .vwrap .vmark .valert .vcode:focus{border-color:#3090e4;background-color:#fff}@media screen and (max-width:720px){.v .vwrap .vmark .valert{padding-top:5.5em}.v .vwrap .vmark .valert .vtext{color:#fff;padding:1em 0}}.v .power{color:#999;padding:.5em 0}.v .power,.v .power a{font-size:.75em}.v .vinfo{font-size:0;padding:5px}.v .vinfo .col{font-size:16px;display:inline-block;width:50%;vertical-align:middle}.v .vinfo .vcount .vnum{font-weight:600;font-size:1.25em}.v a{text-decoration:none;color:#555}.v a:hover{color:#222}.v ol,.v ul{padding:0;margin-left:1.25em}.v .txt-center{text-align:center}.v .txt-right{text-align:right}.v .pd5{padding:5px}.v .pd10{padding:10px}.v .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#313131;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:#ededed;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v .vbtn+.vbtn{margin-left:1.25em}.v .vbtn:active,.v .vbtn:hover{color:#3090e4;border-color:#3090e4;background-color:#fff}.v .vempty{padding:1.25em;text-align:center;color:#999}.v .vlist{width:100%}.v .vlist .vcard{padding-top:1.5em;position:relative;display:block}.v .vlist .vcard:after{content:"";clear:both;display:block}.v .vlist .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v .vlist .vcard .vimg{width:2.5em;height:2.5em}}.v .vlist .vcard .vhead{line-height:1.5;margin-top:0}.v .vlist .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v .vlist .vcard .vhead .vnick:before{content:"";position:absolute;width:0;right:0;bottom:0;height:1px;background:#1abc9c;-webkit-transition:width .3s ease;transition:width .3s ease}.v .vlist .vcard .vhead .vnick:hover{color:#d7191a}.v .vlist .vcard .vhead .vnick:hover:before{width:100%;left:0;right:auto}.v .vlist .vcard .vhead .vsys{display:inline-block;padding:.2em .5em;background:#ededed;color:#b3b1b1;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v .vlist .vcard .vhead .vsys{display:none}}.v .vlist .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v .vlist .vcard .vh .vtime{color:#b3b3b3;font-size:.75em;margin-right:.875em}.v .vlist .vcard .vh .vmeta{line-height:1;position:relative}.v .vlist .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v .vlist .vcard:last-child .vh{border-bottom:none}.v .vlist .vcard .vcontent{word-wrap:break-word;word-break:break-all;text-align:justify;color:#4a4a4a;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v .vlist .vcard .vcontent frame,.v .vlist .vcard .vcontent iframe,.v .vlist .vcard .vcontent img{max-width:100%;border:none}.v .vlist .vcard .vcontent.expand{cursor:pointer;max-height:11.25em;overflow:hidden}.v .vlist .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;pointer-events:none;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9))}.v .vlist .vcard .vcontent.expand:after{display:block;content:"Click on expand";text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;pointer-events:none;background:hsla(0,0%,100%,.9)}.v .vlist .vcard .vquote{color:#666;margin-top:1em;padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v .vlist .vcard .vquote .vimg{width:2.225em;height:2.225em}.v .vpage .vmore{margin:1em 0}.v .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v .vloading{position:relative;padding:20px;display:block;height:80px}.v .vloading:before{-webkit-box-sizing:border-box;box-sizing:border-box;content:"";position:absolute;display:inline-block;top:20px;left:50%;margin-left:-20px;width:40px;height:40px;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}</style><script src="//js.fundebug.cn/fundebug.1.9.0.min.js" apikey="2c7e5b30c7cf402cb7fb35d14b62e7f778babbb70d054160af750065a180fdcd" async="true"></script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="app"><div class="progress-bar"><div class="bg-red"></div><div class="bg-orange"></div><div class="bg-yellow"></div><div class="bg-green"></div><div class="bg-blue"></div><div class="bg-indigo"></div><div class="bg-purple"></div></div><main class="main"><div class="sidebar text-left"><h1><a class="logo" href="/">打开天眼看文章</a></h1><p>TECH | LIFE | X</p><p class="font-sm"><a class="text-blue" title="about me" href="/about">@me |</a><a class="text-green" href="https://github.com/xiao555" title="github" target="_blank" rel="noopener noreferrer">@github</a></p><p class="font-sm"><a href="mailto:zhangruiwu32@gmail.com">zhangruiwu32@gmail.com</a></p><p><small>本站已存活 49 天</small></p><button class="border-0 px-0"><i class="fas fa-moon" aria-hidden="true"></i></button></div><article class="main-content"><h2>如何写 Webpack 配置文件</h2><p><small>2017-04-13</small><span id="how-to-config-webpack" class="leancloud_visitors ml-1"><small>阅读量</small> <small class="leancloud-visitors-count"></small></span></p><section><p>本文从一个小Demo开始，通过不断增加功能来说明webpack的基本配置，只针对新手，也欢迎指正错误。</p>
+<p>Node.js version： -v7.7.0
+webpack 最好全局装一下</p>
+<h3 id="base">Base</h3>
+<p>我们先从简单的Demo开始，首先我创建了一个项目目录<code>webpack</code>，在该目录下运行命令：</p>
+<pre><code class="language-bash">npm init
+npm <span class="hljs-keyword">install</span> webpack html-loader <span class="hljs-keyword">style</span>-loader css-loader <span class="hljs-comment">--save-dev</span></code></pre>
+<p>安装完成后我的<code>package.json</code>是这样子的：</p>
+<pre><code class="language-json">{
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"webpack-example"</span>,
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A webpack example"</span>,
+  <span class="hljs-attr">"main"</span>: <span class="hljs-string">"index.js"</span>,
+  <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"test"</span>: <span class="hljs-string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span>
+  },
+  <span class="hljs-attr">"keywords"</span>: [
+    <span class="hljs-string">"webpack"</span>
+  ],
+  <span class="hljs-attr">"author"</span>: <span class="hljs-string">"xiao555"</span>,
+  <span class="hljs-attr">"license"</span>: <span class="hljs-string">"MIT"</span>,
+  <span class="hljs-attr">"devDependencies"</span>: {
+    <span class="hljs-attr">"css-loader"</span>: <span class="hljs-string">"^0.28.0"</span>,
+    <span class="hljs-attr">"html-loader"</span>: <span class="hljs-string">"^0.4.5"</span>,
+    <span class="hljs-attr">"webpack"</span>: <span class="hljs-string">"^2.3.3"</span>
+  }
+}</code></pre>
+<p>然后我在根目录下创建了<code>index.html</code>，<code>style.css</code>，<code>entry.js</code>，<code>webpack.config.js</code>:</p>
+<pre><code class="language-html">// index.html
+<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hello Webpack<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./style.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello Webpack!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/bundle.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<pre><code class="language-css"><span class="hljs-comment">// style.css</span>
+<span class="hljs-class">h1 </span>{
+<span class="hljs-symbol">  color:</span> lightblue;
+}</code></pre>
+<pre><code class="language-javascript"><span class="hljs-comment">// entry.js</span>
+<span class="hljs-function"><span class="hljs-title">require</span><span class="hljs-params">(<span class="hljs-string">'./style.css'</span>)</span></span></code></pre>
+<pre><code class="language-javascript"><span class="hljs-comment">// webpack.config.js</span>
+<span class="hljs-keyword">let</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack'</span>)
+
+<span class="hljs-built_in">module</span>.exports = {
+  entry: <span class="hljs-string">'./entry.js'</span>,
+  output: {
+    path: __dirname,
+    filename: <span class="hljs-string">'bundle.js'</span>
+  },
+  <span class="hljs-keyword">module</span>: {
+    rules: [
+      {
+        test: <span class="hljs-regexp">/\.css$/</span>,
+        loader: <span class="hljs-string">'style-loader!css-loader'</span>
+      }
+    ]
+  }
+}</code></pre>
+<p>然后修改一下<code>package.json</code>的scripts:</p>
+<pre><code class="language-javascript"><span class="hljs-string">"scripts"</span>: {
+    <span class="hljs-string">"start"</span>: <span class="hljs-string">"webpack --config webpack.config.js"</span>,
+    <span class="hljs-string">"test"</span>: <span class="hljs-string">"echo \"</span><span class="hljs-keyword">Error</span>: <span class="hljs-keyword">no</span> <span class="hljs-keyword">test</span> specified\<span class="hljs-string">" &amp;&amp; exit 1"</span>
+  },</code></pre>
+<p>好了，这样一个简单的Demo就完成了，让我们看一下效果：</p>
+<pre><code class="language-bash">➜  webpack npm start
+
+&gt; webpack-<span class="hljs-symbol">example@</span><span class="hljs-number">1.0</span><span class="hljs-number">.0</span> start /Users/zhangruiwu/Desktop/webpack
+&gt; webpack --config webpack.config.js
+
+Hash: f9e8a168c2845147afb4
+Version: webpack <span class="hljs-number">2.3</span><span class="hljs-number">.3</span>
+Time: <span class="hljs-number">384</span>ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  <span class="hljs-number">73.1</span> kB       <span class="hljs-number">0</span>  [emitted]  main
+   [<span class="hljs-number">0</span>] ./style.css <span class="hljs-number">895</span> bytes {<span class="hljs-number">0</span>} [built]
+   [<span class="hljs-number">1</span>] ./entry.js <span class="hljs-number">22</span> bytes {<span class="hljs-number">0</span>} [built]
+   [<span class="hljs-number">2</span>] ./~/base64-js/index.js <span class="hljs-number">3.48</span> kB {<span class="hljs-number">0</span>} [built]
+   [<span class="hljs-number">3</span>] ./~/buffer/index.js <span class="hljs-number">48.6</span> kB {<span class="hljs-number">0</span>} [built]
+   [<span class="hljs-number">4</span>] ./~/css-loader!./style.css <span class="hljs-number">190</span> bytes {<span class="hljs-number">0</span>} [built]
+   [<span class="hljs-number">5</span>] ./~/css-loader/lib/css-base.js <span class="hljs-number">2.19</span> kB {<span class="hljs-number">0</span>} [built]
+   [<span class="hljs-number">6</span>] ./~/ieee754/index.js <span class="hljs-number">2.05</span> kB {<span class="hljs-number">0</span>} [built]
+   [<span class="hljs-number">7</span>] ./~/isarray/index.js <span class="hljs-number">132</span> bytes {<span class="hljs-number">0</span>} [built]
+   [<span class="hljs-number">8</span>] ./~/style-loader/addStyles.js <span class="hljs-number">8.51</span> kB {<span class="hljs-number">0</span>} [built]
+   [<span class="hljs-number">9</span>] ./~/style-loader/fixUrls.js <span class="hljs-number">3.01</span> kB {<span class="hljs-number">0</span>} [built]
+  [<span class="hljs-number">10</span>] (webpack)/buildin/global.js <span class="hljs-number">509</span> bytes {<span class="hljs-number">0</span>} [built]</code></pre>
+<p>可以看到目录里生成了一个<code>bundle.js</code>，这就是webpack打包后的文件，我们在浏览器里打开<code>index.html</code>:
+<img src="https://xiao555.netlify.com/hello_webpack.jpg" alt="">
+OK, 可以看到我们的css已经渲染上去了。
+我们的webpack配置文件做了什么呢？</p>
+<pre><code class="language-javascript"><span class="hljs-comment">// webpack.config.js</span>
+<span class="hljs-keyword">let</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack'</span>)
+
+<span class="hljs-built_in">module</span>.exports = {
+  entry: <span class="hljs-string">'./entry.js'</span>, <span class="hljs-comment">// 入口文件，根据这个文件来决定打包哪些文件</span>
+  output: {
+    path: __dirname,   <span class="hljs-comment">// 打包后文件存放的路径</span>
+    filename: <span class="hljs-string">'bundle.js'</span> <span class="hljs-comment">// 打包后文件的名称</span>
+  },
+  <span class="hljs-keyword">module</span>: { <span class="hljs-comment">// 决定不同类型的模块如何处理</span>
+    rules: [ <span class="hljs-comment">// 决定了模块创建规则，</span>
+      {
+        test: <span class="hljs-regexp">/\.css$/</span>, <span class="hljs-comment">// 匹配文件类型</span>
+        loader: <span class="hljs-string">'style-loader!css-loader'</span> <span class="hljs-comment">// 应用加载器，'-loader'可以省略(v2好像不可以了)</span>
+      }
+    ]
+  }
+}</code></pre>
+<h3 id="loader">Loader</h3>
+<p>好了，让我们改一下，我再目录里加了一张图片<code>bg.jpg</code>,修改了<code>style.css</code> ：</p>
+<pre><code class="language-css"><span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">color</span>: lightblue;
+}
+
+<span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">'./bg.jpg'</span>);
+}</code></pre>
+<p><code>npm start</code> 一下：</p>
+<pre><code class="language-bash"><span class="hljs-keyword">ERROR </span>in ./bg.jpg
+Module parse failed: /Users/zhangruiwu/Desktop/webpack/bg.jpg Unexpected character '�' (1:0)
+You may need an appropriate loader to handle this file type.
+(Source code omitted for this binary file)
+ @ ./~/css-loader!./style.css 6:94<span class="hljs-string">-113</span>
+ @ ./style.css
+ @ ./entry.js</code></pre>
+<p>报错了，这个错误是什么呢？因为我们引入了一个jpg图片文件，要打包的话需要一个处理这种文件类型的loader：</p>
+<pre><code class="language-javascript"><span class="hljs-comment">// bash</span>
+npm i url-loader --save-dev
+<span class="hljs-comment">// webpack.config.js</span>
+<span class="hljs-keyword">module</span>: {
+    rules: [
+      {
+        test: <span class="hljs-regexp">/\.css$/</span>,
+        loader: <span class="hljs-string">'style-loader!css-loader'</span>
+      },
+      {
+        test: <span class="hljs-regexp">/\.(jpe?g|png|gif|svg)$/</span>,
+        loader: <span class="hljs-string">'url-loader'</span> <span class="hljs-comment">// copy文件的loader</span>
+      }
+    ]
+  }</code></pre>
+<p>重新<code>npm start</code>，发现根目录下多了一个<code>f58125a1fa5c143130104dc5fa9af77b.jpg</code>, 浏览器打开<code>index.html</code>:
+<img src="https://xiao555.netlify.com/webpack_bg.jpg" alt=""></p>
+<p>OK!</p>
+<h3 id="我们改造一下：">我们改造一下：</h3>
+<ol>
+<li>css用stylus</li>
+<li>css,img等资源放在<code>/src</code>目录下</li>
+<li>打包后图片文件放在<code>/dist/static</code>目录下</li>
+<li>打包文件统一放在一个目录下<code>/dist</code></li>
+</ol>
+<pre><code class="language-bash">npm i stylus stylus-loader html-webpack-plugin --<span class="hljs-built_in">save</span>-<span class="hljs-built_in">dev</span></code></pre>
+<p>调整目录结构：</p>
+<pre><code class="language-bash"><span class="hljs-bullet">- </span>webpack
+<span class="hljs-bullet">    - </span>src
+<span class="hljs-bullet">        - </span>assets
+<span class="hljs-bullet">            - </span>img
+<span class="hljs-bullet">                - </span>bg.jpg
+<span class="hljs-bullet">        - </span>style
+<span class="hljs-bullet">            - </span>main.styl
+<span class="hljs-bullet">            - </span>entry.js
+<span class="hljs-bullet">    - </span>index.html
+<span class="hljs-bullet">    - </span>webpack.config.js
+<span class="hljs-bullet">    - </span>package.json</code></pre>
+<pre><code class="language-html">// index.html
+<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hello Webpack<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello Webpack!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<pre><code class="language-stylus"><span class="hljs-comment">// main.styl</span>
+<span class="hljs-selector-tag">h1</span>
+  <span class="hljs-attribute">color</span> lightblue
+<span class="hljs-selector-tag">body</span>
+  <span class="hljs-attribute">background-image</span> url(<span class="hljs-string">'~assets/image/bg.jpg'</span>)</code></pre>
+<pre><code class="language-javascript"><span class="hljs-comment">// entry.js</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'./main.styl'</span></code></pre>
+<pre><code class="language-javascript"><span class="hljs-comment">// webpack.config.js</span>
+<span class="hljs-keyword">let</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack'</span>)
+<span class="hljs-keyword">let</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>)
+<span class="hljs-keyword">let</span> HtmlWebpackPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'html-webpack-plugin'</span>);
+
+<span class="hljs-built_in">module</span>.exports = {
+  entry: {
+    style: <span class="hljs-string">'./src/style/entry.js'</span> <span class="hljs-comment">// 新的入口文件</span>
+  },
+  output: {
+    path: path.join(__dirname, <span class="hljs-string">'./dist'</span>), <span class="hljs-comment">// 新的打包目录</span>
+    filename: <span class="hljs-string">'[name].js'</span> <span class="hljs-comment">// 这里的name对应entry的key值，这里是style，如果增加一个入口文件scrit的话，同样生成一个script.js</span>
+  },
+  <span class="hljs-keyword">module</span>: {
+    rules: [
+      {
+        test: <span class="hljs-regexp">/\.css$/</span>,
+        loader: <span class="hljs-string">'style-loader!css-loader?sourceMap'</span>
+      },
+      {
+        test: <span class="hljs-regexp">/\.(jpe?g|png|gif|svg)$/</span>,
+        loader: <span class="hljs-string">'url-loader?name=static/[hash].[ext]'</span> <span class="hljs-comment">// '?'后跟loader的配置参数，这里name指文件名，static目录下</span>
+      },
+      {
+        test: <span class="hljs-regexp">/\.styl$/</span>,  <span class="hljs-comment">// 增加stylus文件的loader</span>
+        loader: <span class="hljs-string">"style-loader!css-loader!stylus-loader?sourceMap"</span> <span class="hljs-comment">// 可以通过'!'来级联loader</span>
+      }
+    ]
+  },
+  resolve: {
+    alias: {
+      <span class="hljs-string">'assets'</span>: path.join(__dirname, <span class="hljs-string">'./src/assets'</span>) <span class="hljs-comment">// 定义别名，用法见main.styl 里 background-image url('~assets/image/bg.jpg')</span>
+    }
+  },
+  plugins: [
+      <span class="hljs-comment">// 这个插件用来处理html文件，https://github.com/jantimon/html-webpack-plugin , 这里的作业是吧index.html打包到dist目录下</span>
+    <span class="hljs-keyword">new</span> HtmlWebpackPlugin({
+      filename: <span class="hljs-string">'index.html'</span>,
+      template: <span class="hljs-string">'index.html'</span>
+    })
+  ]
+}</code></pre>
+<p><code>npm start</code> 之后生成的目录结构：</p>
+<pre><code><span class="hljs-bullet">- </span>dist
+<span class="hljs-bullet">    - </span>static
+<span class="hljs-bullet">        - </span>f58125a1fa5c143130104dc5fa9af77b.jpg
+<span class="hljs-bullet">    - </span>index.html
+<span class="hljs-bullet">    - </span>style.js</code></pre><p>浏览器访问这个目录下的<code>index.html</code>，没有问题，为什么要把html搞到<code>dist</code>目录下呢？  可以F12看看body背景图片的url，是相对与打包目录<code>dist</code>的，也就是说这里访问的根目录是打包目录，我们的html也要放进去。</p>
+<h3 id="让我们继续改造：">让我们继续改造：</h3>
+<h4 id="1-引入第三方css">1. 引入第三方css</h4>
+<p>以FontAwesome为例：</p>
+<pre><code class="language-path">npm install <span class="hljs-built_in">font</span>-awesome --<span class="hljs-built_in">save</span></code></pre>
+<pre><code class="language-javascript"><span class="hljs-attr">module:</span> <span class="hljs-string">{</span>
+    <span class="hljs-attr">rules:</span> <span class="hljs-string">[</span>
+      <span class="hljs-string">{</span>
+        <span class="hljs-attr">test:</span> <span class="hljs-string">/\.css$/,</span>
+        <span class="hljs-attr">loader:</span> <span class="hljs-string">'style-loader!css-loader?sourceMap'</span>
+      <span class="hljs-string">},</span>
+      <span class="hljs-string">{</span>
+        <span class="hljs-attr">test:</span> <span class="hljs-string">/\.(jpe?g|png|gif|svg)$/,</span>
+        <span class="hljs-attr">loader:</span> <span class="hljs-string">'url-loader?name=static/[hash].[ext]'</span>
+      <span class="hljs-string">},</span>
+      <span class="hljs-string">{</span>
+        <span class="hljs-attr">test:</span> <span class="hljs-string">/\.styl$/,</span>
+        <span class="hljs-attr">loader:</span> <span class="hljs-string">"style-loader!css-loader!stylus-loader?sourceMap"</span>
+      <span class="hljs-string">},</span>
+      <span class="hljs-string">{</span>
+          <span class="hljs-string">//</span> <span class="hljs-string">FontAwesome</span> <span class="hljs-string">需要加载字体文件，(\?.*)</span> <span class="hljs-string">处理带版本号的文件</span>
+        <span class="hljs-attr">test:</span> <span class="hljs-string">/\.(woff2?|eot|ttf|otf)(\?.*)?$/,</span>
+        <span class="hljs-attr">loader:</span> <span class="hljs-string">'url-loader'</span><span class="hljs-string">,</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">{</span>
+          <span class="hljs-attr">limit:</span> <span class="hljs-number">10000</span><span class="hljs-string">,</span>
+          <span class="hljs-attr">name:</span> <span class="hljs-string">'fonts/[name].[hash:7].[ext]'</span>
+        <span class="hljs-string">}</span>
+      <span class="hljs-string">}</span>
+    <span class="hljs-string">]</span>
+  <span class="hljs-string">},</span></code></pre>
+<h4 id="2-多html文件">2. 多html文件</h4>
+<p><code>html-webpack-plugin</code> 这个插件处理多html文件，就是多new几次，也可以通过数组ForEach的方法：</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">let</span> config = {
+  entry: {
+    style: <span class="hljs-string">'./src/style/entry.js'</span>
+  },
+  outpu<span class="hljs-variable">t:</span> {
+    path: path.<span class="hljs-keyword">join</span>(__dirname, <span class="hljs-string">'./dist'</span>),
+    filename: <span class="hljs-string">'[name].js'</span>
+  },
+  module: {
+    rule<span class="hljs-variable">s:</span> [
+      {
+        tes<span class="hljs-variable">t:</span> /\.css$/,
+        loader: <span class="hljs-string">'style-loader!css-loader?sourceMap'</span>
+      },
+      {
+        tes<span class="hljs-variable">t:</span> /\.(jpe?g|png|gif|svg)$/,
+        loader: <span class="hljs-string">'url-loader?name=static/[hash].[ext]'</span>
+      },
+      {
+        tes<span class="hljs-variable">t:</span> /\.styl$/,
+        loader: <span class="hljs-string">"style-loader!css-loader!stylus-loader?sourceMap"</span>
+      },
+      {
+        tes<span class="hljs-variable">t:</span> /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: <span class="hljs-string">'url-loader'</span>,
+        option<span class="hljs-variable">s:</span> {
+          limi<span class="hljs-variable">t:</span> <span class="hljs-number">10000</span>,
+          name: <span class="hljs-string">'fonts/[name].[hash:7].[ext]'</span>
+        }
+      }
+    ]
+  },
+  <span class="hljs-built_in">resolve</span>: {
+    extension<span class="hljs-variable">s:</span> [<span class="hljs-string">'.js'</span>, <span class="hljs-string">'.vue'</span>, <span class="hljs-string">'.json'</span>],
+    alia<span class="hljs-variable">s:</span> {
+      <span class="hljs-string">'assets'</span>: path.<span class="hljs-keyword">join</span>(__dirname, <span class="hljs-string">'./src/assets'</span>)
+    }
+  },
+  plugin<span class="hljs-variable">s:</span> []
+}
+const array = [<span class="hljs-string">'index'</span>, <span class="hljs-string">'test'</span>]
+array.forEach((<span class="hljs-keyword">file</span>) =&gt; {
+  const <span class="hljs-keyword">conf</span> = {
+    filename: `${<span class="hljs-keyword">file</span>}.html`,
+    template: `${<span class="hljs-keyword">file</span>}.html`
+  }
+  config.plugins.push(<span class="hljs-keyword">new</span> HtmlWebpackPlugin(<span class="hljs-keyword">conf</span>))
+})
+
+module.exports = config</code></pre>
+<h4 id="3-某些文件单独打包">3. 某些文件单独打包</h4>
+<p>以jquery为例：</p>
+<pre><code class="language-bash">npm i <span class="hljs-built_in">file</span>-loader <span class="hljs-comment">--save-dev</span>
+npm i jquery <span class="hljs-comment">--save</span></code></pre>
+<pre><code>- src
+    - script
+        - <span class="hljs-keyword">entry</span>.js
+
+// <span class="hljs-keyword">entry</span>.js
+import <span class="hljs-symbol">'copy</span>!jquery/dist/jquery.min.js'</code></pre><pre><code class="language-javascript"><span class="hljs-comment">// webpack.config.js</span>
+<span class="hljs-attribute">entry</span>: {
+  <span class="hljs-attribute">style</span>: <span class="hljs-string">'./src/style/entry.js'</span>,
+  <span class="hljs-attribute">script</span>: <span class="hljs-string">'./src/script/entry.js'</span> <span class="hljs-comment">// 新增入口文件</span>
+},
+...
+<span class="hljs-selector-tag">resolveLoader</span>: { <span class="hljs-comment">// 处理loader</span>
+  <span class="hljs-attribute">alias</span>: {
+    <span class="hljs-string">'copy'</span>: <span class="hljs-string">'file-loader?name=[name].[ext]'</span>, <span class="hljs-comment">//&amp;context=./src</span>
+  }
+},</code></pre>
+<p><code>npm start</code> 后会发现<code>/dist</code> 目录下<code>jquery.min.js</code>已经单独打包出来了</p>
+<h4 id="4-热加载">4. 热加载</h4>
+<p>以BrowserSync为例：</p>
+<pre><code class="language-bash"><span class="hljs-symbol">npm</span> i <span class="hljs-keyword">browser-sync </span><span class="hljs-keyword">browser-sync-webpack-plugin </span>--save-dev</code></pre>
+<pre><code class="language-javascript"><span class="hljs-keyword">let</span> BrowserSyncPlugin   = <span class="hljs-built_in">require</span>(<span class="hljs-string">'browser-sync-webpack-plugin'</span>)
+
+<span class="hljs-keyword">let</span> config = {
+ <span class="hljs-attr">watch</span>: <span class="hljs-literal">true</span>,
+ <span class="hljs-attr">plugins</span>: [
+    <span class="hljs-keyword">new</span> BrowserSyncPlugin(
+      <span class="hljs-comment">// BrowserSync options</span>
+      {
+        <span class="hljs-comment">// browse to http://localhost:3000/ during development</span>
+        <span class="hljs-attr">host</span>: <span class="hljs-string">'localhost'</span>,
+        <span class="hljs-attr">port</span>: <span class="hljs-number">4000</span>,
+        <span class="hljs-comment">// proxy the Webpack Dev Server endpoint</span>
+        <span class="hljs-comment">// (which should be serving on http://localhost:3100/)</span>
+        <span class="hljs-comment">// through BrowserSync</span>
+        <span class="hljs-comment">// proxy: 'http://localhost:3100/'</span>
+        <span class="hljs-attr">server</span>: {
+          <span class="hljs-attr">baseDir</span>: [<span class="hljs-string">'dist'</span>],
+          <span class="hljs-attr">directory</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment">// with directory listing</span>
+        }
+      },
+      <span class="hljs-comment">// plugin options</span>
+      {
+        <span class="hljs-comment">// prevent BrowserSync from reloading the page</span>
+        <span class="hljs-comment">// and let Webpack Dev Server take care of this</span>
+        <span class="hljs-attr">reload</span>: <span class="hljs-literal">true</span>
+      }
+    )
+  ]
+}</code></pre>
+<p>会自动打开浏览器访问<code>http://localhost:4000/</code>, 修改被打包的文件会自动刷新</p>
+<h4 id="5-配置stylus和babel">5. 配置stylus和babel</h4>
+<pre><code class="language-bash"><span class="hljs-symbol">npm</span> i autoprefixer nib poststylus <span class="hljs-keyword">babel-core </span><span class="hljs-keyword">babel-loader </span><span class="hljs-keyword">babel-plugin-transform-runtime </span><span class="hljs-keyword">babel-preset-es2015 </span>--save-dev</code></pre>
+<pre><code class="language-stylus">/<span class="hljs-regexp">/ ./src</span><span class="hljs-regexp">/style/variables</span>.styl
+blue = <span class="hljs-comment">#0073aa</span></code></pre>
+<pre><code class="language-stylus"><span class="hljs-comment">// ./src/style/main.styl</span>
+h1
+  <span class="hljs-built_in">color</span> <span class="hljs-built_in">blue</span></code></pre>
+<pre><code class="language-javascript"><span class="hljs-keyword">let</span> poststylus = require(<span class="hljs-string">'poststylus'</span>)
+...
+plugin<span class="hljs-variable">s:</span> [
+    <span class="hljs-keyword">new</span> webpack.LoaderOptionsPlugin({
+      // tes<span class="hljs-variable">t:</span> /\.xxx$/, // may apply this <span class="hljs-keyword">only</span> <span class="hljs-keyword">for</span> some modules
+      option<span class="hljs-variable">s:</span> {
+        stylu<span class="hljs-variable">s:</span> {
+          use: [
+            poststylus([ <span class="hljs-string">'autoprefixer'</span> ]),
+          ],
+          impor<span class="hljs-variable">t:</span> [
+            <span class="hljs-string">'~nib/index.styl'</span>,
+            path.<span class="hljs-keyword">join</span>(__dirname, <span class="hljs-string">'src/style/variables.styl'</span>)
+          ]
+        },
+        babe<span class="hljs-variable">l:</span> {
+          preset<span class="hljs-variable">s:</span> [<span class="hljs-string">'es2015'</span>],
+          plugin<span class="hljs-variable">s:</span> [<span class="hljs-string">'transform-runtime'</span>]
+        }
+      }
+    }),
+    ...
+  ]</code></pre>
+<p><code>autoprefixer</code>是个自动添加前缀的插件，<code>nib</code>是一个不错的css库，<code>variables.styl</code>可以作为stylus的全局变量加载，babel不用说，可以写es6的代码。</p>
+<h3 id="总结">总结</h3>
+<p>感觉把以上说的走一遍，webpack基本的配置就可以熟悉了，会引入loader，配置loader选项，会设置alias，会用plugins差不多。</p>
+<p>至于现在一些比较大的项目中分多个配置文件，是根据不同的场景拆分开的，基本的一个<code>webpack.base.config.js</code>,主要包含<code>loader</code>，<code>resolve</code>等全局通用的部分，剩下的根据开发或者生产环境分成<code>webpack.dev.config.js</code>，<code>webpack.prod.config.js</code>，除了都会合并base的内容，其他可能跟去环境不一样像<code>output</code>， <code>plugins</code>也都有所不同。</p>
+<p>另外，我说的不是很详细，有些东西还要自己去踩坑，比如loader和plugins的配置可以看官方文档，我没有详细说。</p>
+</section><section id="vcomments" class="v"><div class="vwrap"><div class="vheader item3"><input name="nick" placeholder="昵称" class="vnick vinput" type="text"><input name="mail" placeholder="邮箱" class="vmail vinput" type="email"><input name="link" placeholder="网址(http://)" class="vlink vinput" type="text"></div><div class="vedit"><textarea id="veditor" class="veditor vinput" placeholder="Just Go Go"></textarea><div class="vctrl"><span class="vemoji-btn">表情</span> | <span class="vpreview-btn">预览</span></div><div class="vemojis" style="display:none;"><i name="grinning" title="grinning">😀</i><i name="smiley" title="smiley">😃</i><i name="smile" title="smile">😄</i><i name="grin" title="grin">😁</i><i name="laughing" title="laughing">😆</i><i name="sweat_smile" title="sweat_smile">😅</i><i name="joy" title="joy">😂</i><i name="blush" title="blush">😊</i><i name="innocent" title="innocent">😇</i><i name="wink" title="wink">😉</i><i name="relieved" title="relieved">😌</i><i name="heart_eyes" title="heart_eyes">😍</i><i name="kissing_heart" title="kissing_heart">😘</i><i name="kissing" title="kissing">😗</i><i name="kissing_smiling_eyes" title="kissing_smiling_eyes">😙</i><i name="kissing_closed_eyes" title="kissing_closed_eyes">😚</i><i name="yum" title="yum">😋</i><i name="stuck_out_tongue_winking_eye" title="stuck_out_tongue_winking_eye">😜</i><i name="stuck_out_tongue_closed_eyes" title="stuck_out_tongue_closed_eyes">😝</i><i name="stuck_out_tongue" title="stuck_out_tongue">😛</i><i name="sunglasses" title="sunglasses">😎</i><i name="smirk" title="smirk">😏</i><i name="unamused" title="unamused">😒</i><i name="disappointed" title="disappointed">😞</i><i name="pensive" title="pensive">😔</i><i name="worried" title="worried">😟</i><i name="confused" title="confused">😕</i><i name="persevere" title="persevere">😣</i><i name="confounded" title="confounded">😖</i><i name="tired_face" title="tired_face">😫</i><i name="weary" title="weary">😩</i><i name="angry" title="angry">😠</i><i name="rage" title="rage">😡</i><i name="no_mouth" title="no_mouth">😶</i><i name="neutral_face" title="neutral_face">😐</i><i name="expressionless" title="expressionless">😑</i><i name="hushed" title="hushed">😯</i><i name="frowning" title="frowning">😦</i><i name="anguished" title="anguished">😧</i><i name="open_mouth" title="open_mouth">😮</i><i name="astonished" title="astonished">😲</i><i name="dizzy_face" title="dizzy_face">😵</i><i name="flushed" title="flushed">😳</i><i name="scream" title="scream">😱</i><i name="fearful" title="fearful">😨</i><i name="cold_sweat" title="cold_sweat">😰</i><i name="cry" title="cry">😢</i><i name="disappointed_relieved" title="disappointed_relieved">😥</i><i name="sob" title="sob">😭</i><i name="sweat" title="sweat">😓</i><i name="sleepy" title="sleepy">😪</i><i name="sleeping" title="sleeping">😴</i><i name="mask" title="mask">😷</i><i name="smiling_imp" title="smiling_imp">😈</i><i name="smiley_cat" title="smiley_cat">😺</i><i name="smile_cat" title="smile_cat">😸</i><i name="joy_cat" title="joy_cat">😹</i><i name="heart_eyes_cat" title="heart_eyes_cat">😻</i><i name="smirk_cat" title="smirk_cat">😼</i><i name="kissing_cat" title="kissing_cat">😽</i><i name="scream_cat" title="scream_cat">🙀</i><i name="crying_cat_face" title="crying_cat_face">😿</i><i name="pouting_cat" title="pouting_cat">😾</i><i name="cat" title="cat">🐱</i><i name="mouse" title="mouse">🐭</i><i name="cow" title="cow">🐮</i><i name="monkey_face" title="monkey_face">🐵</i><i name="hand" title="hand">✋</i><i name="fist" title="fist">✊</i><i name="v" title="v">✌️</i><i name="point_up" title="point_up">👆</i><i name="point_down" title="point_down">👇</i><i name="point_left" title="point_left">👈</i><i name="point_right" title="point_right">👉</i><i name="facepunch" title="facepunch">👊</i><i name="wave" title="wave">👋</i><i name="clap" title="clap">👏</i><i name="open_hands" title="open_hands">👐</i><i name="+1" title="+1">👍</i><i name="-1" title="-1">👎</i><i name="ok_hand" title="ok_hand">👌</i><i name="pray" title="pray">🙏</i><i name="ear" title="ear">👂</i><i name="eyes" title="eyes">👀</i><i name="nose" title="nose">👃</i><i name="lips" title="lips">👄</i><i name="tongue" title="tongue">👅</i><i name="heart" title="heart">❤️</i><i name="cupid" title="cupid">💘</i><i name="sparkling_heart" title="sparkling_heart">💖</i><i name="star" title="star">⭐️</i><i name="sparkles" title="sparkles">✨</i><i name="zap" title="zap">⚡️</i><i name="sunny" title="sunny">☀️</i><i name="cloud" title="cloud">☁️</i><i name="snowflake" title="snowflake">❄️</i><i name="umbrella" title="umbrella">☔️</i><i name="coffee" title="coffee">☕️</i><i name="airplane" title="airplane">✈️</i><i name="anchor" title="anchor">⚓️</i><i name="watch" title="watch">⌚️</i><i name="phone" title="phone">☎️</i><i name="hourglass" title="hourglass">⌛️</i><i name="email" title="email">✉️</i><i name="scissors" title="scissors">✂️</i><i name="black_nib" title="black_nib">✒️</i><i name="pencil2" title="pencil2">✏️</i><i name="x" title="x">❌</i><i name="recycle" title="recycle">♻️</i><i name="white_check_mark" title="white_check_mark">✅</i><i name="negative_squared_cross_mark" title="negative_squared_cross_mark">❎</i><i name="m" title="m">Ⓜ️</i><i name="i" title="i">ℹ️</i><i name="tm" title="tm">™️</i><i name="copyright" title="copyright">©️</i><i name="registered" title="registered">®️</i></div><div class="vinput vpreview" style="display:none;"></div></div><div class="vcontrol"><div class="col col-20" title="Markdown is supported"><a href="https://segmentfault.com/markdown" target="_blank"><svg class="markdown" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z"></path></svg></a></div><div class="col col-80 text-right"><button type="button" title="Cmd|Ctrl+Enter" class="vsubmit vbtn">回复</button></div></div><div style="display:none;" class="vmark"></div></div><div class="vinfo" style="display:none;"><div class="vcount col"></div></div><div class="vlist"></div><div class="vempty" style="display:block;"><pre style="text-align:left;">Code 429: Too many requests. [429 GET https://avoscloud.com/1.1/classes/Comment]</pre></div><div class="vpage txt-center"></div><div class="info"><div class="power txt-right">Powered By <a href="https://valine.js.org" target="_blank">Valine</a><br>v1.3.10</div></div></section></article></main></div></div><script>!function(i){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)t=n[l],Object.prototype.hasOwnProperty.call(p,t)&&p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var r=this.webpackJsonpblog=this.webpackJsonpblog||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.7cff77cf.chunk.js"></script><script src="/static/js/main.691d9270.chunk.js"></script></body></html>
