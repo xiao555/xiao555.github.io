@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="zh-hans"><head><meta charset="utf-8"><link rel="icon" href="/favicon_64x64.ico" sizes="64x64"><link rel="canonical" href="https://xiao555.club"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="打开天眼看文章"><link rel="apple-touch-icon" href="favicon_64x64.ico" sizes="64x64"><link rel="manifest" href="/manifest.json"><title>两年经验字节前端面经(可能是最简单的了) | 打开天眼看文章</title><link href="/static/css/2.5bcfae4a.chunk.css" rel="stylesheet"><link href="/static/css/main.96acf59d.chunk.css" rel="stylesheet"><style type="text/css">.v[data-class=v]{font-size:16px;text-align:left}.v[data-class=v] *{-webkit-box-sizing:border-box;box-sizing:border-box;line-height:1.75}.v[data-class=v] .status-bar,.v[data-class=v] .veditor,.v[data-class=v] .vinput,.v[data-class=v] p,.v[data-class=v] pre code{color:#555}.v[data-class=v] .vsys,.v[data-class=v] .vtime{color:#b3b3b3}.v[data-class=v] .text-right{text-align:right}.v[data-class=v] .text-center{text-align:center}.v[data-class=v] img{max-width:100%;border:none}.v[data-class=v] hr{margin:.825em 0;border-color:#f6f6f6;border-style:dashed}.v[data-class=v].hide-avatar .vimg{display:none}.v[data-class=v] a{position:relative;cursor:pointer;color:#1abc9c;text-decoration:none;display:inline-block}.v[data-class=v] a:hover{color:#d7191a}.v[data-class=v] code,.v[data-class=v] pre{background-color:#f8f8f8;padding:.2em .4em;border-radius:3px;font-size:85%;margin:0}.v[data-class=v] pre{padding:10px;overflow:auto;line-height:1.45}.v[data-class=v] pre code{padding:0;background:transparent;white-space:pre-wrap;word-break:keep-all}.v[data-class=v] blockquote{color:#666;margin:.5em 0;padding:0 0 0 1em;border-left:8px solid hsla(0,0%,93%,.5)}.v[data-class=v] .vinput{border:none;resize:none;outline:none;padding:10px 5px;max-width:100%;font-size:.775em}.v[data-class=v] input[type=checkbox],.v[data-class=v] input[type=radio]{display:inline-block;vertical-align:middle;margin-top:-2px}.v[data-class=v] .vicon{cursor:pointer;display:inline-block;overflow:hidden;fill:#555;vertical-align:middle}.v[data-class=v] .vicon+.vicon{margin-left:10px}.v[data-class=v] .vicon.actived{fill:#66b1ff}.v[data-class=v] .vrow{font-size:0;padding:10px 0}.v[data-class=v] .vrow .vcol{display:inline-block;vertical-align:middle;font-size:14px}.v[data-class=v] .vrow .vcol.vcol-20{width:20%}.v[data-class=v] .vrow .vcol.vcol-30{width:30%}.v[data-class=v] .vrow .vcol.vcol-40{width:40%}.v[data-class=v] .vrow .vcol.vcol-50{width:50%}.v[data-class=v] .vrow .vcol.vcol-60{width:60%}.v[data-class=v] .vrow .vcol.vcol-70{width:70%}.v[data-class=v] .vrow .vcol.vcol-80{width:80%}.v[data-class=v] .vrow .vcol.vctrl{font-size:12px}.v[data-class=v] .emoji,.v[data-class=v] .vemoji{max-width:25px;vertical-align:middle;margin:0 1px;display:inline-block}.v[data-class=v] .vwrap{border:1px solid #f0f0f0;border-radius:4px;margin-bottom:10px;overflow:hidden;position:relative;padding:10px}.v[data-class=v] .vwrap input{background:transparent}.v[data-class=v] .vwrap .vedit{position:relative;padding-top:10px}.v[data-class=v] .vwrap .cancel-reply-btn{position:absolute;right:5px;top:5px;cursor:pointer}.v[data-class=v] .vwrap .vemojis{display:none;font-size:18px;max-height:145px;overflow:auto;padding-bottom:10px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v[data-class=v] .vwrap .vemojis i{font-style:normal;padding-top:7px;width:36px;cursor:pointer;text-align:center;display:inline-block;vertical-align:middle}.v[data-class=v] .vwrap .vpreview{padding:7px;-webkit-box-shadow:0 0 1px #f0f0f0;box-shadow:0 0 1px #f0f0f0}.v[data-class=v] .vwrap .vheader .vinput{width:33.33%;border-bottom:1px dashed #dedede}.v[data-class=v] .vwrap .vheader.item2 .vinput{width:50%}.v[data-class=v] .vwrap .vheader.item1 .vinput{width:100%}.v[data-class=v] .vwrap .vheader .vinput:focus{border-bottom-color:#eb5055}@media screen and (max-width:520px){.v[data-class=v] .vwrap .vheader.item2 .vinput,.v[data-class=v] .vwrap .vheader .vinput{width:100%}}.v[data-class=v] .vpower{color:#999;font-size:.75em;padding:.5em 0}.v[data-class=v] .vpower a{font-size:.75em}.v[data-class=v] .vcount{padding:5px;font-weight:600;font-size:1.25em}.v[data-class=v] ol,.v[data-class=v] ul{padding:0;margin-left:1.25em}.v[data-class=v] .txt-center{text-align:center}.v[data-class=v] .txt-right{text-align:right}.v[data-class=v] .pd5{padding:5px}.v[data-class=v] .pd10{padding:10px}.v[data-class=v] .veditor{width:100%;min-height:8.75em;font-size:.875em;background:transparent;resize:vertical;-webkit-transition:all .25s ease;transition:all .25s ease}.v[data-class=v] .vbtn{-webkit-transition-duration:.4s;transition-duration:.4s;text-align:center;color:#555;border:1px solid #ededed;border-radius:.3em;display:inline-block;background:transparent;margin-bottom:0;font-weight:400;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:.5em 1.25em;font-size:.875em;line-height:1.42857143;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;outline:none}.v[data-class=v] .vbtn+.vbtn{margin-left:1.25em}.v[data-class=v] .vbtn:active,.v[data-class=v] .vbtn:hover{color:#3090e4;border-color:#3090e4}.v[data-class=v] .vbtn:disabled{border-color:#e1e1e1;color:#e1e1e1;background-color:#fdfafa;cursor:not-allowed}.v[data-class=v] .vempty{padding:1.25em;text-align:center;color:#555;overflow:auto}.v[data-class=v] .vsys{display:inline-block;padding:.2em .5em;font-size:.75em;border-radius:.2em;margin-right:.3em}@media screen and (max-width:520px){.v[data-class=v] .vsys{display:none}}.v[data-class=v] .vcards{width:100%}.v[data-class=v] .vcards .vcard{padding-top:1.25em;position:relative;display:block}.v[data-class=v] .vcards .vcard:after{content:"";clear:both;display:block}.v[data-class=v] .vcards .vcard .vimg{width:3.125em;height:3.125em;float:left;border-radius:50%;margin-right:.7525em;border:1px solid #f5f5f5;padding:.125em}@media screen and (max-width:720px){.v[data-class=v] .vcards .vcard .vimg{width:2.5em;height:2.5em}}.v[data-class=v] .vcards .vcard .vhead{line-height:1.5;margin-top:0}.v[data-class=v] .vcards .vcard .vhead .vnick{position:relative;font-size:.875em;font-weight:500;margin-right:.875em;cursor:pointer;text-decoration:none;display:inline-block}.v[data-class=v] .vcards .vcard .vhead .vnick:hover{color:#d7191a}.v[data-class=v] .vcards .vcard .vh{overflow:hidden;padding-bottom:.5em;border-bottom:1px dashed #f5f5f5}.v[data-class=v] .vcards .vcard .vh .vtime{font-size:.75em;margin-right:.875em}.v[data-class=v] .vcards .vcard .vh .vmeta{line-height:1;position:relative}.v[data-class=v] .vcards .vcard .vh .vmeta .vat{font-size:.8125em;color:#ef2f11;cursor:pointer;float:right}.v[data-class=v] .vcards .vcard:last-child .vh{border-bottom:none}.v[data-class=v] .vcards .vcard .vcontent{word-wrap:break-word;word-break:break-all;font-size:.875em;line-height:2;position:relative;margin-bottom:.75em;padding-top:.625em}.v[data-class=v] .vcards .vcard .vcontent.expand{cursor:pointer;max-height:8em;overflow:hidden}.v[data-class=v] .vcards .vcard .vcontent.expand:before{display:block;content:"";position:absolute;width:100%;left:0;top:0;bottom:3.15em;background:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,0)),to(hsla(0,0%,100%,.9)));background:linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.9));z-index:999}.v[data-class=v] .vcards .vcard .vcontent.expand:after{display:block;content:attr(data-expand);text-align:center;color:#828586;position:absolute;width:100%;height:3.15em;line-height:3.15em;left:0;bottom:0;z-index:999;background:hsla(0,0%,100%,.9)}.v[data-class=v] .vcards .vcard .vquote{padding-left:1em;border-left:1px dashed hsla(0,0%,93%,.5)}.v[data-class=v] .vcards .vcard .vquote .vimg{width:2.225em;height:2.225em}.v[data-class=v] .vpage .vmore{margin:1em 0}.v[data-class=v] .clear{content:"";display:block;clear:both}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@-webkit-keyframes pulse{50%{background:#dcdcdc}}@keyframes pulse{50%{background:#dcdcdc}}.v[data-class=v] .vspinner{width:22px;height:22px;display:inline-block;border:6px double #a0a0a0;border-top-color:transparent;border-bottom-color:transparent;border-radius:50%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear;position:relative;vertical-align:middle;margin:0 5px}.dark .v[data-class=v] .status-bar,.dark .v[data-class=v] .veditor,.dark .v[data-class=v] .vinput,.dark .v[data-class=v] p,.dark .v[data-class=v] pre code,.night .v[data-class=v] .status-bar,.night .v[data-class=v] .veditor,.night .v[data-class=v] .vinput,.night .v[data-class=v] p,.night .v[data-class=v] pre code,.theme__dark .v[data-class=v] .status-bar,.theme__dark .v[data-class=v] .veditor,.theme__dark .v[data-class=v] .vinput,.theme__dark .v[data-class=v] p,.theme__dark .v[data-class=v] pre code,[data-theme=dark] .v[data-class=v] .status-bar,[data-theme=dark] .v[data-class=v] .veditor,[data-theme=dark] .v[data-class=v] .vinput,[data-theme=dark] .v[data-class=v] p,[data-theme=dark] .v[data-class=v] pre code{color:#b2b2b5}.dark .v[data-class=v] .vsys,.dark .v[data-class=v] .vtime,.night .v[data-class=v] .vsys,.night .v[data-class=v] .vtime,.theme__dark .v[data-class=v] .vsys,.theme__dark .v[data-class=v] .vtime,[data-theme=dark] .v[data-class=v] .vsys,[data-theme=dark] .v[data-class=v] .vtime{color:#929298}.dark .v[data-class=v] code,.dark .v[data-class=v] pre,.dark .v[data-class=v] pre code,.night .v[data-class=v] code,.night .v[data-class=v] pre,.night .v[data-class=v] pre code,.theme__dark .v[data-class=v] code,.theme__dark .v[data-class=v] pre,.theme__dark .v[data-class=v] pre code,[data-theme=dark] .v[data-class=v] code,[data-theme=dark] .v[data-class=v] pre,[data-theme=dark] .v[data-class=v] pre code{color:#929298;background-color:#151414}.dark .v[data-class=v] .vwrap,.night .v[data-class=v] .vwrap,.theme__dark .v[data-class=v] .vwrap,[data-theme=dark] .v[data-class=v] .vwrap{border-color:#b2b2b5}.dark .v[data-class=v] .vicon,.night .v[data-class=v] .vicon,.theme__dark .v[data-class=v] .vicon,[data-theme=dark] .v[data-class=v] .vicon{fill:#b2b2b5}.dark .v[data-class=v] .vicon.actived,.night .v[data-class=v] .vicon.actived,.theme__dark .v[data-class=v] .vicon.actived,[data-theme=dark] .v[data-class=v] .vicon.actived{fill:#66b1ff}.dark .v[data-class=v] .vbtn,.night .v[data-class=v] .vbtn,.theme__dark .v[data-class=v] .vbtn,[data-theme=dark] .v[data-class=v] .vbtn{color:#b2b2b5;border-color:#b2b2b5}.dark .v[data-class=v] .vbtn:hover,.night .v[data-class=v] .vbtn:hover,.theme__dark .v[data-class=v] .vbtn:hover,[data-theme=dark] .v[data-class=v] .vbtn:hover{color:#66b1ff;border-color:#66b1ff}.dark .v[data-class=v] a:hover,.night .v[data-class=v] a:hover,.theme__dark .v[data-class=v] a:hover,[data-theme=dark] .v[data-class=v] a:hover{color:#d7191a}.dark .v[data-class=v] .vcards .vcard .vcontent.expand:before,.night .v[data-class=v] .vcards .vcard .vcontent.expand:before,.theme__dark .v[data-class=v] .vcards .vcard .vcontent.expand:before,[data-theme=dark] .v[data-class=v] .vcards .vcard .vcontent.expand:before{background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.3)),to(rgba(0,0,0,.7)));background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.7))}.dark .v[data-class=v] .vcards .vcard .vcontent.expand:after,.night .v[data-class=v] .vcards .vcard .vcontent.expand:after,.theme__dark .v[data-class=v] .vcards .vcard .vcontent.expand:after,[data-theme=dark] .v[data-class=v] .vcards .vcard .vcontent.expand:after{background:rgba(0,0,0,.7)}@media (prefers-color-scheme:dark){.v[data-class=v] .status-bar,.v[data-class=v] .veditor,.v[data-class=v] .vinput,.v[data-class=v] p,.v[data-class=v] pre code{color:#b2b2b5}.v[data-class=v] .vsys,.v[data-class=v] .vtime{color:#929298}.v[data-class=v] code,.v[data-class=v] pre,.v[data-class=v] pre code{color:#929298;background-color:#151414}.v[data-class=v] .vwrap{border-color:#b2b2b5}.v[data-class=v] .vicon{fill:#b2b2b5}.v[data-class=v] .vicon.actived{fill:#66b1ff}.v[data-class=v] .vbtn{color:#b2b2b5;border-color:#b2b2b5}.v[data-class=v] .vbtn:hover{color:#66b1ff;border-color:#66b1ff}.v[data-class=v] a:hover{color:#d7191a}.v[data-class=v] .vcards .vcard .vcontent.expand:before{background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.3)),to(rgba(0,0,0,.7)));background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.7))}.v[data-class=v] .vcards .vcard .vcontent.expand:after{background:rgba(0,0,0,.7)}}</style></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="app"><div class="progress-bar"><div class="bg-red"></div><div class="bg-orange"></div><div class="bg-yellow"></div><div class="bg-green"></div><div class="bg-blue"></div><div class="bg-indigo"></div><div class="bg-purple"></div></div><main class="main"><div><h1><a class="header_logo__1X7aW" href="/">打开天眼看文章</a></h1><p class="font-sm"><a class="text-blue font-weight-bold" title="about me" href="/about">@me |</a><a class="text-green font-weight-bold" href="https://github.com/xiao555" title="github" target="_blank" rel="noopener noreferrer">@github</a></p><p class="font-sm"><a href="mailto:zhangruiwu32@gmail.com">zhangruiwu32@gmail.com</a></p><p><small>本站已存活 186 天</small></p><button class="border-0 px-0 mb-1" aria-label="Theme Color"><span class="icon-moon header_icon__2CeRL"></span></button></div><article class="main-content"><h2>两年经验字节前端面经(可能是最简单的了)</h2><p><small>2020-08-29</small><span id="bytedance-interview" class="leancloud_visitors ml-1"><small>阅读量</small> <small class="leancloud-visitors-count"></small></span></p><section><p>两年之期已到，<del>参见龙王</del>。最近面了下字节，面之前看了好多掘金大佬的优秀文章，面完来反馈一下，虽然我面的内容真的是太简单了，可能是个假的，参考意义不大。</p>
+<h2 id="背景">背景</h2>
+<p>我是18年毕业的，之前在一家出口电商公司。当年刚来的时候就打算两年后出来看看，虽然都说疫情大环境不好，我还是毅然决然的裸辞了。</p>
+<p>一是履行当年之约(有内味儿了)，二是在上家公司感觉没有什么上升空间了，疫情原因又出了各种事情。</p>
+<p>7月16号离职，在家刷刷题，打打游戏。30号字节的hr加我微信，了解了一下，我说等我整理一下简历吧，8月5号给了简历，当天评估过了约了24号面试。</p>
+<p>说一下为什么选24号。一是看了看掘金上的面经，感觉自己好菜，留一下准备时间，字节可以约30天内，我想了下也不打算太晚，17天总够了吧。二是因为好久没面试了，中间打算找家公司找找面试的感觉，结果后来面试时候还是紧张得不行。</p>
+<p>下面从面经和面试准备两方面说。</p>
+<h2 id="面经">面经</h2>
+<h3 id="一面-50min">一面 50min</h3>
+<p>之前主要技术栈是Vue，后面有个项目是Reack + Mobx写的。面试官让自我介绍后就先从框架开始：</p>
+<ol>
+<li>谈谈Vue和React的区别？</li>
+<li>Mobx的object和map有什么区别？底层实现？（这个没了解</li>
+<li>Hooks用过吗？（说了用过，然后就往下走了</li>
+<li>Vue如何实现双向绑定的？</li>
+<li>defineProperty有什么缺点？为什么用Proxy，对Proxy了解多少？</li>
+<li>编程题 实现一个发布订阅模式 （给出框架，让具体实现</li>
+<li>Websocket怎么建立连接的？</li>
+<li>对BFF有什么理解？Node为什么支持高并发？多线程除了上下文切换还有什么影响性能？</li>
+<li>说说怎么通过阅读源码处理react-sticky的占位元素不能同步更新的问题</li>
+<li>算法题 数组中第K大元素 （快排，我先说思路然后问了下时间复杂度，然后写</li>
+<li>编程题 手动控制并发请求fetchWithLimit</li>
+<li>有什么问题问我？</li>
+</ol>
+<p>能记住的就这些了，除了编程算法其他基本从简历上问的，参考意义不大。</p>
+<p>快排当时写的有点问题，面试管说你可以不用原地排序，我还跟面试官解释了一下，后面发现其实写错了，但是当时的用例是跑对了的。。。</p>
+<p>fetchWithLimit写了个Promise.all的，面试官说不是最快的实现，因为时间关系就不写了，让我等五分钟下一轮</p>
+<h3 id="二面-50min">二面 50min</h3>
+<ol>
+<li>编程题 手动控制并发请求fetchWithLimit 尽量快的实现</li>
+<li>算法题 数组去重，es5实现，区分数字和字符串</li>
+<li>算法题 判断单向链表是否有环</li>
+<li>谈谈IM项目有什么难点？</li>
+<li>富文本为什么不用框架？</li>
+<li>怎么获取粘贴事件？怎么判断是粘贴了图片？</li>
+<li>怎么做图片压缩的？</li>
+<li>为什么封装了Websocket？心跳是怎么做的？</li>
+<li>Koa和Express有什么区别？</li>
+<li>模块化有了解吗，谈谈CommenJS和ES6的module？</li>
+<li>谈谈你的开源项目，为什么做？</li>
+<li>除了这些还有什么想说的，其他方向的有没有研究？</li>
+<li>Vue源码有看过吗？</li>
+<li>谈谈http1.0 http1.1 http2.0 http3？知道多少说多少</li>
+<li>说说缓存，怎么禁用强缓存？</li>
+<li>还有什么想说的？</li>
+<li>有什么问题问我？</li>
+</ol>
+<p>二面上来做三道题，编程题跟一面一样，不过换了种说法，我一开始窃喜，直接一把梭就把一面的写出来了，他看了看说这不是最快的，能不能写个最快的，并解释了一下，我说我试试。结果写着写着卡主了，当时没想到怎么去循环执行(递归)，问了下思路就先过了。接下来两道easy，然后就问项目了。</p>
+<p>二面面试官给了很大的自由度，一直让我自己发挥，比如：讲讲这个项目，有什么可以说的，除了上面聊的还有什么想说的之类的。结果每次我大脑都一片空白不知道怎么说，然后他就笑笑，“算了，我来问吧。”</p>
+<p>最后我问对我有什么评价或建议，说的是看得出来我是一个务实的人，但是可能深度上还要加强一下。比较中肯。晚上hr约了26号三面。</p>
+<h3 id="三面-40min">三面 40min</h3>
+<p>前两面这么简单搞的我很慌，感觉是被放弃了。但是还是要准备一下，感觉主要是编程和算法，所以去牛客上搜集了一下面经里的算法编程题刷了刷，后面会分享下题目。</p>
+<p>三面是下午五点，面试官稍显严肃，搞的我也紧张，结果大部分时间聊的都是非技术的，技术上就这两个：</p>
+<ol>
+<li>返回数组中和等于给定数的两数下标？</li>
+<li>https中间被篡改了怎么识别？</li>
+</ol>
+<p>leetcode第一题。。很快写完了，问了下时间复杂度，然后又说三数之和呢，复杂度是多少，怎么做？说一下思路就可。https中间被篡改了怎么识别，这个不知道，先说了下先握手，然后后面的数据是对称加密的。这还能改？然后说不解密，就是破坏。这个就直说了没了解过。其实可以想一下如果自己遇到怎么处理。</p>
+<p>非技术问题就是从各方面看你是个什么样的人，能不能胜任字节的工作，以后的打算等等。其中我说了下二面面试官的评价，他说深度这个也要看公司的项目的。以后的打算我把最近思考的说了下，后面他问“你是个有毅力的人吗，很多人说到做不到”，我说更多的是思想上的改变吧，感觉自己这两年啥也没干，天天打游戏，以前可能为了面试而去看一些东西，现在可能更多的是一种职业的态度。</p>
+<p>其他的就不说了，反正这段时间感觉自己真的好菜，看校招生的面经都比我强好多，那我的优势在哪？可能只有积累的一点项目经验了吧。。</p>
+<p>最后让我等20分钟，下一轮。</p>
+<h3 id="hr面-40min">HR面 40min</h3>
+<p>没到20分钟我就问了下约面的HR，说过了，等会HR面，用Zoom。HR也会问好多好多。三到五个工作日出结果。</p>
+<h2 id="面试准备">面试准备</h2>
+<h3 id="数据结构和算法">数据结构和算法</h3>
+<p>我之前没刷过算法，提离职后开始准备的，推荐<a href="https://labuladong.gitbook.io/algo/">labuladong的算法小抄</a>,讲各种类型题目的解题框架，任何事情都有方法论，掌握方法刷题很快的。我没全部看完，看了一部分，动规，回溯，滑动窗口，背包，股票等等，也就是必读系列看完差不多了。一开始看的比较慢，不过慢慢就从看到算法题一脸懵逼到看到算法题先想是什么问题了。</p>
+<p>数据结构推荐极客时间<a href="http://gk.link/a/10kVL">《数据结构与算法之美》</a>(我的链接购买会有返现)，讲的生动形象，通俗易懂，结合实际应用，让我明白了很多之前不明白的事情。</p>
+<p>直接开刷的话我这里列了下问到的题目和搜集的牛客字节面经的题目，大部分easy，个别hard，也可以看到很多剑指Offer的，有时间的话推荐把剑指Offer刷完(我只刷了37道)。到三面前我一共刷了123道 - 简单 58 中等 51 困难 14。结果面试问了这么简单的。不过也感受到算法其实挺有意思的，后面打算每日一题坚持做一做。</p>
+<p>时间复杂度也了解一下，面试问了我好几次复杂度多少。</p>
+<h4 id="字符串数组">字符串/数组</h4>
+<ul>
+<li><ol>
+<li><a href="https://leetcode-cn.com/problems/two-sum/">两数之和</a></li>
+</ol>
+</li>
+<li><ol start="15">
+<li><a href="https://leetcode-cn.com/problems/3sum/">三数之和</a></li>
+</ol>
+</li>
+<li><ol start="33">
+<li><a href="https://leetcode-cn.com/problems/search-in-rotated-sorted-array/">搜索旋转排序数组</a></li>
+</ol>
+</li>
+<li><ol start="215">
+<li><a href="https://leetcode-cn.com/problems/kth-largest-element-in-an-array/">数组中的第K个最大元素</a></li>
+</ol>
+</li>
+<li><ol start="387">
+<li><a href="https://leetcode-cn.com/problems/first-unique-character-in-a-string/">字符串中的第一个唯一字符</a></li>
+</ol>
+</li>
+<li>剑指 Offer 39. <a href="https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/">数组中出现次数超过一半的数字</a></li>
+<li>剑指 Offer 50. <a href="https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/">第一个只出现一次的字符</a></li>
+<li>45°打印矩阵，回形打印矩阵</li>
+</ul>
+<h4 id="链表">链表</h4>
+<ul>
+<li><ol start="141">
+<li><a href="https://leetcode-cn.com/problems/linked-list-cycle/">环形链表</a></li>
+</ol>
+</li>
+<li><ol start="234">
+<li><a href="https://leetcode-cn.com/problems/palindrome-linked-list/">回文链表</a></li>
+</ol>
+</li>
+<li>剑指 Offer 24. <a href="https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/">反转链表</a></li>
+<li>剑指 Offer 25. <a href="https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/">合并两个排序的链表</a></li>
+<li>剑指 Offer 52. <a href="https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/">两个链表的第一个公共节点</a></li>
+<li>面试题 02.07. <a href="https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/">链表相交</a></li>
+</ul>
+<h4 id="栈队列">栈/队列</h4>
+<ul>
+<li><ol start="224">
+<li><a href="https://leetcode-cn.com/problems/basic-calculator/">基本计算器</a></li>
+</ol>
+</li>
+<li><ol start="227">
+<li><a href="https://leetcode-cn.com/problems/basic-calculator-ii/">基本计算器 II</a></li>
+</ol>
+</li>
+<li><ol start="225">
+<li><a href="https://leetcode-cn.com/problems/implement-stack-using-queues/">用队列实现栈</a></li>
+</ol>
+</li>
+<li>剑指 Offer 09. <a href="https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/">用两个栈实现队列</a></li>
+</ul>
+<h4 id="二叉树">二叉树</h4>
+<ul>
+<li><ol start="101">
+<li><a href="https://leetcode-cn.com/problems/symmetric-tree/">对称二叉树</a></li>
+</ol>
+</li>
+<li><ol start="110">
+<li><a href="https://leetcode-cn.com/problems/balanced-binary-tree/">平衡二叉树</a></li>
+</ol>
+</li>
+<li><ol start="112">
+<li><a href="https://leetcode-cn.com/problems/path-sum/">路径总和</a></li>
+</ol>
+</li>
+<li><ol start="113">
+<li><a href="https://leetcode-cn.com/problems/path-sum-ii/">路径总和 II</a></li>
+</ol>
+</li>
+<li><ol start="226">
+<li><a href="https://leetcode-cn.com/problems/invert-binary-tree/">翻转二叉树</a></li>
+</ol>
+</li>
+<li><ol start="617">
+<li><a href="https://leetcode-cn.com/problems/merge-two-binary-trees/">合并二叉树</a></li>
+</ol>
+</li>
+<li>剑指 Offer 28. <a href="https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/">对称的二叉树</a></li>
+<li>剑指 Offer 32 - I. <a href="https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/">从上到下打印二叉树</a></li>
+<li>剑指 Offer 55 - I. <a href="https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/">二叉树的深度</a></li>
+<li>前中后序知道其二还原二叉树</li>
+</ul>
+<h4 id="动态规划">动态规划</h4>
+<ul>
+<li><ol start="70">
+<li><a href="https://leetcode-cn.com/problems/climbing-stairs/">爬楼梯</a></li>
+</ol>
+</li>
+<li><ol start="72">
+<li><a href="https://leetcode-cn.com/problems/edit-distance/">编辑距离</a></li>
+</ol>
+</li>
+<li><ol start="121">
+<li><a href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/">买卖股票的最佳时机</a></li>
+</ol>
+</li>
+<li><ol start="122">
+<li><a href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/">买卖股票的最佳时机 II</a></li>
+</ol>
+</li>
+<li><ol start="123">
+<li><a href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/">买卖股票的最佳时机 III</a></li>
+</ol>
+</li>
+<li>剑指 Offer 19. <a href="https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/">正则表达式匹配</a></li>
+</ul>
+<h4 id="回溯">回溯</h4>
+<ul>
+<li>剑指 Offer 38. <a href="https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/">字符串的排列</a></li>
+</ul>
+<p>之前一位校招大佬的面经里的, 刷了点题看这个题就有思路了，之前也碰到过dp[n]表示以第n位为最后一个值的区间这种题目，不知道我这么做对不对：</p>
+<pre><code class="language-javascript"><span class="hljs-comment">/**
+ * 给定一个正整数数列a, 对于其每个区间, 我们都可以计算一个X值;
+ * X值的定义如下: 对于任意区间, 其X值等于区间内最小的那个数乘上区间内所有数和;
+ * 现在需要你找出数列a的所有区间中, X值最大的那个区间;
+ * 如数列a为: 3 1 6 4 5 2; 则X值最大的区间为6, 4, 5, X = 4 * (6+4+5) = 60;
+ *
+ * 作者：甘先森
+ * 链接：https://juejin.im/post/6844904088337907720
+ * 来源：掘金
+ * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+ */</span>
+
+function getMaxX (<span class="hljs-built_in">array</span>) {
+  <span class="hljs-built_in">let</span> n = <span class="hljs-built_in">array</span>.<span class="hljs-built_in">length</span>
+  <span class="hljs-keyword">if</span> (n === <span class="hljs-number">0</span>) <span class="hljs-built_in">return</span> <span class="hljs-number">0</span>
+  <span class="hljs-built_in">let</span> <span class="hljs-built_in">min</span> = [<span class="hljs-built_in">array</span>[<span class="hljs-number">0</span>]]
+  <span class="hljs-built_in">let</span> dp = [<span class="hljs-built_in">array</span>[<span class="hljs-number">0</span>] * <span class="hljs-built_in">array</span>[<span class="hljs-number">0</span>]]
+  <span class="hljs-built_in">let</span> <span class="hljs-built_in">max</span> = dp[<span class="hljs-number">0</span>]
+  <span class="hljs-keyword">for</span> (<span class="hljs-built_in">let</span> i = <span class="hljs-number">1</span>; i &lt; n; i++) {
+    <span class="hljs-built_in">let</span> val = <span class="hljs-built_in">array</span>[i]
+    <span class="hljs-built_in">let</span> preMin = <span class="hljs-built_in">min</span>[i - <span class="hljs-number">1</span>]
+    <span class="hljs-built_in">min</span>[i] = Math.<span class="hljs-built_in">min</span>(preMin, val)
+    <span class="hljs-built_in">let</span> one = dp[i - <span class="hljs-number">1</span>] * <span class="hljs-built_in">min</span>[i] / preMin + val * <span class="hljs-built_in">min</span>[i]
+    <span class="hljs-built_in">let</span> two = val * val
+    <span class="hljs-keyword">if</span> (one &gt; two) {
+      dp[i] = one
+    } <span class="hljs-keyword">else</span> {
+      dp[i] = two
+      <span class="hljs-built_in">min</span>[i] = val
+    }
+    <span class="hljs-built_in">max</span> = Math.<span class="hljs-built_in">max</span>(<span class="hljs-built_in">max</span>, dp[i])
+  }
+  <span class="hljs-built_in">return</span> <span class="hljs-built_in">max</span>
+}
+
+console.<span class="hljs-built_in">log</span>(getMaxX([<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>])) // <span class="hljs-number">60</span></code></pre>
+<h3 id="编程题">编程题</h3>
+<p>这篇文章不错，<a href="https://juejin.im/post/6855129007852093453">「一劳永逸」送你21道高频JavaScript手写面试题
+</a>。一定要自己写一遍，上面也不是一点问题都没有，也不一定就一种实现方法，面试可能会问你有没有其他方法，比如节流，重点是思路。我面试问的fetchWithLimit就类似里面的<strong>实现一个同时允许任务数量最大为n的函数</strong>。</p>
+<p>除此之外，比如手写Promise，浮点数运算，大数相乘等也可以看看。</p>
+<p>再分享看到一个笔试题：<a href="https://blog.csdn.net/zz_jesse/article/details/107293743">头条前端笔试题 - 实现一个带并发限制的promise异步调度器</a>,不过这老哥的答案是有问题的，题目都改了。</p>
+<pre><code class="language-javascript"><span class="hljs-comment">/**
+ * JS实现一个带并发控制的异步调度器，保证同时运动的任务最多有两个，完善下面代码
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Scheduler</span> </span>{
+  add (promiseCreator) { ... }
+  <span class="hljs-comment">//...</span>
+}
+
+<span class="hljs-keyword">const</span> timeout = <span class="hljs-function">(<span class="hljs-params">time</span>) =&gt;</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-params">resolve</span> =&gt;</span> setTimeout(resolve, time))
+
+<span class="hljs-keyword">const</span> scheduler = <span class="hljs-keyword">new</span> Scheduler()
+
+<span class="hljs-keyword">const</span> addTask = <span class="hljs-function">(<span class="hljs-params">time, order</span>) =&gt;</span> {
+  scheduler.add(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span> timeout(time)).then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(order))
+}
+
+addTask(<span class="hljs-number">1000</span>,<span class="hljs-number">1</span>)
+addTask(<span class="hljs-number">500</span>,<span class="hljs-number">2</span>)
+addTask(<span class="hljs-number">300</span>,<span class="hljs-number">3</span>)
+addTask(<span class="hljs-number">400</span>,<span class="hljs-number">4</span>)</code></pre>
+<p>我的实现：</p>
+<pre><code class="language-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Scheduler</span> </span>{
+
+  <span class="hljs-keyword">constructor</span> (limit = <span class="hljs-number">2</span>) {
+    <span class="hljs-keyword">this</span>.limit = limit
+    <span class="hljs-keyword">this</span>.concurrent = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">this</span>.stack = []
+  }
+
+  add (promiseCreator) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.concurrent &lt; <span class="hljs-keyword">this</span>.limit) {
+      <span class="hljs-keyword">this</span>.concurrent++
+      <span class="hljs-keyword">return</span> promiseCreator().then(() =&gt; {
+        <span class="hljs-keyword">this</span>.concurrent--
+        <span class="hljs-keyword">this</span>.next()
+      })
+    } <span class="hljs-keyword">else</span> {
+      let resolve
+      let p = new Promise(r =&gt; {
+        resolve = r
+      })
+      <span class="hljs-keyword">this</span>.stack.push(() =&gt; {
+        promiseCreator().then(() =&gt; {
+          resolve()
+          <span class="hljs-keyword">this</span>.concurrent--
+          <span class="hljs-keyword">this</span>.next()
+        })
+      })
+      <span class="hljs-keyword">return</span> p
+    }
+  }
+
+  next () {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.stack.length &gt; <span class="hljs-number">0</span> &amp;&amp; <span class="hljs-keyword">this</span>.concurrent &lt; <span class="hljs-keyword">this</span>.limit) {
+      let p = <span class="hljs-keyword">this</span>.stack.shift()
+      <span class="hljs-keyword">this</span>.concurrent++
+      p()
+    }
+  }
+}</code></pre>
+<h3 id="计算机基础，前端基础等等">计算机基础，前端基础等等</h3>
+<p>这个就不说了，掘金一搜一大把。这次准备我自己整理了一波，挺多的，后面可能会分模块整理一下。</p>
+<h3 id="好文">好文</h3>
+<ul>
+<li><a href="https://juejin.im/post/6844904113302568973">艺术喵 2 年前端面试心路历程（字节跳动、YY、虎牙、BIGO）| 掘金技术征文</a></li>
+<li><a href="https://juejin.im/post/6844903830887366670#heading-20">一名【合格】前端工程师的自检清单</a></li>
+<li><a href="https://mp.weixin.qq.com/s/h2M2RCNNL2cnC0VskXz7JQ">看到一个不错的前端面试题开源项目</a></li>
+</ul>
+<p>也不要“尽信书”，比如这篇<a href="https://juejin.im/post/6844903896343642125">DOM, CSS, JS的阻塞,解析渲染顺序</a></p>
+<p><img src="https://imgkr2.cn-bj.ufileos.com/ee702161-2c54-4a26-8650-9d2e522fd7e5.png?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&amp;Signature=rIDbYyvIMIDDdqTQEHcfHOiMIB4%253D&amp;Expires=1598718661" alt=""></p>
+<p>红框内的有问题，导致我看懵了，说好的CSS不会阻塞DOM解析呢？最后自己写个Demo发现控制台打印是在前面的。</p>
+<h2 id="总结">总结</h2>
+<p>这次面试包括准备面试期间给我的几点感受：</p>
+<ol>
+<li>我太菜了</li>
+<li>算法挺有意思的</li>
+<li>少玩游戏多学习</li>
+</ol>
+<p>最后，许愿offer~</p>
+</section><section id="vcomments" class=" v" data-class="v"><div class="vpanel"><div class="vwrap"><p class="cancel-reply text-right" style="display:none;" title="取消回复"><svg class="vicon cancel-reply-btn" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4220" width="22" height="22"><path d="M796.454 985H227.545c-50.183 0-97.481-19.662-133.183-55.363-35.7-35.701-55.362-83-55.362-133.183V227.545c0-50.183 19.662-97.481 55.363-133.183 35.701-35.7 83-55.362 133.182-55.362h568.909c50.183 0 97.481 19.662 133.183 55.363 35.701 35.702 55.363 83 55.363 133.183v568.909c0 50.183-19.662 97.481-55.363 133.183S846.637 985 796.454 985zM227.545 91C152.254 91 91 152.254 91 227.545v568.909C91 871.746 152.254 933 227.545 933h568.909C871.746 933 933 871.746 933 796.454V227.545C933 152.254 871.746 91 796.454 91H227.545z" p-id="4221"></path><path d="M568.569 512l170.267-170.267c15.556-15.556 15.556-41.012 0-56.569s-41.012-15.556-56.569 0L512 455.431 341.733 285.165c-15.556-15.556-41.012-15.556-56.569 0s-15.556 41.012 0 56.569L455.431 512 285.165 682.267c-15.556 15.556-15.556 41.012 0 56.569 15.556 15.556 41.012 15.556 56.569 0L512 568.569l170.267 170.267c15.556 15.556 41.012 15.556 56.569 0 15.556-15.556 15.556-41.012 0-56.569L568.569 512z" p-id="4222"></path></svg></p><div class="vheader item3"><input name="nick" placeholder="昵称" class="vnick vinput" type="text"><input name="mail" placeholder="邮箱" class="vmail vinput" type="email"><input name="link" placeholder="网址(http://)" class="vlink vinput" type="text"></div><div class="vedit"><textarea id="veditor" class="veditor vinput" placeholder="Just Go Go"></textarea><div class="vrow"><div class="vcol vcol-60 status-bar"></div><div class="vcol vcol-40 vctrl text-right"><span title="表情" class="vicon vemoji-btn"><svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16172" width="22" height="22"><path d="M512 1024a512 512 0 1 1 512-512 512 512 0 0 1-512 512zM512 56.888889a455.111111 455.111111 0 1 0 455.111111 455.111111 455.111111 455.111111 0 0 0-455.111111-455.111111zM312.888889 512A85.333333 85.333333 0 1 1 398.222222 426.666667 85.333333 85.333333 0 0 1 312.888889 512z" p-id="16173"></path><path d="M512 768A142.222222 142.222222 0 0 1 369.777778 625.777778a28.444444 28.444444 0 0 1 56.888889 0 85.333333 85.333333 0 0 0 170.666666 0 28.444444 28.444444 0 0 1 56.888889 0A142.222222 142.222222 0 0 1 512 768z" p-id="16174"></path><path d="M782.222222 391.964444l-113.777778 59.733334a29.013333 29.013333 0 0 1-38.684444-10.808889 28.444444 28.444444 0 0 1 10.24-38.684445l113.777778-56.888888a28.444444 28.444444 0 0 1 38.684444 10.24 28.444444 28.444444 0 0 1-10.24 36.408888z" p-id="16175"></path><path d="M640.568889 451.697778l113.777778 56.888889a27.875556 27.875556 0 0 0 38.684444-10.24 27.875556 27.875556 0 0 0-10.24-38.684445l-113.777778-56.888889a28.444444 28.444444 0 0 0-38.684444 10.808889 28.444444 28.444444 0 0 0 10.24 38.115556z" p-id="16176"></path></svg></span><span title="预览" class="vicon vpreview-btn"><svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="17688" width="22" height="22"><path d="M502.390154 935.384615a29.538462 29.538462 0 1 1 0 59.076923H141.430154C79.911385 994.461538 29.538462 946.254769 29.538462 886.153846V137.846154C29.538462 77.745231 79.950769 29.538462 141.390769 29.538462h741.218462c61.44 0 111.852308 48.206769 111.852307 108.307692v300.268308a29.538462 29.538462 0 1 1-59.076923 0V137.846154c0-26.899692-23.355077-49.230769-52.775384-49.230769H141.390769c-29.420308 0-52.775385 22.331077-52.775384 49.230769v748.307692c0 26.899692 23.355077 49.230769 52.775384 49.230769h360.999385z" p-id="17689"></path><path d="M196.923077 216.615385m29.538461 0l374.153847 0q29.538462 0 29.538461 29.538461l0 0q0 29.538462-29.538461 29.538462l-374.153847 0q-29.538462 0-29.538461-29.538462l0 0q0-29.538462 29.538461-29.538461Z" p-id="17690"></path><path d="M649.846154 846.769231a216.615385 216.615385 0 1 0 0-433.230769 216.615385 216.615385 0 0 0 0 433.230769z m0 59.076923a275.692308 275.692308 0 1 1 0-551.384616 275.692308 275.692308 0 0 1 0 551.384616z" p-id="17691"></path><path d="M807.398383 829.479768m20.886847-20.886846l0 0q20.886846-20.886846 41.773692 0l125.321079 125.321079q20.886846 20.886846 0 41.773693l0 0q-20.886846 20.886846-41.773693 0l-125.321078-125.321079q-20.886846-20.886846 0-41.773693Z" p-id="17692"></path></svg></span></div></div></div><div class="vrow"><div class="vcol vcol-30"><a alt="Markdown is supported" href="https://guides.github.com/features/mastering-markdown/" class="vicon" target="_blank"><svg class="markdown" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z"></path></svg></a></div><div class="vcol vcol-70 text-right"><button type="button" title="Cmd|Ctrl+Enter" class="vsubmit vbtn">提交</button></div></div><div class="vemojis" style="display:none;"></div><div class="vinput vpreview" style="display:none;"></div><div style="display:none;" class="vmark"></div></div></div><div class="vcount" style="display:none;"><span class="vnum">0</span> 评论</div><div class="vload-top text-center" style="display:none;"><i class="vspinner" style="width:30px;height:30px;"></i></div><div class="vcards"></div><div class="vload-bottom text-center" style="display:none;"><i class="vspinner" style="width:30px;height:30px;"></i></div><div class="vempty" style="display: block;"><pre style="text-align:left;">Code 429: Too many requests. [429 GET https://avoscloud.com/1.1/classes/Comment]</pre></div><div class="vpage txt-center" style="display:none"><button type="button" class="vmore vbtn">加载更多...</button></div><div class="vpower txt-right">Powered By <a href="https://valine.js.org" target="_blank">Valine</a><br>v1.4.14</div></section></article></main><div class="back-to-top ">△</div><div class="sw-update-popup_wrapper__kqnqb"><div class="sw-update-popup_content__nGfn0">发现新内容!!</div><button class="button_btn__SGdXd button_btn-sm__TF0QD">刷新</button></div></div></div><script async="" src="https://www.google-analytics.com/analytics.js"></script><script>!function(e,a,t,n,g,c,o){e.GoogleAnalyticsObject=g,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),o=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",o.parentNode.insertBefore(c,o)}(window,document,"script",0,"ga"),ga("create","UA-98427538-1","auto"),ga("send","pageview")</script><script>!function(i){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)t=n[l],Object.prototype.hasOwnProperty.call(p,t)&&p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var r=this.webpackJsonpblog=this.webpackJsonpblog||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.3bfdae32.chunk.js"></script><script src="/static/js/main.c7d0cb8c.chunk.js"></script></body></html>
